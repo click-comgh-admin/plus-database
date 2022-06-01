@@ -1,0 +1,49 @@
+/*
+ * This combined file was created by the DataTables downloader builder:
+ *   https://datatables.net/download
+ *
+ * To rebuild or modify this file with the latest versions of the included
+ * software please visit:
+ *   https://datatables.net/download/#dt/fc-4.0.1
+ *
+ * Included libraries:
+ *   FixedColumns 4.0.1
+ */
+
+table.dataTable.display tbody tr.DTFC_NoData {
+  background-color: transparent;
+}
+
+tr.even td {
+  background-color: #ffffff;
+}
+
+tr.odd td {
+  background-color: #f9f9f9;
+}
+
+tr.selected td {
+  background-color: #a6b4cd;
+}
+
+thead th {
+  background-color: white;
+}
+
+tfoot th {
+  background-color: white;
+}
+
+tr.dt-rowReorder-moving td.dtfc-fixed-left,
+tr.dt-rowReorder-moving td.dtfc-fixed-right {
+  border-top: 2px solid #555 !important;
+  border-bottom: 2px solid #555 !important;
+}
+tr.dt-rowReorder-moving td.dtfc-fixed-left:first-child {
+  border-left: 2px solid #555 !important;
+}
+tr.dt-rowReorder-moving td.dtfc-fixed-right:last-child {
+  border-right: 2px solid #555 !important;
+}
+
+

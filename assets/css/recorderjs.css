@@ -1,0 +1,334 @@
+@-webkit-keyframes pulse {
+    0% {
+        -webkit-transform: scale(1)
+    }
+    50% {
+        -webkit-transform: scale(1.1)
+    }
+    100% {
+        -webkit-transform: scale(1)
+    }
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1)
+    }
+    50% {
+        transform: scale(1.1)
+    }
+    100% {
+        transform: scale(1)
+    }
+}
+
+@-webkit-keyframes swing {
+    20%,
+    40%,
+    60%,
+    80%,
+    100% {
+        -webkit-transform-origin: top center
+    }
+    20% {
+        -webkit-transform: rotate(15deg)
+    }
+    40% {
+        -webkit-transform: rotate(-10deg)
+    }
+    60% {
+        -webkit-transform: rotate(5deg)
+    }
+    80% {
+        -webkit-transform: rotate(-5deg)
+    }
+    100% {
+        -webkit-transform: rotate(0deg)
+    }
+}
+
+@keyframes swing {
+    20% {
+        transform: rotate(15deg)
+    }
+    40% {
+        transform: rotate(-10deg)
+    }
+    60% {
+        transform: rotate(5deg)
+    }
+    80% {
+        transform: rotate(-5deg)
+    }
+    100% {
+        transform: rotate(0deg)
+    }
+}
+
+.recording_indicator,
+.record_button {
+    display: none !important;
+}
+
+.recording_indicator.show,
+.record_button.show {
+    display: block !important;
+}
+
+[recording_indicator="pulse"],
+[recording_indicator="no_action"],
+[recording_indicator="player"] {
+    font-style: italic;
+    font-weight: bold;
+    transition: all 0.5s ease;
+    max-width: 97.5% !important;
+}
+
+[recording_indicator="pulse"] {
+    -webkit-animation-name: pulse;
+    animation-name: pulse;
+    -webkit-animation-duration: calc( 1s);
+    animation-duration: calc( 1s);
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+}
+
+[record_button="main"] {
+    width: 50px;
+    min-width: 50px;
+    max-width: 50px;
+}
+
+.startButton[type="button"],
+.stopButton[type="button"] {
+    width: 50px;
+    min-width: 50px;
+    max-width: 50px;
+    height: 35px;
+    min-height: 35px;
+    max-height: 35px;
+    transition: all 0.5s ease;
+}
+
+audio.recording,
+audio.preview {
+    height: 35px;
+    min-height: 35px;
+    max-height: 35px;
+    margin: -12px 0;
+    transition: all 0.5s ease;
+}
+
+button.record_container[type="button"] {
+    width: 80%
+}
+
+[recording_indicator="no_action"]>span[no_action="info"]>i {
+    font-style: italic;
+    font-weight: bold;
+    font-size: large;
+    -webkit-transform-origin: center bottom;
+    transform-origin: center bottom;
+    -webkit-animation-name: swing;
+    animation-name: swing;
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+    -webkit-animation-duration: calc( 1s);
+    animation-duration: calc( 1s);
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+    transition: all 0.5s ease;
+}
+
+[email-tabs="nav"]>[email-tabs="nav-item"] {
+    margin: 1px 0;
+    padding: 5px 0;
+    display: block;
+    list-style-type: none;
+    box-sizing: border-box;
+    width: 100%;
+    transition: all 0.5s ease;
+    background-image: linear-gradient(120deg, rgb(246, 211, 101) 0%, rgb(253, 160, 133) 100%) !important;
+}
+
+[email-tabs="nav"]>[email-tabs="nav-item"]:hover,
+[email-tabs="nav"]>[email-tabs="nav-item"].active {
+    padding: 10px 0;
+    transition: all 0.5s ease;
+    background-image: linear-gradient(to right, rgb(79, 172, 254) 0%, rgb(0, 242, 254) 100%) !important;
+}
+
+[email-tabs="nav"]>[email-tabs="nav-item"]>a {
+    display: block;
+    padding: 5px;
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    [email-tabs="nav"] {
+        display: flex;
+        justify-content: space-between;
+    }
+    [email-tabs="nav"]>[email-tabs="nav-item"]:hover,
+    [email-tabs="nav"]>[email-tabs="nav-item"].active {
+        padding: 5px 0;
+        transition: all 0.5s ease;
+        background-image: linear-gradient(to right, rgb(79, 172, 254) 0%, rgb(0, 242, 254) 100%) !important;
+    }
+    [email-tabs="nav"]>[email-tabs="nav-item"] {
+        display: inline;
+        padding: 5px 0;
+        text-align: center;
+        transition: all 0.5s ease;
+        margin: 0 2px;
+        border-radius: 2.5px;
+        box-shadow: 0 0.46875rem 2.1875rem rgba(4, 9, 20, 0.03), 0 0.9375rem 1.40625rem rgba(4, 9, 20, 0.03), 0 0.25rem 0.53125rem rgba(4, 9, 20, 0.05), 0 0.125rem 0.1875rem rgba(4, 9, 20, 0.03);
+    }
+}
+
+[email-tabs="container"] {
+    padding: 0;
+}
+
+[email-tabs="container-list"],
+[email-tabs="container-mail"] {
+    padding: 5px 0px;
+}
+
+[email-tabs="container-list--item"] {
+    color: #000;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid rgba(0, 0, 0, 0.0625) !important;
+}
+
+[email-tabs="container-list--item"].seen {
+    color: rgb(144, 144, 144);
+}
+
+[email-tabs="container-list--item"]:first-child {
+    border-top: 0 !important;
+}
+
+[email-tabs="container-list--item"]:last-child {
+    border-bottom: 0 !important;
+}
+
+[email-tabs="container-list--item---content"],
+[email-tabs="container-list--item---others"] {
+    display: flex;
+    padding: 10px 10px 0 0;
+}
+
+[email-tabs="container-list--item---content"] {
+    justify-content: start;
+}
+
+[email-tabs="container-list--item---others"] {
+    justify-content: end;
+}
+
+[email-tabs="container-list--item---content"]>[email-tabs="container-list--item---content----client_abbr"],
+.mail-sender--abbr {
+    width: 40px;
+    height: 40px;
+    padding: 4px;
+    display: flex;
+    color: #fff;
+    min-width: 40px;
+    max-width: 40px;
+    min-height: 40px;
+    max-height: 40px;
+    font-size: 1.6em;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 50%;
+    text-transform: uppercase;
+    justify-content: space-around;
+    background-image: linear-gradient(to right, rgb(219, 219, 219) 0%, rgb(159, 159, 159) 100%);
+}
+
+[email-tabs="container-list--item---others"] {
+    width: 20%;
+}
+
+[email-tabs="container-list--item---content----text"] {
+    padding: 0 10px 0 10px;
+}
+
+[email-tabs="container-list--item---others----date"],
+[email-tabs="container-list--item---others----select"] {
+    padding: 0 10px 0 10px;
+}
+
+[email-tabs="container-list--item---others----date"] {
+    font-size: 80%;
+    font-weight: 400;
+}
+
+[email-tabs="container-list--item---content----attach"]>span.pe-7s-file {
+    font-size: 1.5em;
+}
+
+@media (max-width: 768px) {
+    [email-tabs="container-list--item"] {
+        display: block;
+        justify-content: space-between;
+        border: 1px solid rgba(0, 0, 0, 0.0625) !important;
+    }
+    [email-tabs="container-list--item---others"] {
+        width: 35%;
+        position: absolute;
+        right: 20px;
+        z-index: 999;
+        padding: 0;
+        bottom: 10px;
+    }
+    [email-tabs="container-list--item---others"] {
+        width: 35%;
+        position: absolute;
+        right: 20px;
+        z-index: 999;
+        padding: 0;
+        bottom: 10px;
+    }
+    [email-tabs="container-list--item---others----select"],
+    [email-tabs="container-list--item---others----date"] {
+        right: 0;
+        position: absolute;
+    }
+    [email-tabs="container-list--item---others----select"] {
+        bottom: 35px;
+    }
+    [email-tabs="container-list--item---others----date"] {
+        bottom: -5px;
+    }
+}
+
+[myBar] {
+    width: 10%;
+    border-radius: 10px;
+    padding: 0 3.5px;
+    height: 20px;
+    background-color: #4CAF50;
+    text-align: center;
+    /* To center it horizontally (if you want) */
+    line-height: 20px;
+    /* To center it vertically */
+    color: white;
+}
+
+[myProgress] {
+    width: 100%;
+    border-radius: 10px;
+    /*background-color: grey;*/
+    background-color: #5f101e;
+}
+
+.mfp-img-mobile {
+    z-index: 999999999999999!important;
+}

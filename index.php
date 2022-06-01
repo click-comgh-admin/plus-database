@@ -1,0 +1,337 @@
+<?php
+	require_once 'assets/php/include.php';
+	require_once 'defs.php';
+
+	if (!isset($_COOKIE['pdb-client-user']) || empty($_COOKIE['pdb-client-user'])) {
+		header("Location: " . ClientBaseUrl . "login");
+    }
+
+    use Encryptor\Encryptor;
+    use FileManager\FileManager;
+    $fM = new FileManager();
+    
+    define('PAGE_TITLE', "Home");
+    define('PAGE_DESC', "Home Page.");
+?>
+<!doctype html>
+<html lang="en">
+    <?php require_once 'assets/php/page_components/header/head.php'; ?>
+    <body>
+        <div class="app-container app-theme-white body-tabs-shadow fixed-sidebar fixed-header">
+            <?php require_once 'assets/php/page_components/header/navbar.php'; ?>
+            <?php require_once 'assets/php/page_components/settings.php'; ?>
+            <div class="app-main">
+                <?php require_once 'assets/php/page_components/sidebar.php'; ?>
+                <div class="app-main__outer">
+                    <div class="app-main__inner">
+                        <div class="app-page-title">
+                            <div class="page-title-wrapper">
+                                <div class="page-title-heading">
+                                    <div class="page-title-icon">
+                                        <i class="pe-7s-car icon-gradient bg-mean-fruit">
+                                        </i>
+                                    </div>
+                                    <div>
+                                        <?= PAGE_TITLE; ?>
+                                        <div class="page-title-subheading"><?= PAGE_DESC; ?></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <?php
+                            if ($account_status['is_active'] === false) {
+                                require_once 'assets/php/page_components/account_inactive.php';
+                                require_once 'assets/php/page_components/footer/close.php';
+                                die();
+                            }
+                        ?>
+                        <div class="row">
+                            <div class="col-md-12 col-xl-4">
+                                <div class="card mb-3 widget-content bg-midnight-bloom">
+                                    <div class="widget-content-wrapper text-white">
+                                        <div class="widget-content-left">
+                                            <div class="widget-heading">Members</div>
+                                            <div class="widget-subheading">Total Members</div>
+                                        </div>
+                                        <div class="widget-content-right">
+                                            <?php   
+                                                @$get_string = @"currentpage=1&rowsperpage=100000000000&client_id=$account_id";
+                                                @$total_members = @$ccApi->client_members($type="members", $get_string = $get_string, function ($members) {
+                                                    return @$members;
+                                                }, $debug = false); 
+                                            ?>
+                                            <div class="widget-numbers text-white"><span><?= count(@$total_members['data']); ?></span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-xl-4">
+                                <div class="card mb-3 widget-content bg-arielle-smile">
+                                    <div class="widget-content-wrapper text-white">
+                                        <div class="widget-content-left">
+                                            <div class="widget-heading">Contacts</div>
+                                            <div class="widget-subheading">Total Contacts</div>
+                                        </div>
+                                        <div class="widget-content-right">
+                                            <?php
+                                                $get_string = @"contacts?account_id=$account_id";
+                                                $total_contacts = @$ccApi->communications($type="clients", $get_string, function($contacts)
+                                                {
+                                                    return @$contacts;
+                                                }, $debug = false);
+                                            ?>
+                                            <div class="widget-numbers text-white"><span><?= count(@$total_contacts); ?></span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-xl-4">
+                                <div class="card mb-3 widget-content bg-grow-early">
+                                    <div class="widget-content-wrapper text-white">
+                                        <div class="widget-content-left">
+                                            <div class="widget-heading">Administrative Users</div>
+                                            <div class="widget-subheading">Total Administrative Users</div>
+                                        </div>
+                                        <div class="widget-content-right">
+                                            <?php
+                                                $client_users = @$ccApi->user_info($type = "client", $account_id = $account_id,
+                                                    $all="all_client_users", $id=1, function ($info) {
+                                                    return @$info;
+                                                });
+                                            ?>
+                                            <div class="widget-numbers text-white"><span><?= count(@$client_users); ?></span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 col-lg-6">
+                                <div class="card-shadow-danger mb-3 widget-chart widget-chart2 text-left card">
+                                    <div class="widget-content">
+                                        <div class="widget-content-outer">
+                                            <?php
+                                                $get_string = "clients/spaces/all?account_id=$account_id";
+                                                $spaces = $ccApi->file_manager($get_string, function($spaces)
+                                                {
+                                                    return isset($spaces[0])? $spaces[0]: [];
+                                                }, $debug = false);
+                                                $pdcfmf_space = isset($spaces['pdcfmf_space'])? $spaces['pdcfmf_space']: 1;
+                                                $pdcfmf_space_used = isset($spaces['pdcfmf_space_used'])? $spaces['pdcfmf_space_used']: 1;
+                                                $fmSpacePercent = @(int)((floatval($pdcfmf_space_used)*100)/floatval($pdcfmf_space));
+                                                $progressBarVar = ($fmSpacePercent <= 25) ? "success": "danger";
+                                                $progressBarVar = ($fmSpacePercent > 25 && $fmSpacePercent <= 50) ? "info": $progressBarVar;
+                                                $progressBarVar = ($fmSpacePercent > 50 && $fmSpacePercent <= 75) ? "warning": $progressBarVar;
+
+                                                if ($fmSpacePercent <= 25) {
+                                                    $progressBarVar = "love-kiss";
+                                                    $progressTxt = "danger";
+                                                } else if ($fmSpacePercent > 25 && $fmSpacePercent <= 50) {
+                                                    $progressBarVar = "sunny-morning";
+                                                    $progressTxt = "warning";
+                                                } else if ($fmSpacePercent > 50 && $fmSpacePercent <= 75) {
+                                                    $progressBarVar = "malibu-beach";
+                                                    $progressTxt = "info";
+                                                } else {
+                                                    $progressBarVar = "happy-green";
+                                                    $progressTxt = "success";
+                                                }
+                                            ?>
+                                            <div class="widget-content-wrapper">
+                                                <div class="widget-content-left pr-2 fsize-1">
+                                                    <div class="widget-numbers mt-0 fsize-3 text-<?= $progressTxt; ?>"><?= $fmSpacePercent; ?>%</div>
+                                                </div>
+                                                <div class="widget-content-right w-100">
+                                                    <div class="progress-bar-xs progress">
+                                                        <div class="progress-bar bg-<?= $progressBarVar ?>" role="progressbar" aria-valuenow="<?= $fmSpacePercent; ?>" aria-valuemin="0" aria-valuemax="100" style="width: <?= $fmSpacePercent; ?>%;"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="widget-content-left fsize-1">
+                                                <div class="text-muted opacity-6">File Manager Space <i>// <?= $fM->storage_space($spaces['pdcfmf_space_used']); ?> of <?= $fM->storage_space($spaces['pdcfmf_space']); ?></i></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-6">
+                                <div class="card-shadow-success mb-3 widget-chart widget-chart2 text-left card">
+                                    <div class="widget-content">
+                                        <div class="widget-content-outer">
+                                            <?php
+                                                $account_subscriptions = @$account_status['subscription'];
+                                                $membershipMax = @$account_subscriptions[0]['pdcp_membership_size'];
+                                                $membershipMax = @$ccApi->membership_size($all=false, $id=$membershipMax, function($membership_size) {
+                                                    return @$membership_size[0]['pdd_info'];
+                                                });
+                                                $membershipMax = explode("-", $membershipMax);
+                                                $membershipMax = end($membershipMax);
+                                                $membershipMax = trim($membershipMax);
+                                                $membershipRegPercent = @(int)(((int)count($total_members['data'])*100)/(int)$membershipMax);
+                                                
+                                                if ($membershipRegPercent <= 25) {
+                                                    $progressBarVar = "happy-green";
+                                                    $progressTxt = "success";
+                                                } else if ($membershipRegPercent > 25 && $membershipRegPercent <= 50) {
+                                                    $progressBarVar = "malibu-beach";
+                                                    $progressTxt = "info";
+                                                } else if ($membershipRegPercent > 50 && $membershipRegPercent <= 75) {
+                                                    $progressBarVar = "sunny-morning";
+                                                    $progressTxt = "warning";
+                                                } else {
+                                                    $progressBarVar = "love-kiss";
+                                                    $progressTxt = "danger";
+                                                }
+                                            ?>
+                                            <div class="widget-content-wrapper">
+                                                <div class="widget-content-left pr-2 fsize-1">
+                                                    <div class="widget-numbers mt-0 fsize-3 text-<?= $progressTxt; ?>"><?= $membershipRegPercent; ?>%</div>
+                                                </div>
+                                                <div class="widget-content-right w-100">
+                                                    <div class="progress-bar-xs progress">
+                                                        <div class="progress-bar bg-<?= $progressBarVar ?>" role="progressbar" aria-valuenow="<?= $membershipRegPercent; ?>" aria-valuemin="0" aria-valuemax="100" style="width: <?= $membershipRegPercent; ?>%;"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="widget-content-left fsize-1">
+                                                <div class="text-muted opacity-6">Member Registration Space <i>// <?= count($total_members['data']); ?> of <?= $membershipMax; ?></i></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 col-lg-6">
+                                <div class="card-shadow-danger mb-3 widget-chart widget-chart2 text-left card">
+                                    <div class="widget-content">
+                                        <div class="widget-content-outer">
+                                            <?php
+                                                $get_string = "clients/spaces/all?account_id=$account_id";
+                                                $spaces = $ccApi->file_manager($get_string, function($spaces)
+                                                {
+                                                    return @$spaces[0];
+                                                }, $debug = false);
+                                                $account_subscriptions = @$account_status['subscription'][0];
+                                            ?>
+                                            <div class="widget-content-wrapper">
+                                                <div class="widget-content-left pr-2 fsize-1">
+                                                    <div class="text-muted">
+                                                        <?= (@$account_subscriptions['pdcc_is_trial'] == 1) ? "Trial Activation" : "Subscription"; ?> Fee
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="widget-content-left fsize-1">
+                                                <div class="text-muted opacity-6">GHC <?= @$account_subscriptions['pdcp_amount']; ?></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-6">
+                                <div class="card-shadow-success mb-3 widget-chart widget-chart2 text-left card">
+                                    <div class="widget-content">
+                                        <div class="widget-content-outer">
+                                            <div class="row">
+                                                <div class="col-md-3 pr-2 fsize-1">
+                                                    <input type="hidden" getClock__="<?= date("m/d/Y H:i", strtotime($account_subscriptions['pdcp_expire_date'])); ?>" name="">
+                                                    <div class="text-muted">
+                                                        <?= (@$account_subscriptions['pdcc_is_trial'] == 1) ? "Trial" : "Subscription"; ?> Period Ends In:
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-9">
+                                                    <ul class="countdown">
+                                                        <li> <span style="background-color: #eee" class="days">00</span>
+                                                            <p class="days_ref">days</p>
+                                                        </li>
+                                                        <li class="seperator">|</li>
+                                                        <li> <span style="background-color: #eee" class="hours">00</span>
+                                                            <p class="hours_ref">hours</p>
+                                                        </li>
+                                                        <li class="seperator">|</li>
+                                                        <li> <span style="background-color: #eee" class="minutes">00</span>
+                                                            <p class="minutes_ref">minutes</p>
+                                                        </li>
+                                                        <li class="seperator">|</li>
+                                                        <li> <span style="background-color: #eee" class="seconds">00</span>
+                                                            <p class="seconds_ref">seconds</p>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="main-card mb-3 card">
+                                    <div class="card-header">Recent Users
+                                    </div>
+                                    <div class="table-responsive">
+                                        <table class="align-middle mb-0 table table-borderless table-striped table-hover">
+                                            <thead>
+                                                <tr>
+                                                    <th class="text-center">#</th>
+                                                    <th>Name</th>
+                                                    <th class="text-center">Actions</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <?php 
+                                                    @$get_string = @"currentpage=1&rowsperpage=5&client_id=$account_id";
+                                                    @$total_members = @$ccApi->client_members($type="members_reverse", $get_string = $get_string, function ($members) {
+                                                        return (isset($members['data']) && !empty($members['data'])) ? $members['data'] : [];
+                                                    }, $debug = false); 
+                                                    foreach ($total_members as $member_key => $member) { ?>
+                                                    <tr>
+                                                        <td class="text-center text-muted">#<?= (int)$member_key + 1; ?></td>
+                                                        <td>
+                                                            <div class="widget-content p-0">
+                                                                <div class="widget-content-wrapper">
+                                                                    <div class="widget-content-left mr-3">
+                                                                        <div class="widget-content-left">
+                                                                            <img width="40" height="40" class="rounded-circle" src="<?= FILE_BUCKET_BASE_URL; ?>files/members/profile-picture/<?= @$member['pdm_profile_picture']; ?>" alt=""></div>
+                                                                    </div>
+                                                                    <div class="widget-content-left flex2">
+                                                                        <div class="widget-heading"><?= @$member['pdm_firstname'] . " " . @$member['pdm_surname']; ?></div>
+                                                                        <div class="widget-subheading opacity-7"><?= (@$member['pdm_gender'] == 1) ? "Male" : "Female"; ?></div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <td class="text-center w-25">
+                                                            <button class="badge badge-info btn btn-sm text-white mb-2">
+                                                                <?=  
+                                                                    $active_status = $ccApi->active_status($all="one", $id=$member['pdm_status'],function($active_status) {
+                                                                        return @$active_status[0]['pdd_info'];
+                                                                    });
+                                                                ?>
+                                                            </button>
+                                                            <?php
+                                                                $user_id = $member['pdm_id'];
+                                                                $encryptor = new Encryptor("members", md5("members"));
+                                                                $user_id = $encryptor->encrypt($user_id);
+                                                            ?>
+                                                            <a href="<?= CLIENT_BASE_URL; ?>members?show-member&member=<?= $user_id; ?>" class="btn btn-success mt-0 btn-sm" type="button">Details</a>                                                            
+                                                        </td>
+                                                    </tr>
+                                                <?php } ?>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="d-block text-center card-footer">                                      
+                                        <a href="<?= CLIENT_BASE_URL; ?>members" class="btn-wide btn btn-success">Members</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <?php require_once 'assets/php/page_components/footer/footer.php'; ?>
+                </div>
+            </div>
+        </div>
+        <?php require_once 'assets/php/page_components/footer/js.php'; ?>
+    </body>
+</html>

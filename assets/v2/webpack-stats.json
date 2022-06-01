@@ -1,0 +1,930 @@
+{
+  "status": "done",
+  "assets": {
+    "../../../client_dashboard/assets/v2/prod-files/css/attendance/setup-view.css": {
+      "name": "../../../client_dashboard/assets/v2/prod-files/css/attendance/setup-view.css",
+      "path": "C:\\xampp\\htdocs\\AMG\\plus_db\\client_dashboard\\assets\\v2\\prod-files\\css\\attendance\\setup-view.css",
+      "publicPath": "https://client.plusdatabase.com/../../../client_dashboard/assets/v2/prod-files/css/attendance/setup-view.css"
+    },
+    "../../../client_dashboard/assets/v2/prod-files/js/attendance/setup-view.js": {
+      "name": "../../../client_dashboard/assets/v2/prod-files/js/attendance/setup-view.js",
+      "path": "C:\\xampp\\htdocs\\AMG\\plus_db\\client_dashboard\\assets\\v2\\prod-files\\js\\attendance\\setup-view.js",
+      "publicPath": "https://client.plusdatabase.com/../../../client_dashboard/assets/v2/prod-files/js/attendance/setup-view.js"
+    },
+    "../../../client_dashboard/assets/v2/prod-files/css/attendance/setup-form.css": {
+      "name": "../../../client_dashboard/assets/v2/prod-files/css/attendance/setup-form.css",
+      "path": "C:\\xampp\\htdocs\\AMG\\plus_db\\client_dashboard\\assets\\v2\\prod-files\\css\\attendance\\setup-form.css",
+      "publicPath": "https://client.plusdatabase.com/../../../client_dashboard/assets/v2/prod-files/css/attendance/setup-form.css"
+    },
+    "../../../client_dashboard/assets/v2/prod-files/js/attendance/setup-form.js": {
+      "name": "../../../client_dashboard/assets/v2/prod-files/js/attendance/setup-form.js",
+      "path": "C:\\xampp\\htdocs\\AMG\\plus_db\\client_dashboard\\assets\\v2\\prod-files\\js\\attendance\\setup-form.js",
+      "publicPath": "https://client.plusdatabase.com/../../../client_dashboard/assets/v2/prod-files/js/attendance/setup-form.js"
+    },
+    "../../../client_dashboard/assets/v2/prod-files/css/attendance/setup-form/edit-admin.css": {
+      "name": "../../../client_dashboard/assets/v2/prod-files/css/attendance/setup-form/edit-admin.css",
+      "path": "C:\\xampp\\htdocs\\AMG\\plus_db\\client_dashboard\\assets\\v2\\prod-files\\css\\attendance\\setup-form\\edit-admin.css",
+      "publicPath": "https://client.plusdatabase.com/../../../client_dashboard/assets/v2/prod-files/css/attendance/setup-form/edit-admin.css"
+    },
+    "../../../client_dashboard/assets/v2/prod-files/js/attendance/setup-form/edit-admin.js": {
+      "name": "../../../client_dashboard/assets/v2/prod-files/js/attendance/setup-form/edit-admin.js",
+      "path": "C:\\xampp\\htdocs\\AMG\\plus_db\\client_dashboard\\assets\\v2\\prod-files\\js\\attendance\\setup-form\\edit-admin.js",
+      "publicPath": "https://client.plusdatabase.com/../../../client_dashboard/assets/v2/prod-files/js/attendance/setup-form/edit-admin.js"
+    },
+    "../../../client_dashboard/assets/v2/prod-files/css/attendance/setup-form/edit-attachment.css": {
+      "name": "../../../client_dashboard/assets/v2/prod-files/css/attendance/setup-form/edit-attachment.css",
+      "path": "C:\\xampp\\htdocs\\AMG\\plus_db\\client_dashboard\\assets\\v2\\prod-files\\css\\attendance\\setup-form\\edit-attachment.css",
+      "publicPath": "https://client.plusdatabase.com/../../../client_dashboard/assets/v2/prod-files/css/attendance/setup-form/edit-attachment.css"
+    },
+    "../../../client_dashboard/assets/v2/prod-files/js/attendance/setup-form/edit-attachment.js": {
+      "name": "../../../client_dashboard/assets/v2/prod-files/js/attendance/setup-form/edit-attachment.js",
+      "path": "C:\\xampp\\htdocs\\AMG\\plus_db\\client_dashboard\\assets\\v2\\prod-files\\js\\attendance\\setup-form\\edit-attachment.js",
+      "publicPath": "https://client.plusdatabase.com/../../../client_dashboard/assets/v2/prod-files/js/attendance/setup-form/edit-attachment.js"
+    },
+    "../../../client_dashboard/assets/v2/prod-files/css/attendance/setup-form/edit-break.css": {
+      "name": "../../../client_dashboard/assets/v2/prod-files/css/attendance/setup-form/edit-break.css",
+      "path": "C:\\xampp\\htdocs\\AMG\\plus_db\\client_dashboard\\assets\\v2\\prod-files\\css\\attendance\\setup-form\\edit-break.css",
+      "publicPath": "https://client.plusdatabase.com/../../../client_dashboard/assets/v2/prod-files/css/attendance/setup-form/edit-break.css"
+    },
+    "../../../client_dashboard/assets/v2/prod-files/js/attendance/setup-form/edit-break.js": {
+      "name": "../../../client_dashboard/assets/v2/prod-files/js/attendance/setup-form/edit-break.js",
+      "path": "C:\\xampp\\htdocs\\AMG\\plus_db\\client_dashboard\\assets\\v2\\prod-files\\js\\attendance\\setup-form\\edit-break.js",
+      "publicPath": "https://client.plusdatabase.com/../../../client_dashboard/assets/v2/prod-files/js/attendance/setup-form/edit-break.js"
+    },
+    "../../../client_dashboard/assets/v2/prod-files/js/attendance/setup-form/edit-date.js": {
+      "name": "../../../client_dashboard/assets/v2/prod-files/js/attendance/setup-form/edit-date.js",
+      "path": "C:\\xampp\\htdocs\\AMG\\plus_db\\client_dashboard\\assets\\v2\\prod-files\\js\\attendance\\setup-form\\edit-date.js",
+      "publicPath": "https://client.plusdatabase.com/../../../client_dashboard/assets/v2/prod-files/js/attendance/setup-form/edit-date.js"
+    },
+    "../../../client_dashboard/assets/v2/prod-files/css/attendance/setup-form/edit-day.css": {
+      "name": "../../../client_dashboard/assets/v2/prod-files/css/attendance/setup-form/edit-day.css",
+      "path": "C:\\xampp\\htdocs\\AMG\\plus_db\\client_dashboard\\assets\\v2\\prod-files\\css\\attendance\\setup-form\\edit-day.css",
+      "publicPath": "https://client.plusdatabase.com/../../../client_dashboard/assets/v2/prod-files/css/attendance/setup-form/edit-day.css"
+    },
+    "../../../client_dashboard/assets/v2/prod-files/js/attendance/setup-form/edit-day.js": {
+      "name": "../../../client_dashboard/assets/v2/prod-files/js/attendance/setup-form/edit-day.js",
+      "path": "C:\\xampp\\htdocs\\AMG\\plus_db\\client_dashboard\\assets\\v2\\prod-files\\js\\attendance\\setup-form\\edit-day.js",
+      "publicPath": "https://client.plusdatabase.com/../../../client_dashboard/assets/v2/prod-files/js/attendance/setup-form/edit-day.js"
+    },
+    "../../../client_dashboard/assets/v2/prod-files/css/attendance/setup-form/edit-group.css": {
+      "name": "../../../client_dashboard/assets/v2/prod-files/css/attendance/setup-form/edit-group.css",
+      "path": "C:\\xampp\\htdocs\\AMG\\plus_db\\client_dashboard\\assets\\v2\\prod-files\\css\\attendance\\setup-form\\edit-group.css",
+      "publicPath": "https://client.plusdatabase.com/../../../client_dashboard/assets/v2/prod-files/css/attendance/setup-form/edit-group.css"
+    },
+    "../../../client_dashboard/assets/v2/prod-files/js/attendance/setup-form/edit-group.js": {
+      "name": "../../../client_dashboard/assets/v2/prod-files/js/attendance/setup-form/edit-group.js",
+      "path": "C:\\xampp\\htdocs\\AMG\\plus_db\\client_dashboard\\assets\\v2\\prod-files\\js\\attendance\\setup-form\\edit-group.js",
+      "publicPath": "https://client.plusdatabase.com/../../../client_dashboard/assets/v2/prod-files/js/attendance/setup-form/edit-group.js"
+    },
+    "../../../client_dashboard/assets/v2/prod-files/css/attendance/setup-form/edit-location.css": {
+      "name": "../../../client_dashboard/assets/v2/prod-files/css/attendance/setup-form/edit-location.css",
+      "path": "C:\\xampp\\htdocs\\AMG\\plus_db\\client_dashboard\\assets\\v2\\prod-files\\css\\attendance\\setup-form\\edit-location.css",
+      "publicPath": "https://client.plusdatabase.com/../../../client_dashboard/assets/v2/prod-files/css/attendance/setup-form/edit-location.css"
+    },
+    "../../../client_dashboard/assets/v2/prod-files/js/attendance/setup-form/edit-location.js": {
+      "name": "../../../client_dashboard/assets/v2/prod-files/js/attendance/setup-form/edit-location.js",
+      "path": "C:\\xampp\\htdocs\\AMG\\plus_db\\client_dashboard\\assets\\v2\\prod-files\\js\\attendance\\setup-form\\edit-location.js",
+      "publicPath": "https://client.plusdatabase.com/../../../client_dashboard/assets/v2/prod-files/js/attendance/setup-form/edit-location.js"
+    },
+    "../../../client_dashboard/assets/v2/prod-files/css/attendance/setup-form/edit-member.css": {
+      "name": "../../../client_dashboard/assets/v2/prod-files/css/attendance/setup-form/edit-member.css",
+      "path": "C:\\xampp\\htdocs\\AMG\\plus_db\\client_dashboard\\assets\\v2\\prod-files\\css\\attendance\\setup-form\\edit-member.css",
+      "publicPath": "https://client.plusdatabase.com/../../../client_dashboard/assets/v2/prod-files/css/attendance/setup-form/edit-member.css"
+    },
+    "../../../client_dashboard/assets/v2/prod-files/js/attendance/setup-form/edit-member.js": {
+      "name": "../../../client_dashboard/assets/v2/prod-files/js/attendance/setup-form/edit-member.js",
+      "path": "C:\\xampp\\htdocs\\AMG\\plus_db\\client_dashboard\\assets\\v2\\prod-files\\js\\attendance\\setup-form\\edit-member.js",
+      "publicPath": "https://client.plusdatabase.com/../../../client_dashboard/assets/v2/prod-files/js/attendance/setup-form/edit-member.js"
+    },
+    "../../../client_dashboard/assets/v2/prod-files/css/attendance/setup-form/edit-sms.css": {
+      "name": "../../../client_dashboard/assets/v2/prod-files/css/attendance/setup-form/edit-sms.css",
+      "path": "C:\\xampp\\htdocs\\AMG\\plus_db\\client_dashboard\\assets\\v2\\prod-files\\css\\attendance\\setup-form\\edit-sms.css",
+      "publicPath": "https://client.plusdatabase.com/../../../client_dashboard/assets/v2/prod-files/css/attendance/setup-form/edit-sms.css"
+    },
+    "../../../client_dashboard/assets/v2/prod-files/js/attendance/setup-form/edit-sms.js": {
+      "name": "../../../client_dashboard/assets/v2/prod-files/js/attendance/setup-form/edit-sms.js",
+      "path": "C:\\xampp\\htdocs\\AMG\\plus_db\\client_dashboard\\assets\\v2\\prod-files\\js\\attendance\\setup-form\\edit-sms.js",
+      "publicPath": "https://client.plusdatabase.com/../../../client_dashboard/assets/v2/prod-files/js/attendance/setup-form/edit-sms.js"
+    },
+    "../../../client_dashboard/assets/v2/prod-files/css/attendance/setup-form/edit-schedule.css": {
+      "name": "../../../client_dashboard/assets/v2/prod-files/css/attendance/setup-form/edit-schedule.css",
+      "path": "C:\\xampp\\htdocs\\AMG\\plus_db\\client_dashboard\\assets\\v2\\prod-files\\css\\attendance\\setup-form\\edit-schedule.css",
+      "publicPath": "https://client.plusdatabase.com/../../../client_dashboard/assets/v2/prod-files/css/attendance/setup-form/edit-schedule.css"
+    },
+    "../../../client_dashboard/assets/v2/prod-files/js/attendance/setup-form/edit-schedule.js": {
+      "name": "../../../client_dashboard/assets/v2/prod-files/js/attendance/setup-form/edit-schedule.js",
+      "path": "C:\\xampp\\htdocs\\AMG\\plus_db\\client_dashboard\\assets\\v2\\prod-files\\js\\attendance\\setup-form\\edit-schedule.js",
+      "publicPath": "https://client.plusdatabase.com/../../../client_dashboard/assets/v2/prod-files/js/attendance/setup-form/edit-schedule.js"
+    },
+    "../../../client_dashboard/assets/v2/prod-files/css/attendance/setup-form/edit-sub_group.css": {
+      "name": "../../../client_dashboard/assets/v2/prod-files/css/attendance/setup-form/edit-sub_group.css",
+      "path": "C:\\xampp\\htdocs\\AMG\\plus_db\\client_dashboard\\assets\\v2\\prod-files\\css\\attendance\\setup-form\\edit-sub_group.css",
+      "publicPath": "https://client.plusdatabase.com/../../../client_dashboard/assets/v2/prod-files/css/attendance/setup-form/edit-sub_group.css"
+    },
+    "../../../client_dashboard/assets/v2/prod-files/js/attendance/setup-form/edit-sub_group.js": {
+      "name": "../../../client_dashboard/assets/v2/prod-files/js/attendance/setup-form/edit-sub_group.js",
+      "path": "C:\\xampp\\htdocs\\AMG\\plus_db\\client_dashboard\\assets\\v2\\prod-files\\js\\attendance\\setup-form\\edit-sub_group.js",
+      "publicPath": "https://client.plusdatabase.com/../../../client_dashboard/assets/v2/prod-files/js/attendance/setup-form/edit-sub_group.js"
+    },
+    "../../../client_dashboard/assets/v2/prod-files/css/attendance/setup-view/schedules.css": {
+      "name": "../../../client_dashboard/assets/v2/prod-files/css/attendance/setup-view/schedules.css",
+      "path": "C:\\xampp\\htdocs\\AMG\\plus_db\\client_dashboard\\assets\\v2\\prod-files\\css\\attendance\\setup-view\\schedules.css",
+      "publicPath": "https://client.plusdatabase.com/../../../client_dashboard/assets/v2/prod-files/css/attendance/setup-view/schedules.css"
+    },
+    "../../../client_dashboard/assets/v2/prod-files/js/attendance/setup-view/schedules.js": {
+      "name": "../../../client_dashboard/assets/v2/prod-files/js/attendance/setup-view/schedules.js",
+      "path": "C:\\xampp\\htdocs\\AMG\\plus_db\\client_dashboard\\assets\\v2\\prod-files\\js\\attendance\\setup-view\\schedules.js",
+      "publicPath": "https://client.plusdatabase.com/../../../client_dashboard/assets/v2/prod-files/js/attendance/setup-view/schedules.js"
+    },
+    "../../../client_dashboard/assets/v2/prod-files/css/attendance/setup-view/schedule.css": {
+      "name": "../../../client_dashboard/assets/v2/prod-files/css/attendance/setup-view/schedule.css",
+      "path": "C:\\xampp\\htdocs\\AMG\\plus_db\\client_dashboard\\assets\\v2\\prod-files\\css\\attendance\\setup-view\\schedule.css",
+      "publicPath": "https://client.plusdatabase.com/../../../client_dashboard/assets/v2/prod-files/css/attendance/setup-view/schedule.css"
+    },
+    "../../../client_dashboard/assets/v2/prod-files/js/attendance/setup-view/schedule.js": {
+      "name": "../../../client_dashboard/assets/v2/prod-files/js/attendance/setup-view/schedule.js",
+      "path": "C:\\xampp\\htdocs\\AMG\\plus_db\\client_dashboard\\assets\\v2\\prod-files\\js\\attendance\\setup-view\\schedule.js",
+      "publicPath": "https://client.plusdatabase.com/../../../client_dashboard/assets/v2/prod-files/js/attendance/setup-view/schedule.js"
+    },
+    "../../../client_dashboard/assets/v2/prod-files/css/membership/registration/excel.css": {
+      "name": "../../../client_dashboard/assets/v2/prod-files/css/membership/registration/excel.css",
+      "path": "C:\\xampp\\htdocs\\AMG\\plus_db\\client_dashboard\\assets\\v2\\prod-files\\css\\membership\\registration\\excel.css",
+      "publicPath": "https://client.plusdatabase.com/../../../client_dashboard/assets/v2/prod-files/css/membership/registration/excel.css"
+    },
+    "../../../client_dashboard/assets/v2/prod-files/js/membership/registration/excel.js": {
+      "name": "../../../client_dashboard/assets/v2/prod-files/js/membership/registration/excel.js",
+      "path": "C:\\xampp\\htdocs\\AMG\\plus_db\\client_dashboard\\assets\\v2\\prod-files\\js\\membership\\registration\\excel.js",
+      "publicPath": "https://client.plusdatabase.com/../../../client_dashboard/assets/v2/prod-files/js/membership/registration/excel.js"
+    },
+    "../../../client_dashboard/assets/v2/prod-files/js/membership/groupings/branches/all.js": {
+      "name": "../../../client_dashboard/assets/v2/prod-files/js/membership/groupings/branches/all.js",
+      "path": "C:\\xampp\\htdocs\\AMG\\plus_db\\client_dashboard\\assets\\v2\\prod-files\\js\\membership\\groupings\\branches\\all.js",
+      "publicPath": "https://client.plusdatabase.com/../../../client_dashboard/assets/v2/prod-files/js/membership/groupings/branches/all.js"
+    },
+    "../../../client_dashboard/assets/v2/prod-files/js/membership/groupings/branches/one.js": {
+      "name": "../../../client_dashboard/assets/v2/prod-files/js/membership/groupings/branches/one.js",
+      "path": "C:\\xampp\\htdocs\\AMG\\plus_db\\client_dashboard\\assets\\v2\\prod-files\\js\\membership\\groupings\\branches\\one.js",
+      "publicPath": "https://client.plusdatabase.com/../../../client_dashboard/assets/v2/prod-files/js/membership/groupings/branches/one.js"
+    },
+    "../../../client_dashboard/assets/v2/prod-files/js/membership/groupings/branches/add.js": {
+      "name": "../../../client_dashboard/assets/v2/prod-files/js/membership/groupings/branches/add.js",
+      "path": "C:\\xampp\\htdocs\\AMG\\plus_db\\client_dashboard\\assets\\v2\\prod-files\\js\\membership\\groupings\\branches\\add.js",
+      "publicPath": "https://client.plusdatabase.com/../../../client_dashboard/assets/v2/prod-files/js/membership/groupings/branches/add.js"
+    },
+    "../../../client_dashboard/assets/v2/prod-files/js/membership/groupings/branches/edit.js": {
+      "name": "../../../client_dashboard/assets/v2/prod-files/js/membership/groupings/branches/edit.js",
+      "path": "C:\\xampp\\htdocs\\AMG\\plus_db\\client_dashboard\\assets\\v2\\prod-files\\js\\membership\\groupings\\branches\\edit.js",
+      "publicPath": "https://client.plusdatabase.com/../../../client_dashboard/assets/v2/prod-files/js/membership/groupings/branches/edit.js"
+    },
+    "../../../client_dashboard/assets/v2/prod-files/js/membership/groupings/member_categories/all.js": {
+      "name": "../../../client_dashboard/assets/v2/prod-files/js/membership/groupings/member_categories/all.js",
+      "path": "C:\\xampp\\htdocs\\AMG\\plus_db\\client_dashboard\\assets\\v2\\prod-files\\js\\membership\\groupings\\member_categories\\all.js",
+      "publicPath": "https://client.plusdatabase.com/../../../client_dashboard/assets/v2/prod-files/js/membership/groupings/member_categories/all.js"
+    },
+    "../../../client_dashboard/assets/v2/prod-files/js/membership/groupings/member_categories/one.js": {
+      "name": "../../../client_dashboard/assets/v2/prod-files/js/membership/groupings/member_categories/one.js",
+      "path": "C:\\xampp\\htdocs\\AMG\\plus_db\\client_dashboard\\assets\\v2\\prod-files\\js\\membership\\groupings\\member_categories\\one.js",
+      "publicPath": "https://client.plusdatabase.com/../../../client_dashboard/assets/v2/prod-files/js/membership/groupings/member_categories/one.js"
+    },
+    "../../../client_dashboard/assets/v2/prod-files/js/membership/groupings/member_categories/add.js": {
+      "name": "../../../client_dashboard/assets/v2/prod-files/js/membership/groupings/member_categories/add.js",
+      "path": "C:\\xampp\\htdocs\\AMG\\plus_db\\client_dashboard\\assets\\v2\\prod-files\\js\\membership\\groupings\\member_categories\\add.js",
+      "publicPath": "https://client.plusdatabase.com/../../../client_dashboard/assets/v2/prod-files/js/membership/groupings/member_categories/add.js"
+    },
+    "../../../client_dashboard/assets/v2/prod-files/js/membership/groupings/member_categories/edit.js": {
+      "name": "../../../client_dashboard/assets/v2/prod-files/js/membership/groupings/member_categories/edit.js",
+      "path": "C:\\xampp\\htdocs\\AMG\\plus_db\\client_dashboard\\assets\\v2\\prod-files\\js\\membership\\groupings\\member_categories\\edit.js",
+      "publicPath": "https://client.plusdatabase.com/../../../client_dashboard/assets/v2/prod-files/js/membership/groupings/member_categories/edit.js"
+    },
+    "../../../client_dashboard/assets/v2/prod-files/js/shared.js": {
+      "name": "../../../client_dashboard/assets/v2/prod-files/js/shared.js",
+      "path": "C:\\xampp\\htdocs\\AMG\\plus_db\\client_dashboard\\assets\\v2\\prod-files\\js\\shared.js",
+      "publicPath": "https://client.plusdatabase.com/../../../client_dashboard/assets/v2/prod-files/js/shared.js"
+    },
+    "../../../client_dashboard/assets/v2/prod-files/js/runtime.js": {
+      "name": "../../../client_dashboard/assets/v2/prod-files/js/runtime.js",
+      "path": "C:\\xampp\\htdocs\\AMG\\plus_db\\client_dashboard\\assets\\v2\\prod-files\\js\\runtime.js",
+      "publicPath": "https://client.plusdatabase.com/../../../client_dashboard/assets/v2/prod-files/js/runtime.js"
+    },
+    "../../../client_dashboard/assets/v2/prod-files/js/vendors.material.js": {
+      "name": "../../../client_dashboard/assets/v2/prod-files/js/vendors.material.js",
+      "path": "C:\\xampp\\htdocs\\AMG\\plus_db\\client_dashboard\\assets\\v2\\prod-files\\js\\vendors.material.js",
+      "publicPath": "https://client.plusdatabase.com/../../../client_dashboard/assets/v2/prod-files/js/vendors.material.js"
+    },
+    "../../../client_dashboard/assets/v2/prod-files/js/vendors.buffer.js": {
+      "name": "../../../client_dashboard/assets/v2/prod-files/js/vendors.buffer.js",
+      "path": "C:\\xampp\\htdocs\\AMG\\plus_db\\client_dashboard\\assets\\v2\\prod-files\\js\\vendors.buffer.js",
+      "publicPath": "https://client.plusdatabase.com/../../../client_dashboard/assets/v2/prod-files/js/vendors.buffer.js"
+    },
+    "../../../client_dashboard/assets/v2/prod-files/js/vendors.sweetalert2.js": {
+      "name": "../../../client_dashboard/assets/v2/prod-files/js/vendors.sweetalert2.js",
+      "path": "C:\\xampp\\htdocs\\AMG\\plus_db\\client_dashboard\\assets\\v2\\prod-files\\js\\vendors.sweetalert2.js",
+      "publicPath": "https://client.plusdatabase.com/../../../client_dashboard/assets/v2/prod-files/js/vendors.sweetalert2.js"
+    },
+    "../../../client_dashboard/assets/v2/prod-files/js/vendors.wicg-inert.js": {
+      "name": "../../../client_dashboard/assets/v2/prod-files/js/vendors.wicg-inert.js",
+      "path": "C:\\xampp\\htdocs\\AMG\\plus_db\\client_dashboard\\assets\\v2\\prod-files\\js\\vendors.wicg-inert.js",
+      "publicPath": "https://client.plusdatabase.com/../../../client_dashboard/assets/v2/prod-files/js/vendors.wicg-inert.js"
+    },
+    "../../../client_dashboard/assets/v2/prod-files/js/vendors.jquery.js": {
+      "name": "../../../client_dashboard/assets/v2/prod-files/js/vendors.jquery.js",
+      "path": "C:\\xampp\\htdocs\\AMG\\plus_db\\client_dashboard\\assets\\v2\\prod-files\\js\\vendors.jquery.js",
+      "publicPath": "https://client.plusdatabase.com/../../../client_dashboard/assets/v2/prod-files/js/vendors.jquery.js"
+    },
+    "../../../client_dashboard/assets/v2/prod-files/js/vendors.select2.js": {
+      "name": "../../../client_dashboard/assets/v2/prod-files/js/vendors.select2.js",
+      "path": "C:\\xampp\\htdocs\\AMG\\plus_db\\client_dashboard\\assets\\v2\\prod-files\\js\\vendors.select2.js",
+      "publicPath": "https://client.plusdatabase.com/../../../client_dashboard/assets/v2/prod-files/js/vendors.select2.js"
+    },
+    "../../../client_dashboard/assets/v2/prod-files/js/907.js": {
+      "name": "../../../client_dashboard/assets/v2/prod-files/js/907.js",
+      "path": "C:\\xampp\\htdocs\\AMG\\plus_db\\client_dashboard\\assets\\v2\\prod-files\\js\\907.js",
+      "publicPath": "https://client.plusdatabase.com/../../../client_dashboard/assets/v2/prod-files/js/907.js"
+    },
+    "../../../client_dashboard/assets/v2/prod-files/js/111.js": {
+      "name": "../../../client_dashboard/assets/v2/prod-files/js/111.js",
+      "path": "C:\\xampp\\htdocs\\AMG\\plus_db\\client_dashboard\\assets\\v2\\prod-files\\js\\111.js",
+      "publicPath": "https://client.plusdatabase.com/../../../client_dashboard/assets/v2/prod-files/js/111.js"
+    },
+    "../../../client_dashboard/assets/v2/prod-files/css/214.css": {
+      "name": "../../../client_dashboard/assets/v2/prod-files/css/214.css",
+      "path": "C:\\xampp\\htdocs\\AMG\\plus_db\\client_dashboard\\assets\\v2\\prod-files\\css\\214.css",
+      "publicPath": "https://client.plusdatabase.com/../../../client_dashboard/assets/v2/prod-files/css/214.css"
+    },
+    "../../../client_dashboard/assets/v2/prod-files/js/985.js": {
+      "name": "../../../client_dashboard/assets/v2/prod-files/js/985.js",
+      "path": "C:\\xampp\\htdocs\\AMG\\plus_db\\client_dashboard\\assets\\v2\\prod-files\\js\\985.js",
+      "publicPath": "https://client.plusdatabase.com/../../../client_dashboard/assets/v2/prod-files/js/985.js"
+    },
+    "../../../client_dashboard/assets/v2/prod-files/css/948.css": {
+      "name": "../../../client_dashboard/assets/v2/prod-files/css/948.css",
+      "path": "C:\\xampp\\htdocs\\AMG\\plus_db\\client_dashboard\\assets\\v2\\prod-files\\css\\948.css",
+      "publicPath": "https://client.plusdatabase.com/../../../client_dashboard/assets/v2/prod-files/css/948.css"
+    },
+    "../../../client_dashboard/assets/v2/prod-files/js/800.js": {
+      "name": "../../../client_dashboard/assets/v2/prod-files/js/800.js",
+      "path": "C:\\xampp\\htdocs\\AMG\\plus_db\\client_dashboard\\assets\\v2\\prod-files\\js\\800.js",
+      "publicPath": "https://client.plusdatabase.com/../../../client_dashboard/assets/v2/prod-files/js/800.js"
+    },
+    "../../../client_dashboard/assets/v2/prod-files/js/200.js": {
+      "name": "../../../client_dashboard/assets/v2/prod-files/js/200.js",
+      "path": "C:\\xampp\\htdocs\\AMG\\plus_db\\client_dashboard\\assets\\v2\\prod-files\\js\\200.js",
+      "publicPath": "https://client.plusdatabase.com/../../../client_dashboard/assets/v2/prod-files/js/200.js"
+    },
+    "../../../client_dashboard/assets/v2/prod-files/js/111.js.LICENSE.txt": {
+      "name": "../../../client_dashboard/assets/v2/prod-files/js/111.js.LICENSE.txt",
+      "path": "C:\\xampp\\htdocs\\AMG\\plus_db\\client_dashboard\\assets\\v2\\prod-files\\js\\111.js.LICENSE.txt",
+      "publicPath": "https://client.plusdatabase.com/../../../client_dashboard/assets/v2/prod-files/js/111.js.LICENSE.txt"
+    },
+    "../../../client_dashboard/assets/v2/prod-files/js/200.js.LICENSE.txt": {
+      "name": "../../../client_dashboard/assets/v2/prod-files/js/200.js.LICENSE.txt",
+      "path": "C:\\xampp\\htdocs\\AMG\\plus_db\\client_dashboard\\assets\\v2\\prod-files\\js\\200.js.LICENSE.txt",
+      "publicPath": "https://client.plusdatabase.com/../../../client_dashboard/assets/v2/prod-files/js/200.js.LICENSE.txt"
+    },
+    "../../../client_dashboard/assets/v2/prod-files/js/907.js.LICENSE.txt": {
+      "name": "../../../client_dashboard/assets/v2/prod-files/js/907.js.LICENSE.txt",
+      "path": "C:\\xampp\\htdocs\\AMG\\plus_db\\client_dashboard\\assets\\v2\\prod-files\\js\\907.js.LICENSE.txt",
+      "publicPath": "https://client.plusdatabase.com/../../../client_dashboard/assets/v2/prod-files/js/907.js.LICENSE.txt"
+    },
+    "../../../client_dashboard/assets/v2/prod-files/js/attendance/setup-form/edit-attachment.js.LICENSE.txt": {
+      "name": "../../../client_dashboard/assets/v2/prod-files/js/attendance/setup-form/edit-attachment.js.LICENSE.txt",
+      "path": "C:\\xampp\\htdocs\\AMG\\plus_db\\client_dashboard\\assets\\v2\\prod-files\\js\\attendance\\setup-form\\edit-attachment.js.LICENSE.txt",
+      "publicPath": "https://client.plusdatabase.com/../../../client_dashboard/assets/v2/prod-files/js/attendance/setup-form/edit-attachment.js.LICENSE.txt"
+    },
+    "../../../client_dashboard/assets/v2/prod-files/js/attendance/setup-form/edit-break.js.LICENSE.txt": {
+      "name": "../../../client_dashboard/assets/v2/prod-files/js/attendance/setup-form/edit-break.js.LICENSE.txt",
+      "path": "C:\\xampp\\htdocs\\AMG\\plus_db\\client_dashboard\\assets\\v2\\prod-files\\js\\attendance\\setup-form\\edit-break.js.LICENSE.txt",
+      "publicPath": "https://client.plusdatabase.com/../../../client_dashboard/assets/v2/prod-files/js/attendance/setup-form/edit-break.js.LICENSE.txt"
+    },
+    "../../../client_dashboard/assets/v2/prod-files/js/attendance/setup-form/edit-date.js.LICENSE.txt": {
+      "name": "../../../client_dashboard/assets/v2/prod-files/js/attendance/setup-form/edit-date.js.LICENSE.txt",
+      "path": "C:\\xampp\\htdocs\\AMG\\plus_db\\client_dashboard\\assets\\v2\\prod-files\\js\\attendance\\setup-form\\edit-date.js.LICENSE.txt",
+      "publicPath": "https://client.plusdatabase.com/../../../client_dashboard/assets/v2/prod-files/js/attendance/setup-form/edit-date.js.LICENSE.txt"
+    },
+    "../../../client_dashboard/assets/v2/prod-files/js/attendance/setup-form/edit-location.js.LICENSE.txt": {
+      "name": "../../../client_dashboard/assets/v2/prod-files/js/attendance/setup-form/edit-location.js.LICENSE.txt",
+      "path": "C:\\xampp\\htdocs\\AMG\\plus_db\\client_dashboard\\assets\\v2\\prod-files\\js\\attendance\\setup-form\\edit-location.js.LICENSE.txt",
+      "publicPath": "https://client.plusdatabase.com/../../../client_dashboard/assets/v2/prod-files/js/attendance/setup-form/edit-location.js.LICENSE.txt"
+    },
+    "../../../client_dashboard/assets/v2/prod-files/js/attendance/setup-form/edit-sms.js.LICENSE.txt": {
+      "name": "../../../client_dashboard/assets/v2/prod-files/js/attendance/setup-form/edit-sms.js.LICENSE.txt",
+      "path": "C:\\xampp\\htdocs\\AMG\\plus_db\\client_dashboard\\assets\\v2\\prod-files\\js\\attendance\\setup-form\\edit-sms.js.LICENSE.txt",
+      "publicPath": "https://client.plusdatabase.com/../../../client_dashboard/assets/v2/prod-files/js/attendance/setup-form/edit-sms.js.LICENSE.txt"
+    },
+    "../../../client_dashboard/assets/v2/prod-files/js/attendance/setup-view/schedules.js.LICENSE.txt": {
+      "name": "../../../client_dashboard/assets/v2/prod-files/js/attendance/setup-view/schedules.js.LICENSE.txt",
+      "path": "C:\\xampp\\htdocs\\AMG\\plus_db\\client_dashboard\\assets\\v2\\prod-files\\js\\attendance\\setup-view\\schedules.js.LICENSE.txt",
+      "publicPath": "https://client.plusdatabase.com/../../../client_dashboard/assets/v2/prod-files/js/attendance/setup-view/schedules.js.LICENSE.txt"
+    },
+    "../../../client_dashboard/assets/v2/prod-files/js/membership/groupings/branches/add.js.LICENSE.txt": {
+      "name": "../../../client_dashboard/assets/v2/prod-files/js/membership/groupings/branches/add.js.LICENSE.txt",
+      "path": "C:\\xampp\\htdocs\\AMG\\plus_db\\client_dashboard\\assets\\v2\\prod-files\\js\\membership\\groupings\\branches\\add.js.LICENSE.txt",
+      "publicPath": "https://client.plusdatabase.com/../../../client_dashboard/assets/v2/prod-files/js/membership/groupings/branches/add.js.LICENSE.txt"
+    },
+    "../../../client_dashboard/assets/v2/prod-files/js/membership/groupings/branches/edit.js.LICENSE.txt": {
+      "name": "../../../client_dashboard/assets/v2/prod-files/js/membership/groupings/branches/edit.js.LICENSE.txt",
+      "path": "C:\\xampp\\htdocs\\AMG\\plus_db\\client_dashboard\\assets\\v2\\prod-files\\js\\membership\\groupings\\branches\\edit.js.LICENSE.txt",
+      "publicPath": "https://client.plusdatabase.com/../../../client_dashboard/assets/v2/prod-files/js/membership/groupings/branches/edit.js.LICENSE.txt"
+    },
+    "../../../client_dashboard/assets/v2/prod-files/js/membership/groupings/member_categories/add.js.LICENSE.txt": {
+      "name": "../../../client_dashboard/assets/v2/prod-files/js/membership/groupings/member_categories/add.js.LICENSE.txt",
+      "path": "C:\\xampp\\htdocs\\AMG\\plus_db\\client_dashboard\\assets\\v2\\prod-files\\js\\membership\\groupings\\member_categories\\add.js.LICENSE.txt",
+      "publicPath": "https://client.plusdatabase.com/../../../client_dashboard/assets/v2/prod-files/js/membership/groupings/member_categories/add.js.LICENSE.txt"
+    },
+    "../../../client_dashboard/assets/v2/prod-files/js/membership/groupings/member_categories/edit.js.LICENSE.txt": {
+      "name": "../../../client_dashboard/assets/v2/prod-files/js/membership/groupings/member_categories/edit.js.LICENSE.txt",
+      "path": "C:\\xampp\\htdocs\\AMG\\plus_db\\client_dashboard\\assets\\v2\\prod-files\\js\\membership\\groupings\\member_categories\\edit.js.LICENSE.txt",
+      "publicPath": "https://client.plusdatabase.com/../../../client_dashboard/assets/v2/prod-files/js/membership/groupings/member_categories/edit.js.LICENSE.txt"
+    },
+    "../../../client_dashboard/assets/v2/prod-files/js/membership/registration/excel.js.LICENSE.txt": {
+      "name": "../../../client_dashboard/assets/v2/prod-files/js/membership/registration/excel.js.LICENSE.txt",
+      "path": "C:\\xampp\\htdocs\\AMG\\plus_db\\client_dashboard\\assets\\v2\\prod-files\\js\\membership\\registration\\excel.js.LICENSE.txt",
+      "publicPath": "https://client.plusdatabase.com/../../../client_dashboard/assets/v2/prod-files/js/membership/registration/excel.js.LICENSE.txt"
+    },
+    "../../../client_dashboard/assets/v2/prod-files/js/vendors.buffer.js.LICENSE.txt": {
+      "name": "../../../client_dashboard/assets/v2/prod-files/js/vendors.buffer.js.LICENSE.txt",
+      "path": "C:\\xampp\\htdocs\\AMG\\plus_db\\client_dashboard\\assets\\v2\\prod-files\\js\\vendors.buffer.js.LICENSE.txt",
+      "publicPath": "https://client.plusdatabase.com/../../../client_dashboard/assets/v2/prod-files/js/vendors.buffer.js.LICENSE.txt"
+    },
+    "../../../client_dashboard/assets/v2/prod-files/js/vendors.jquery.js.LICENSE.txt": {
+      "name": "../../../client_dashboard/assets/v2/prod-files/js/vendors.jquery.js.LICENSE.txt",
+      "path": "C:\\xampp\\htdocs\\AMG\\plus_db\\client_dashboard\\assets\\v2\\prod-files\\js\\vendors.jquery.js.LICENSE.txt",
+      "publicPath": "https://client.plusdatabase.com/../../../client_dashboard/assets/v2/prod-files/js/vendors.jquery.js.LICENSE.txt"
+    },
+    "../../../client_dashboard/assets/v2/prod-files/js/vendors.material.js.LICENSE.txt": {
+      "name": "../../../client_dashboard/assets/v2/prod-files/js/vendors.material.js.LICENSE.txt",
+      "path": "C:\\xampp\\htdocs\\AMG\\plus_db\\client_dashboard\\assets\\v2\\prod-files\\js\\vendors.material.js.LICENSE.txt",
+      "publicPath": "https://client.plusdatabase.com/../../../client_dashboard/assets/v2/prod-files/js/vendors.material.js.LICENSE.txt"
+    },
+    "../../../client_dashboard/assets/v2/prod-files/js/vendors.select2.js.LICENSE.txt": {
+      "name": "../../../client_dashboard/assets/v2/prod-files/js/vendors.select2.js.LICENSE.txt",
+      "path": "C:\\xampp\\htdocs\\AMG\\plus_db\\client_dashboard\\assets\\v2\\prod-files\\js\\vendors.select2.js.LICENSE.txt",
+      "publicPath": "https://client.plusdatabase.com/../../../client_dashboard/assets/v2/prod-files/js/vendors.select2.js.LICENSE.txt"
+    },
+    "../../../client_dashboard/assets/v2/prod-files/css/attendance/setup-view.css.map": {
+      "name": "../../../client_dashboard/assets/v2/prod-files/css/attendance/setup-view.css.map",
+      "path": "C:\\xampp\\htdocs\\AMG\\plus_db\\client_dashboard\\assets\\v2\\prod-files\\css\\attendance\\setup-view.css.map",
+      "publicPath": "https://client.plusdatabase.com/../../../client_dashboard/assets/v2/prod-files/css/attendance/setup-view.css.map"
+    },
+    "../../../client_dashboard/assets/v2/prod-files/js/attendance/setup-view.js.map": {
+      "name": "../../../client_dashboard/assets/v2/prod-files/js/attendance/setup-view.js.map",
+      "path": "C:\\xampp\\htdocs\\AMG\\plus_db\\client_dashboard\\assets\\v2\\prod-files\\js\\attendance\\setup-view.js.map",
+      "publicPath": "https://client.plusdatabase.com/../../../client_dashboard/assets/v2/prod-files/js/attendance/setup-view.js.map"
+    },
+    "../../../client_dashboard/assets/v2/prod-files/css/attendance/setup-form.css.map": {
+      "name": "../../../client_dashboard/assets/v2/prod-files/css/attendance/setup-form.css.map",
+      "path": "C:\\xampp\\htdocs\\AMG\\plus_db\\client_dashboard\\assets\\v2\\prod-files\\css\\attendance\\setup-form.css.map",
+      "publicPath": "https://client.plusdatabase.com/../../../client_dashboard/assets/v2/prod-files/css/attendance/setup-form.css.map"
+    },
+    "../../../client_dashboard/assets/v2/prod-files/js/attendance/setup-form.js.map": {
+      "name": "../../../client_dashboard/assets/v2/prod-files/js/attendance/setup-form.js.map",
+      "path": "C:\\xampp\\htdocs\\AMG\\plus_db\\client_dashboard\\assets\\v2\\prod-files\\js\\attendance\\setup-form.js.map",
+      "publicPath": "https://client.plusdatabase.com/../../../client_dashboard/assets/v2/prod-files/js/attendance/setup-form.js.map"
+    },
+    "../../../client_dashboard/assets/v2/prod-files/css/attendance/setup-form/edit-admin.css.map": {
+      "name": "../../../client_dashboard/assets/v2/prod-files/css/attendance/setup-form/edit-admin.css.map",
+      "path": "C:\\xampp\\htdocs\\AMG\\plus_db\\client_dashboard\\assets\\v2\\prod-files\\css\\attendance\\setup-form\\edit-admin.css.map",
+      "publicPath": "https://client.plusdatabase.com/../../../client_dashboard/assets/v2/prod-files/css/attendance/setup-form/edit-admin.css.map"
+    },
+    "../../../client_dashboard/assets/v2/prod-files/js/attendance/setup-form/edit-admin.js.map": {
+      "name": "../../../client_dashboard/assets/v2/prod-files/js/attendance/setup-form/edit-admin.js.map",
+      "path": "C:\\xampp\\htdocs\\AMG\\plus_db\\client_dashboard\\assets\\v2\\prod-files\\js\\attendance\\setup-form\\edit-admin.js.map",
+      "publicPath": "https://client.plusdatabase.com/../../../client_dashboard/assets/v2/prod-files/js/attendance/setup-form/edit-admin.js.map"
+    },
+    "../../../client_dashboard/assets/v2/prod-files/css/attendance/setup-form/edit-attachment.css.map": {
+      "name": "../../../client_dashboard/assets/v2/prod-files/css/attendance/setup-form/edit-attachment.css.map",
+      "path": "C:\\xampp\\htdocs\\AMG\\plus_db\\client_dashboard\\assets\\v2\\prod-files\\css\\attendance\\setup-form\\edit-attachment.css.map",
+      "publicPath": "https://client.plusdatabase.com/../../../client_dashboard/assets/v2/prod-files/css/attendance/setup-form/edit-attachment.css.map"
+    },
+    "../../../client_dashboard/assets/v2/prod-files/js/attendance/setup-form/edit-attachment.js.map": {
+      "name": "../../../client_dashboard/assets/v2/prod-files/js/attendance/setup-form/edit-attachment.js.map",
+      "path": "C:\\xampp\\htdocs\\AMG\\plus_db\\client_dashboard\\assets\\v2\\prod-files\\js\\attendance\\setup-form\\edit-attachment.js.map",
+      "publicPath": "https://client.plusdatabase.com/../../../client_dashboard/assets/v2/prod-files/js/attendance/setup-form/edit-attachment.js.map"
+    },
+    "../../../client_dashboard/assets/v2/prod-files/css/attendance/setup-form/edit-break.css.map": {
+      "name": "../../../client_dashboard/assets/v2/prod-files/css/attendance/setup-form/edit-break.css.map",
+      "path": "C:\\xampp\\htdocs\\AMG\\plus_db\\client_dashboard\\assets\\v2\\prod-files\\css\\attendance\\setup-form\\edit-break.css.map",
+      "publicPath": "https://client.plusdatabase.com/../../../client_dashboard/assets/v2/prod-files/css/attendance/setup-form/edit-break.css.map"
+    },
+    "../../../client_dashboard/assets/v2/prod-files/js/attendance/setup-form/edit-break.js.map": {
+      "name": "../../../client_dashboard/assets/v2/prod-files/js/attendance/setup-form/edit-break.js.map",
+      "path": "C:\\xampp\\htdocs\\AMG\\plus_db\\client_dashboard\\assets\\v2\\prod-files\\js\\attendance\\setup-form\\edit-break.js.map",
+      "publicPath": "https://client.plusdatabase.com/../../../client_dashboard/assets/v2/prod-files/js/attendance/setup-form/edit-break.js.map"
+    },
+    "../../../client_dashboard/assets/v2/prod-files/js/attendance/setup-form/edit-date.js.map": {
+      "name": "../../../client_dashboard/assets/v2/prod-files/js/attendance/setup-form/edit-date.js.map",
+      "path": "C:\\xampp\\htdocs\\AMG\\plus_db\\client_dashboard\\assets\\v2\\prod-files\\js\\attendance\\setup-form\\edit-date.js.map",
+      "publicPath": "https://client.plusdatabase.com/../../../client_dashboard/assets/v2/prod-files/js/attendance/setup-form/edit-date.js.map"
+    },
+    "../../../client_dashboard/assets/v2/prod-files/css/attendance/setup-form/edit-day.css.map": {
+      "name": "../../../client_dashboard/assets/v2/prod-files/css/attendance/setup-form/edit-day.css.map",
+      "path": "C:\\xampp\\htdocs\\AMG\\plus_db\\client_dashboard\\assets\\v2\\prod-files\\css\\attendance\\setup-form\\edit-day.css.map",
+      "publicPath": "https://client.plusdatabase.com/../../../client_dashboard/assets/v2/prod-files/css/attendance/setup-form/edit-day.css.map"
+    },
+    "../../../client_dashboard/assets/v2/prod-files/js/attendance/setup-form/edit-day.js.map": {
+      "name": "../../../client_dashboard/assets/v2/prod-files/js/attendance/setup-form/edit-day.js.map",
+      "path": "C:\\xampp\\htdocs\\AMG\\plus_db\\client_dashboard\\assets\\v2\\prod-files\\js\\attendance\\setup-form\\edit-day.js.map",
+      "publicPath": "https://client.plusdatabase.com/../../../client_dashboard/assets/v2/prod-files/js/attendance/setup-form/edit-day.js.map"
+    },
+    "../../../client_dashboard/assets/v2/prod-files/css/attendance/setup-form/edit-group.css.map": {
+      "name": "../../../client_dashboard/assets/v2/prod-files/css/attendance/setup-form/edit-group.css.map",
+      "path": "C:\\xampp\\htdocs\\AMG\\plus_db\\client_dashboard\\assets\\v2\\prod-files\\css\\attendance\\setup-form\\edit-group.css.map",
+      "publicPath": "https://client.plusdatabase.com/../../../client_dashboard/assets/v2/prod-files/css/attendance/setup-form/edit-group.css.map"
+    },
+    "../../../client_dashboard/assets/v2/prod-files/js/attendance/setup-form/edit-group.js.map": {
+      "name": "../../../client_dashboard/assets/v2/prod-files/js/attendance/setup-form/edit-group.js.map",
+      "path": "C:\\xampp\\htdocs\\AMG\\plus_db\\client_dashboard\\assets\\v2\\prod-files\\js\\attendance\\setup-form\\edit-group.js.map",
+      "publicPath": "https://client.plusdatabase.com/../../../client_dashboard/assets/v2/prod-files/js/attendance/setup-form/edit-group.js.map"
+    },
+    "../../../client_dashboard/assets/v2/prod-files/css/attendance/setup-form/edit-location.css.map": {
+      "name": "../../../client_dashboard/assets/v2/prod-files/css/attendance/setup-form/edit-location.css.map",
+      "path": "C:\\xampp\\htdocs\\AMG\\plus_db\\client_dashboard\\assets\\v2\\prod-files\\css\\attendance\\setup-form\\edit-location.css.map",
+      "publicPath": "https://client.plusdatabase.com/../../../client_dashboard/assets/v2/prod-files/css/attendance/setup-form/edit-location.css.map"
+    },
+    "../../../client_dashboard/assets/v2/prod-files/js/attendance/setup-form/edit-location.js.map": {
+      "name": "../../../client_dashboard/assets/v2/prod-files/js/attendance/setup-form/edit-location.js.map",
+      "path": "C:\\xampp\\htdocs\\AMG\\plus_db\\client_dashboard\\assets\\v2\\prod-files\\js\\attendance\\setup-form\\edit-location.js.map",
+      "publicPath": "https://client.plusdatabase.com/../../../client_dashboard/assets/v2/prod-files/js/attendance/setup-form/edit-location.js.map"
+    },
+    "../../../client_dashboard/assets/v2/prod-files/css/attendance/setup-form/edit-member.css.map": {
+      "name": "../../../client_dashboard/assets/v2/prod-files/css/attendance/setup-form/edit-member.css.map",
+      "path": "C:\\xampp\\htdocs\\AMG\\plus_db\\client_dashboard\\assets\\v2\\prod-files\\css\\attendance\\setup-form\\edit-member.css.map",
+      "publicPath": "https://client.plusdatabase.com/../../../client_dashboard/assets/v2/prod-files/css/attendance/setup-form/edit-member.css.map"
+    },
+    "../../../client_dashboard/assets/v2/prod-files/js/attendance/setup-form/edit-member.js.map": {
+      "name": "../../../client_dashboard/assets/v2/prod-files/js/attendance/setup-form/edit-member.js.map",
+      "path": "C:\\xampp\\htdocs\\AMG\\plus_db\\client_dashboard\\assets\\v2\\prod-files\\js\\attendance\\setup-form\\edit-member.js.map",
+      "publicPath": "https://client.plusdatabase.com/../../../client_dashboard/assets/v2/prod-files/js/attendance/setup-form/edit-member.js.map"
+    },
+    "../../../client_dashboard/assets/v2/prod-files/css/attendance/setup-form/edit-sms.css.map": {
+      "name": "../../../client_dashboard/assets/v2/prod-files/css/attendance/setup-form/edit-sms.css.map",
+      "path": "C:\\xampp\\htdocs\\AMG\\plus_db\\client_dashboard\\assets\\v2\\prod-files\\css\\attendance\\setup-form\\edit-sms.css.map",
+      "publicPath": "https://client.plusdatabase.com/../../../client_dashboard/assets/v2/prod-files/css/attendance/setup-form/edit-sms.css.map"
+    },
+    "../../../client_dashboard/assets/v2/prod-files/js/attendance/setup-form/edit-sms.js.map": {
+      "name": "../../../client_dashboard/assets/v2/prod-files/js/attendance/setup-form/edit-sms.js.map",
+      "path": "C:\\xampp\\htdocs\\AMG\\plus_db\\client_dashboard\\assets\\v2\\prod-files\\js\\attendance\\setup-form\\edit-sms.js.map",
+      "publicPath": "https://client.plusdatabase.com/../../../client_dashboard/assets/v2/prod-files/js/attendance/setup-form/edit-sms.js.map"
+    },
+    "../../../client_dashboard/assets/v2/prod-files/css/attendance/setup-form/edit-schedule.css.map": {
+      "name": "../../../client_dashboard/assets/v2/prod-files/css/attendance/setup-form/edit-schedule.css.map",
+      "path": "C:\\xampp\\htdocs\\AMG\\plus_db\\client_dashboard\\assets\\v2\\prod-files\\css\\attendance\\setup-form\\edit-schedule.css.map",
+      "publicPath": "https://client.plusdatabase.com/../../../client_dashboard/assets/v2/prod-files/css/attendance/setup-form/edit-schedule.css.map"
+    },
+    "../../../client_dashboard/assets/v2/prod-files/js/attendance/setup-form/edit-schedule.js.map": {
+      "name": "../../../client_dashboard/assets/v2/prod-files/js/attendance/setup-form/edit-schedule.js.map",
+      "path": "C:\\xampp\\htdocs\\AMG\\plus_db\\client_dashboard\\assets\\v2\\prod-files\\js\\attendance\\setup-form\\edit-schedule.js.map",
+      "publicPath": "https://client.plusdatabase.com/../../../client_dashboard/assets/v2/prod-files/js/attendance/setup-form/edit-schedule.js.map"
+    },
+    "../../../client_dashboard/assets/v2/prod-files/css/attendance/setup-form/edit-sub_group.css.map": {
+      "name": "../../../client_dashboard/assets/v2/prod-files/css/attendance/setup-form/edit-sub_group.css.map",
+      "path": "C:\\xampp\\htdocs\\AMG\\plus_db\\client_dashboard\\assets\\v2\\prod-files\\css\\attendance\\setup-form\\edit-sub_group.css.map",
+      "publicPath": "https://client.plusdatabase.com/../../../client_dashboard/assets/v2/prod-files/css/attendance/setup-form/edit-sub_group.css.map"
+    },
+    "../../../client_dashboard/assets/v2/prod-files/js/attendance/setup-form/edit-sub_group.js.map": {
+      "name": "../../../client_dashboard/assets/v2/prod-files/js/attendance/setup-form/edit-sub_group.js.map",
+      "path": "C:\\xampp\\htdocs\\AMG\\plus_db\\client_dashboard\\assets\\v2\\prod-files\\js\\attendance\\setup-form\\edit-sub_group.js.map",
+      "publicPath": "https://client.plusdatabase.com/../../../client_dashboard/assets/v2/prod-files/js/attendance/setup-form/edit-sub_group.js.map"
+    },
+    "../../../client_dashboard/assets/v2/prod-files/css/attendance/setup-view/schedules.css.map": {
+      "name": "../../../client_dashboard/assets/v2/prod-files/css/attendance/setup-view/schedules.css.map",
+      "path": "C:\\xampp\\htdocs\\AMG\\plus_db\\client_dashboard\\assets\\v2\\prod-files\\css\\attendance\\setup-view\\schedules.css.map",
+      "publicPath": "https://client.plusdatabase.com/../../../client_dashboard/assets/v2/prod-files/css/attendance/setup-view/schedules.css.map"
+    },
+    "../../../client_dashboard/assets/v2/prod-files/js/attendance/setup-view/schedules.js.map": {
+      "name": "../../../client_dashboard/assets/v2/prod-files/js/attendance/setup-view/schedules.js.map",
+      "path": "C:\\xampp\\htdocs\\AMG\\plus_db\\client_dashboard\\assets\\v2\\prod-files\\js\\attendance\\setup-view\\schedules.js.map",
+      "publicPath": "https://client.plusdatabase.com/../../../client_dashboard/assets/v2/prod-files/js/attendance/setup-view/schedules.js.map"
+    },
+    "../../../client_dashboard/assets/v2/prod-files/css/attendance/setup-view/schedule.css.map": {
+      "name": "../../../client_dashboard/assets/v2/prod-files/css/attendance/setup-view/schedule.css.map",
+      "path": "C:\\xampp\\htdocs\\AMG\\plus_db\\client_dashboard\\assets\\v2\\prod-files\\css\\attendance\\setup-view\\schedule.css.map",
+      "publicPath": "https://client.plusdatabase.com/../../../client_dashboard/assets/v2/prod-files/css/attendance/setup-view/schedule.css.map"
+    },
+    "../../../client_dashboard/assets/v2/prod-files/js/attendance/setup-view/schedule.js.map": {
+      "name": "../../../client_dashboard/assets/v2/prod-files/js/attendance/setup-view/schedule.js.map",
+      "path": "C:\\xampp\\htdocs\\AMG\\plus_db\\client_dashboard\\assets\\v2\\prod-files\\js\\attendance\\setup-view\\schedule.js.map",
+      "publicPath": "https://client.plusdatabase.com/../../../client_dashboard/assets/v2/prod-files/js/attendance/setup-view/schedule.js.map"
+    },
+    "../../../client_dashboard/assets/v2/prod-files/css/membership/registration/excel.css.map": {
+      "name": "../../../client_dashboard/assets/v2/prod-files/css/membership/registration/excel.css.map",
+      "path": "C:\\xampp\\htdocs\\AMG\\plus_db\\client_dashboard\\assets\\v2\\prod-files\\css\\membership\\registration\\excel.css.map",
+      "publicPath": "https://client.plusdatabase.com/../../../client_dashboard/assets/v2/prod-files/css/membership/registration/excel.css.map"
+    },
+    "../../../client_dashboard/assets/v2/prod-files/js/membership/registration/excel.js.map": {
+      "name": "../../../client_dashboard/assets/v2/prod-files/js/membership/registration/excel.js.map",
+      "path": "C:\\xampp\\htdocs\\AMG\\plus_db\\client_dashboard\\assets\\v2\\prod-files\\js\\membership\\registration\\excel.js.map",
+      "publicPath": "https://client.plusdatabase.com/../../../client_dashboard/assets/v2/prod-files/js/membership/registration/excel.js.map"
+    },
+    "../../../client_dashboard/assets/v2/prod-files/js/membership/groupings/branches/all.js.map": {
+      "name": "../../../client_dashboard/assets/v2/prod-files/js/membership/groupings/branches/all.js.map",
+      "path": "C:\\xampp\\htdocs\\AMG\\plus_db\\client_dashboard\\assets\\v2\\prod-files\\js\\membership\\groupings\\branches\\all.js.map",
+      "publicPath": "https://client.plusdatabase.com/../../../client_dashboard/assets/v2/prod-files/js/membership/groupings/branches/all.js.map"
+    },
+    "../../../client_dashboard/assets/v2/prod-files/js/membership/groupings/branches/one.js.map": {
+      "name": "../../../client_dashboard/assets/v2/prod-files/js/membership/groupings/branches/one.js.map",
+      "path": "C:\\xampp\\htdocs\\AMG\\plus_db\\client_dashboard\\assets\\v2\\prod-files\\js\\membership\\groupings\\branches\\one.js.map",
+      "publicPath": "https://client.plusdatabase.com/../../../client_dashboard/assets/v2/prod-files/js/membership/groupings/branches/one.js.map"
+    },
+    "../../../client_dashboard/assets/v2/prod-files/js/membership/groupings/branches/add.js.map": {
+      "name": "../../../client_dashboard/assets/v2/prod-files/js/membership/groupings/branches/add.js.map",
+      "path": "C:\\xampp\\htdocs\\AMG\\plus_db\\client_dashboard\\assets\\v2\\prod-files\\js\\membership\\groupings\\branches\\add.js.map",
+      "publicPath": "https://client.plusdatabase.com/../../../client_dashboard/assets/v2/prod-files/js/membership/groupings/branches/add.js.map"
+    },
+    "../../../client_dashboard/assets/v2/prod-files/js/membership/groupings/branches/edit.js.map": {
+      "name": "../../../client_dashboard/assets/v2/prod-files/js/membership/groupings/branches/edit.js.map",
+      "path": "C:\\xampp\\htdocs\\AMG\\plus_db\\client_dashboard\\assets\\v2\\prod-files\\js\\membership\\groupings\\branches\\edit.js.map",
+      "publicPath": "https://client.plusdatabase.com/../../../client_dashboard/assets/v2/prod-files/js/membership/groupings/branches/edit.js.map"
+    },
+    "../../../client_dashboard/assets/v2/prod-files/js/membership/groupings/member_categories/all.js.map": {
+      "name": "../../../client_dashboard/assets/v2/prod-files/js/membership/groupings/member_categories/all.js.map",
+      "path": "C:\\xampp\\htdocs\\AMG\\plus_db\\client_dashboard\\assets\\v2\\prod-files\\js\\membership\\groupings\\member_categories\\all.js.map",
+      "publicPath": "https://client.plusdatabase.com/../../../client_dashboard/assets/v2/prod-files/js/membership/groupings/member_categories/all.js.map"
+    },
+    "../../../client_dashboard/assets/v2/prod-files/js/membership/groupings/member_categories/one.js.map": {
+      "name": "../../../client_dashboard/assets/v2/prod-files/js/membership/groupings/member_categories/one.js.map",
+      "path": "C:\\xampp\\htdocs\\AMG\\plus_db\\client_dashboard\\assets\\v2\\prod-files\\js\\membership\\groupings\\member_categories\\one.js.map",
+      "publicPath": "https://client.plusdatabase.com/../../../client_dashboard/assets/v2/prod-files/js/membership/groupings/member_categories/one.js.map"
+    },
+    "../../../client_dashboard/assets/v2/prod-files/js/membership/groupings/member_categories/add.js.map": {
+      "name": "../../../client_dashboard/assets/v2/prod-files/js/membership/groupings/member_categories/add.js.map",
+      "path": "C:\\xampp\\htdocs\\AMG\\plus_db\\client_dashboard\\assets\\v2\\prod-files\\js\\membership\\groupings\\member_categories\\add.js.map",
+      "publicPath": "https://client.plusdatabase.com/../../../client_dashboard/assets/v2/prod-files/js/membership/groupings/member_categories/add.js.map"
+    },
+    "../../../client_dashboard/assets/v2/prod-files/js/membership/groupings/member_categories/edit.js.map": {
+      "name": "../../../client_dashboard/assets/v2/prod-files/js/membership/groupings/member_categories/edit.js.map",
+      "path": "C:\\xampp\\htdocs\\AMG\\plus_db\\client_dashboard\\assets\\v2\\prod-files\\js\\membership\\groupings\\member_categories\\edit.js.map",
+      "publicPath": "https://client.plusdatabase.com/../../../client_dashboard/assets/v2/prod-files/js/membership/groupings/member_categories/edit.js.map"
+    },
+    "../../../client_dashboard/assets/v2/prod-files/js/shared.js.map": {
+      "name": "../../../client_dashboard/assets/v2/prod-files/js/shared.js.map",
+      "path": "C:\\xampp\\htdocs\\AMG\\plus_db\\client_dashboard\\assets\\v2\\prod-files\\js\\shared.js.map",
+      "publicPath": "https://client.plusdatabase.com/../../../client_dashboard/assets/v2/prod-files/js/shared.js.map"
+    },
+    "../../../client_dashboard/assets/v2/prod-files/js/runtime.js.map": {
+      "name": "../../../client_dashboard/assets/v2/prod-files/js/runtime.js.map",
+      "path": "C:\\xampp\\htdocs\\AMG\\plus_db\\client_dashboard\\assets\\v2\\prod-files\\js\\runtime.js.map",
+      "publicPath": "https://client.plusdatabase.com/../../../client_dashboard/assets/v2/prod-files/js/runtime.js.map"
+    },
+    "../../../client_dashboard/assets/v2/prod-files/js/vendors.material.js.map": {
+      "name": "../../../client_dashboard/assets/v2/prod-files/js/vendors.material.js.map",
+      "path": "C:\\xampp\\htdocs\\AMG\\plus_db\\client_dashboard\\assets\\v2\\prod-files\\js\\vendors.material.js.map",
+      "publicPath": "https://client.plusdatabase.com/../../../client_dashboard/assets/v2/prod-files/js/vendors.material.js.map"
+    },
+    "../../../client_dashboard/assets/v2/prod-files/js/vendors.buffer.js.map": {
+      "name": "../../../client_dashboard/assets/v2/prod-files/js/vendors.buffer.js.map",
+      "path": "C:\\xampp\\htdocs\\AMG\\plus_db\\client_dashboard\\assets\\v2\\prod-files\\js\\vendors.buffer.js.map",
+      "publicPath": "https://client.plusdatabase.com/../../../client_dashboard/assets/v2/prod-files/js/vendors.buffer.js.map"
+    },
+    "../../../client_dashboard/assets/v2/prod-files/js/vendors.sweetalert2.js.map": {
+      "name": "../../../client_dashboard/assets/v2/prod-files/js/vendors.sweetalert2.js.map",
+      "path": "C:\\xampp\\htdocs\\AMG\\plus_db\\client_dashboard\\assets\\v2\\prod-files\\js\\vendors.sweetalert2.js.map",
+      "publicPath": "https://client.plusdatabase.com/../../../client_dashboard/assets/v2/prod-files/js/vendors.sweetalert2.js.map"
+    },
+    "../../../client_dashboard/assets/v2/prod-files/js/vendors.wicg-inert.js.map": {
+      "name": "../../../client_dashboard/assets/v2/prod-files/js/vendors.wicg-inert.js.map",
+      "path": "C:\\xampp\\htdocs\\AMG\\plus_db\\client_dashboard\\assets\\v2\\prod-files\\js\\vendors.wicg-inert.js.map",
+      "publicPath": "https://client.plusdatabase.com/../../../client_dashboard/assets/v2/prod-files/js/vendors.wicg-inert.js.map"
+    },
+    "../../../client_dashboard/assets/v2/prod-files/js/vendors.jquery.js.map": {
+      "name": "../../../client_dashboard/assets/v2/prod-files/js/vendors.jquery.js.map",
+      "path": "C:\\xampp\\htdocs\\AMG\\plus_db\\client_dashboard\\assets\\v2\\prod-files\\js\\vendors.jquery.js.map",
+      "publicPath": "https://client.plusdatabase.com/../../../client_dashboard/assets/v2/prod-files/js/vendors.jquery.js.map"
+    },
+    "../../../client_dashboard/assets/v2/prod-files/js/vendors.select2.js.map": {
+      "name": "../../../client_dashboard/assets/v2/prod-files/js/vendors.select2.js.map",
+      "path": "C:\\xampp\\htdocs\\AMG\\plus_db\\client_dashboard\\assets\\v2\\prod-files\\js\\vendors.select2.js.map",
+      "publicPath": "https://client.plusdatabase.com/../../../client_dashboard/assets/v2/prod-files/js/vendors.select2.js.map"
+    },
+    "../../../client_dashboard/assets/v2/prod-files/js/907.js.map": {
+      "name": "../../../client_dashboard/assets/v2/prod-files/js/907.js.map",
+      "path": "C:\\xampp\\htdocs\\AMG\\plus_db\\client_dashboard\\assets\\v2\\prod-files\\js\\907.js.map",
+      "publicPath": "https://client.plusdatabase.com/../../../client_dashboard/assets/v2/prod-files/js/907.js.map"
+    },
+    "../../../client_dashboard/assets/v2/prod-files/js/111.js.map": {
+      "name": "../../../client_dashboard/assets/v2/prod-files/js/111.js.map",
+      "path": "C:\\xampp\\htdocs\\AMG\\plus_db\\client_dashboard\\assets\\v2\\prod-files\\js\\111.js.map",
+      "publicPath": "https://client.plusdatabase.com/../../../client_dashboard/assets/v2/prod-files/js/111.js.map"
+    },
+    "../../../client_dashboard/assets/v2/prod-files/css/214.css.map": {
+      "name": "../../../client_dashboard/assets/v2/prod-files/css/214.css.map",
+      "path": "C:\\xampp\\htdocs\\AMG\\plus_db\\client_dashboard\\assets\\v2\\prod-files\\css\\214.css.map",
+      "publicPath": "https://client.plusdatabase.com/../../../client_dashboard/assets/v2/prod-files/css/214.css.map"
+    },
+    "../../../client_dashboard/assets/v2/prod-files/js/985.js.map": {
+      "name": "../../../client_dashboard/assets/v2/prod-files/js/985.js.map",
+      "path": "C:\\xampp\\htdocs\\AMG\\plus_db\\client_dashboard\\assets\\v2\\prod-files\\js\\985.js.map",
+      "publicPath": "https://client.plusdatabase.com/../../../client_dashboard/assets/v2/prod-files/js/985.js.map"
+    },
+    "../../../client_dashboard/assets/v2/prod-files/css/948.css.map": {
+      "name": "../../../client_dashboard/assets/v2/prod-files/css/948.css.map",
+      "path": "C:\\xampp\\htdocs\\AMG\\plus_db\\client_dashboard\\assets\\v2\\prod-files\\css\\948.css.map",
+      "publicPath": "https://client.plusdatabase.com/../../../client_dashboard/assets/v2/prod-files/css/948.css.map"
+    },
+    "../../../client_dashboard/assets/v2/prod-files/js/800.js.map": {
+      "name": "../../../client_dashboard/assets/v2/prod-files/js/800.js.map",
+      "path": "C:\\xampp\\htdocs\\AMG\\plus_db\\client_dashboard\\assets\\v2\\prod-files\\js\\800.js.map",
+      "publicPath": "https://client.plusdatabase.com/../../../client_dashboard/assets/v2/prod-files/js/800.js.map"
+    },
+    "../../../client_dashboard/assets/v2/prod-files/js/200.js.map": {
+      "name": "../../../client_dashboard/assets/v2/prod-files/js/200.js.map",
+      "path": "C:\\xampp\\htdocs\\AMG\\plus_db\\client_dashboard\\assets\\v2\\prod-files\\js\\200.js.map",
+      "publicPath": "https://client.plusdatabase.com/../../../client_dashboard/assets/v2/prod-files/js/200.js.map"
+    }
+  },
+  "chunks": {
+    "attendance/setup-view": [
+      "../../../client_dashboard/assets/v2/prod-files/js/vendors.material.js",
+      "../../../client_dashboard/assets/v2/prod-files/js/vendors.buffer.js",
+      "../../../client_dashboard/assets/v2/prod-files/js/vendors.sweetalert2.js",
+      "../../../client_dashboard/assets/v2/prod-files/js/907.js",
+      "../../../client_dashboard/assets/v2/prod-files/css/214.css",
+      "../../../client_dashboard/assets/v2/prod-files/js/985.js",
+      "../../../client_dashboard/assets/v2/prod-files/js/200.js",
+      "../../../client_dashboard/assets/v2/prod-files/css/attendance/setup-view.css",
+      "../../../client_dashboard/assets/v2/prod-files/js/attendance/setup-view.js"
+    ],
+    "attendance/setup-form": [
+      "../../../client_dashboard/assets/v2/prod-files/js/vendors.material.js",
+      "../../../client_dashboard/assets/v2/prod-files/js/vendors.buffer.js",
+      "../../../client_dashboard/assets/v2/prod-files/js/vendors.sweetalert2.js",
+      "../../../client_dashboard/assets/v2/prod-files/js/907.js",
+      "../../../client_dashboard/assets/v2/prod-files/css/214.css",
+      "../../../client_dashboard/assets/v2/prod-files/js/985.js",
+      "../../../client_dashboard/assets/v2/prod-files/js/200.js",
+      "../../../client_dashboard/assets/v2/prod-files/css/attendance/setup-form.css",
+      "../../../client_dashboard/assets/v2/prod-files/js/attendance/setup-form.js"
+    ],
+    "attendance/setup-form/edit-admin": [
+      "../../../client_dashboard/assets/v2/prod-files/js/vendors.material.js",
+      "../../../client_dashboard/assets/v2/prod-files/js/vendors.buffer.js",
+      "../../../client_dashboard/assets/v2/prod-files/js/vendors.sweetalert2.js",
+      "../../../client_dashboard/assets/v2/prod-files/js/vendors.wicg-inert.js",
+      "../../../client_dashboard/assets/v2/prod-files/js/vendors.jquery.js",
+      "../../../client_dashboard/assets/v2/prod-files/js/vendors.select2.js",
+      "../../../client_dashboard/assets/v2/prod-files/js/907.js",
+      "../../../client_dashboard/assets/v2/prod-files/js/111.js",
+      "../../../client_dashboard/assets/v2/prod-files/css/214.css",
+      "../../../client_dashboard/assets/v2/prod-files/js/985.js",
+      "../../../client_dashboard/assets/v2/prod-files/css/948.css",
+      "../../../client_dashboard/assets/v2/prod-files/js/800.js",
+      "../../../client_dashboard/assets/v2/prod-files/css/attendance/setup-form/edit-admin.css",
+      "../../../client_dashboard/assets/v2/prod-files/js/attendance/setup-form/edit-admin.js"
+    ],
+    "attendance/setup-form/edit-attachment": [
+      "../../../client_dashboard/assets/v2/prod-files/js/vendors.material.js",
+      "../../../client_dashboard/assets/v2/prod-files/js/vendors.buffer.js",
+      "../../../client_dashboard/assets/v2/prod-files/js/vendors.sweetalert2.js",
+      "../../../client_dashboard/assets/v2/prod-files/js/vendors.wicg-inert.js",
+      "../../../client_dashboard/assets/v2/prod-files/js/vendors.jquery.js",
+      "../../../client_dashboard/assets/v2/prod-files/js/vendors.select2.js",
+      "../../../client_dashboard/assets/v2/prod-files/js/907.js",
+      "../../../client_dashboard/assets/v2/prod-files/css/214.css",
+      "../../../client_dashboard/assets/v2/prod-files/js/985.js",
+      "../../../client_dashboard/assets/v2/prod-files/css/948.css",
+      "../../../client_dashboard/assets/v2/prod-files/js/800.js",
+      "../../../client_dashboard/assets/v2/prod-files/css/attendance/setup-form/edit-attachment.css",
+      "../../../client_dashboard/assets/v2/prod-files/js/attendance/setup-form/edit-attachment.js"
+    ],
+    "attendance/setup-form/edit-break": [
+      "../../../client_dashboard/assets/v2/prod-files/js/vendors.material.js",
+      "../../../client_dashboard/assets/v2/prod-files/js/vendors.buffer.js",
+      "../../../client_dashboard/assets/v2/prod-files/js/vendors.sweetalert2.js",
+      "../../../client_dashboard/assets/v2/prod-files/js/vendors.wicg-inert.js",
+      "../../../client_dashboard/assets/v2/prod-files/js/vendors.jquery.js",
+      "../../../client_dashboard/assets/v2/prod-files/js/vendors.select2.js",
+      "../../../client_dashboard/assets/v2/prod-files/js/907.js",
+      "../../../client_dashboard/assets/v2/prod-files/css/214.css",
+      "../../../client_dashboard/assets/v2/prod-files/js/985.js",
+      "../../../client_dashboard/assets/v2/prod-files/css/948.css",
+      "../../../client_dashboard/assets/v2/prod-files/js/800.js",
+      "../../../client_dashboard/assets/v2/prod-files/css/attendance/setup-form/edit-break.css",
+      "../../../client_dashboard/assets/v2/prod-files/js/attendance/setup-form/edit-break.js"
+    ],
+    "attendance/setup-form/edit-date": [
+      "../../../client_dashboard/assets/v2/prod-files/js/vendors.material.js",
+      "../../../client_dashboard/assets/v2/prod-files/js/vendors.buffer.js",
+      "../../../client_dashboard/assets/v2/prod-files/js/vendors.sweetalert2.js",
+      "../../../client_dashboard/assets/v2/prod-files/js/vendors.wicg-inert.js",
+      "../../../client_dashboard/assets/v2/prod-files/js/907.js",
+      "../../../client_dashboard/assets/v2/prod-files/css/214.css",
+      "../../../client_dashboard/assets/v2/prod-files/js/985.js",
+      "../../../client_dashboard/assets/v2/prod-files/css/948.css",
+      "../../../client_dashboard/assets/v2/prod-files/js/attendance/setup-form/edit-date.js"
+    ],
+    "attendance/setup-form/edit-day": [
+      "../../../client_dashboard/assets/v2/prod-files/js/vendors.material.js",
+      "../../../client_dashboard/assets/v2/prod-files/js/vendors.buffer.js",
+      "../../../client_dashboard/assets/v2/prod-files/js/vendors.sweetalert2.js",
+      "../../../client_dashboard/assets/v2/prod-files/js/vendors.wicg-inert.js",
+      "../../../client_dashboard/assets/v2/prod-files/js/vendors.jquery.js",
+      "../../../client_dashboard/assets/v2/prod-files/js/vendors.select2.js",
+      "../../../client_dashboard/assets/v2/prod-files/js/907.js",
+      "../../../client_dashboard/assets/v2/prod-files/js/111.js",
+      "../../../client_dashboard/assets/v2/prod-files/css/214.css",
+      "../../../client_dashboard/assets/v2/prod-files/js/985.js",
+      "../../../client_dashboard/assets/v2/prod-files/css/948.css",
+      "../../../client_dashboard/assets/v2/prod-files/js/800.js",
+      "../../../client_dashboard/assets/v2/prod-files/css/attendance/setup-form/edit-day.css",
+      "../../../client_dashboard/assets/v2/prod-files/js/attendance/setup-form/edit-day.js"
+    ],
+    "attendance/setup-form/edit-group": [
+      "../../../client_dashboard/assets/v2/prod-files/js/vendors.material.js",
+      "../../../client_dashboard/assets/v2/prod-files/js/vendors.buffer.js",
+      "../../../client_dashboard/assets/v2/prod-files/js/vendors.sweetalert2.js",
+      "../../../client_dashboard/assets/v2/prod-files/js/vendors.wicg-inert.js",
+      "../../../client_dashboard/assets/v2/prod-files/js/vendors.jquery.js",
+      "../../../client_dashboard/assets/v2/prod-files/js/vendors.select2.js",
+      "../../../client_dashboard/assets/v2/prod-files/js/907.js",
+      "../../../client_dashboard/assets/v2/prod-files/js/111.js",
+      "../../../client_dashboard/assets/v2/prod-files/css/214.css",
+      "../../../client_dashboard/assets/v2/prod-files/js/985.js",
+      "../../../client_dashboard/assets/v2/prod-files/css/948.css",
+      "../../../client_dashboard/assets/v2/prod-files/js/800.js",
+      "../../../client_dashboard/assets/v2/prod-files/css/attendance/setup-form/edit-group.css",
+      "../../../client_dashboard/assets/v2/prod-files/js/attendance/setup-form/edit-group.js"
+    ],
+    "attendance/setup-form/edit-location": [
+      "../../../client_dashboard/assets/v2/prod-files/js/vendors.material.js",
+      "../../../client_dashboard/assets/v2/prod-files/js/vendors.buffer.js",
+      "../../../client_dashboard/assets/v2/prod-files/js/vendors.sweetalert2.js",
+      "../../../client_dashboard/assets/v2/prod-files/js/vendors.wicg-inert.js",
+      "../../../client_dashboard/assets/v2/prod-files/js/vendors.jquery.js",
+      "../../../client_dashboard/assets/v2/prod-files/js/vendors.select2.js",
+      "../../../client_dashboard/assets/v2/prod-files/js/907.js",
+      "../../../client_dashboard/assets/v2/prod-files/css/214.css",
+      "../../../client_dashboard/assets/v2/prod-files/js/985.js",
+      "../../../client_dashboard/assets/v2/prod-files/css/948.css",
+      "../../../client_dashboard/assets/v2/prod-files/js/800.js",
+      "../../../client_dashboard/assets/v2/prod-files/css/attendance/setup-form/edit-location.css",
+      "../../../client_dashboard/assets/v2/prod-files/js/attendance/setup-form/edit-location.js"
+    ],
+    "attendance/setup-form/edit-member": [
+      "../../../client_dashboard/assets/v2/prod-files/js/vendors.material.js",
+      "../../../client_dashboard/assets/v2/prod-files/js/vendors.buffer.js",
+      "../../../client_dashboard/assets/v2/prod-files/js/vendors.sweetalert2.js",
+      "../../../client_dashboard/assets/v2/prod-files/js/vendors.wicg-inert.js",
+      "../../../client_dashboard/assets/v2/prod-files/js/vendors.jquery.js",
+      "../../../client_dashboard/assets/v2/prod-files/js/vendors.select2.js",
+      "../../../client_dashboard/assets/v2/prod-files/js/907.js",
+      "../../../client_dashboard/assets/v2/prod-files/js/111.js",
+      "../../../client_dashboard/assets/v2/prod-files/css/214.css",
+      "../../../client_dashboard/assets/v2/prod-files/js/985.js",
+      "../../../client_dashboard/assets/v2/prod-files/css/948.css",
+      "../../../client_dashboard/assets/v2/prod-files/js/800.js",
+      "../../../client_dashboard/assets/v2/prod-files/css/attendance/setup-form/edit-member.css",
+      "../../../client_dashboard/assets/v2/prod-files/js/attendance/setup-form/edit-member.js"
+    ],
+    "attendance/setup-form/edit-sms": [
+      "../../../client_dashboard/assets/v2/prod-files/js/vendors.material.js",
+      "../../../client_dashboard/assets/v2/prod-files/js/vendors.buffer.js",
+      "../../../client_dashboard/assets/v2/prod-files/js/vendors.sweetalert2.js",
+      "../../../client_dashboard/assets/v2/prod-files/js/vendors.wicg-inert.js",
+      "../../../client_dashboard/assets/v2/prod-files/js/vendors.jquery.js",
+      "../../../client_dashboard/assets/v2/prod-files/js/vendors.select2.js",
+      "../../../client_dashboard/assets/v2/prod-files/js/907.js",
+      "../../../client_dashboard/assets/v2/prod-files/css/214.css",
+      "../../../client_dashboard/assets/v2/prod-files/js/985.js",
+      "../../../client_dashboard/assets/v2/prod-files/css/948.css",
+      "../../../client_dashboard/assets/v2/prod-files/js/800.js",
+      "../../../client_dashboard/assets/v2/prod-files/css/attendance/setup-form/edit-sms.css",
+      "../../../client_dashboard/assets/v2/prod-files/js/attendance/setup-form/edit-sms.js"
+    ],
+    "attendance/setup-form/edit-schedule": [
+      "../../../client_dashboard/assets/v2/prod-files/js/vendors.material.js",
+      "../../../client_dashboard/assets/v2/prod-files/js/vendors.buffer.js",
+      "../../../client_dashboard/assets/v2/prod-files/js/vendors.sweetalert2.js",
+      "../../../client_dashboard/assets/v2/prod-files/js/907.js",
+      "../../../client_dashboard/assets/v2/prod-files/css/214.css",
+      "../../../client_dashboard/assets/v2/prod-files/js/985.js",
+      "../../../client_dashboard/assets/v2/prod-files/js/200.js",
+      "../../../client_dashboard/assets/v2/prod-files/css/attendance/setup-form/edit-schedule.css",
+      "../../../client_dashboard/assets/v2/prod-files/js/attendance/setup-form/edit-schedule.js"
+    ],
+    "attendance/setup-form/edit-sub_group": [
+      "../../../client_dashboard/assets/v2/prod-files/js/vendors.material.js",
+      "../../../client_dashboard/assets/v2/prod-files/js/vendors.buffer.js",
+      "../../../client_dashboard/assets/v2/prod-files/js/vendors.sweetalert2.js",
+      "../../../client_dashboard/assets/v2/prod-files/js/vendors.wicg-inert.js",
+      "../../../client_dashboard/assets/v2/prod-files/js/vendors.jquery.js",
+      "../../../client_dashboard/assets/v2/prod-files/js/vendors.select2.js",
+      "../../../client_dashboard/assets/v2/prod-files/js/907.js",
+      "../../../client_dashboard/assets/v2/prod-files/js/111.js",
+      "../../../client_dashboard/assets/v2/prod-files/css/214.css",
+      "../../../client_dashboard/assets/v2/prod-files/js/985.js",
+      "../../../client_dashboard/assets/v2/prod-files/css/948.css",
+      "../../../client_dashboard/assets/v2/prod-files/js/800.js",
+      "../../../client_dashboard/assets/v2/prod-files/css/attendance/setup-form/edit-sub_group.css",
+      "../../../client_dashboard/assets/v2/prod-files/js/attendance/setup-form/edit-sub_group.js"
+    ],
+    "attendance/setup-view/schedules": [
+      "../../../client_dashboard/assets/v2/prod-files/js/vendors.material.js",
+      "../../../client_dashboard/assets/v2/prod-files/js/vendors.buffer.js",
+      "../../../client_dashboard/assets/v2/prod-files/js/vendors.wicg-inert.js",
+      "../../../client_dashboard/assets/v2/prod-files/js/vendors.jquery.js",
+      "../../../client_dashboard/assets/v2/prod-files/js/vendors.select2.js",
+      "../../../client_dashboard/assets/v2/prod-files/js/907.js",
+      "../../../client_dashboard/assets/v2/prod-files/css/214.css",
+      "../../../client_dashboard/assets/v2/prod-files/css/948.css",
+      "../../../client_dashboard/assets/v2/prod-files/js/800.js",
+      "../../../client_dashboard/assets/v2/prod-files/css/attendance/setup-view/schedules.css",
+      "../../../client_dashboard/assets/v2/prod-files/js/attendance/setup-view/schedules.js"
+    ],
+    "attendance/setup-view/schedule": [
+      "../../../client_dashboard/assets/v2/prod-files/js/vendors.material.js",
+      "../../../client_dashboard/assets/v2/prod-files/js/vendors.buffer.js",
+      "../../../client_dashboard/assets/v2/prod-files/js/vendors.sweetalert2.js",
+      "../../../client_dashboard/assets/v2/prod-files/js/vendors.wicg-inert.js",
+      "../../../client_dashboard/assets/v2/prod-files/js/907.js",
+      "../../../client_dashboard/assets/v2/prod-files/js/111.js",
+      "../../../client_dashboard/assets/v2/prod-files/css/214.css",
+      "../../../client_dashboard/assets/v2/prod-files/js/985.js",
+      "../../../client_dashboard/assets/v2/prod-files/css/948.css",
+      "../../../client_dashboard/assets/v2/prod-files/css/attendance/setup-view/schedule.css",
+      "../../../client_dashboard/assets/v2/prod-files/js/attendance/setup-view/schedule.js"
+    ],
+    "membership/registration/excel": [
+      "../../../client_dashboard/assets/v2/prod-files/js/vendors.material.js",
+      "../../../client_dashboard/assets/v2/prod-files/js/vendors.buffer.js",
+      "../../../client_dashboard/assets/v2/prod-files/js/vendors.sweetalert2.js",
+      "../../../client_dashboard/assets/v2/prod-files/js/vendors.wicg-inert.js",
+      "../../../client_dashboard/assets/v2/prod-files/js/907.js",
+      "../../../client_dashboard/assets/v2/prod-files/css/214.css",
+      "../../../client_dashboard/assets/v2/prod-files/js/985.js",
+      "../../../client_dashboard/assets/v2/prod-files/css/948.css",
+      "../../../client_dashboard/assets/v2/prod-files/css/membership/registration/excel.css",
+      "../../../client_dashboard/assets/v2/prod-files/js/membership/registration/excel.js"
+    ],
+    "membership/groupings/branches/all": [
+      "../../../client_dashboard/assets/v2/prod-files/js/vendors.material.js",
+      "../../../client_dashboard/assets/v2/prod-files/js/vendors.buffer.js",
+      "../../../client_dashboard/assets/v2/prod-files/js/vendors.sweetalert2.js",
+      "../../../client_dashboard/assets/v2/prod-files/js/907.js",
+      "../../../client_dashboard/assets/v2/prod-files/css/214.css",
+      "../../../client_dashboard/assets/v2/prod-files/js/985.js",
+      "../../../client_dashboard/assets/v2/prod-files/css/948.css",
+      "../../../client_dashboard/assets/v2/prod-files/js/membership/groupings/branches/all.js"
+    ],
+    "membership/groupings/branches/one": [
+      "../../../client_dashboard/assets/v2/prod-files/js/membership/groupings/branches/one.js"
+    ],
+    "membership/groupings/branches/add": [
+      "../../../client_dashboard/assets/v2/prod-files/js/vendors.material.js",
+      "../../../client_dashboard/assets/v2/prod-files/js/vendors.buffer.js",
+      "../../../client_dashboard/assets/v2/prod-files/js/vendors.sweetalert2.js",
+      "../../../client_dashboard/assets/v2/prod-files/js/907.js",
+      "../../../client_dashboard/assets/v2/prod-files/css/214.css",
+      "../../../client_dashboard/assets/v2/prod-files/js/985.js",
+      "../../../client_dashboard/assets/v2/prod-files/css/948.css",
+      "../../../client_dashboard/assets/v2/prod-files/js/membership/groupings/branches/add.js"
+    ],
+    "membership/groupings/branches/edit": [
+      "../../../client_dashboard/assets/v2/prod-files/js/vendors.material.js",
+      "../../../client_dashboard/assets/v2/prod-files/js/vendors.buffer.js",
+      "../../../client_dashboard/assets/v2/prod-files/js/vendors.sweetalert2.js",
+      "../../../client_dashboard/assets/v2/prod-files/js/907.js",
+      "../../../client_dashboard/assets/v2/prod-files/css/214.css",
+      "../../../client_dashboard/assets/v2/prod-files/js/985.js",
+      "../../../client_dashboard/assets/v2/prod-files/css/948.css",
+      "../../../client_dashboard/assets/v2/prod-files/js/membership/groupings/branches/edit.js"
+    ],
+    "membership/groupings/member_categories/all": [
+      "../../../client_dashboard/assets/v2/prod-files/js/vendors.material.js",
+      "../../../client_dashboard/assets/v2/prod-files/js/vendors.buffer.js",
+      "../../../client_dashboard/assets/v2/prod-files/js/vendors.sweetalert2.js",
+      "../../../client_dashboard/assets/v2/prod-files/js/907.js",
+      "../../../client_dashboard/assets/v2/prod-files/css/214.css",
+      "../../../client_dashboard/assets/v2/prod-files/js/985.js",
+      "../../../client_dashboard/assets/v2/prod-files/css/948.css",
+      "../../../client_dashboard/assets/v2/prod-files/js/membership/groupings/member_categories/all.js"
+    ],
+    "membership/groupings/member_categories/one": [
+      "../../../client_dashboard/assets/v2/prod-files/js/membership/groupings/member_categories/one.js"
+    ],
+    "membership/groupings/member_categories/add": [
+      "../../../client_dashboard/assets/v2/prod-files/js/vendors.material.js",
+      "../../../client_dashboard/assets/v2/prod-files/js/vendors.buffer.js",
+      "../../../client_dashboard/assets/v2/prod-files/js/vendors.sweetalert2.js",
+      "../../../client_dashboard/assets/v2/prod-files/js/907.js",
+      "../../../client_dashboard/assets/v2/prod-files/css/214.css",
+      "../../../client_dashboard/assets/v2/prod-files/js/985.js",
+      "../../../client_dashboard/assets/v2/prod-files/css/948.css",
+      "../../../client_dashboard/assets/v2/prod-files/js/membership/groupings/member_categories/add.js"
+    ],
+    "membership/groupings/member_categories/edit": [
+      "../../../client_dashboard/assets/v2/prod-files/js/vendors.material.js",
+      "../../../client_dashboard/assets/v2/prod-files/js/vendors.buffer.js",
+      "../../../client_dashboard/assets/v2/prod-files/js/vendors.sweetalert2.js",
+      "../../../client_dashboard/assets/v2/prod-files/js/907.js",
+      "../../../client_dashboard/assets/v2/prod-files/css/214.css",
+      "../../../client_dashboard/assets/v2/prod-files/js/985.js",
+      "../../../client_dashboard/assets/v2/prod-files/css/948.css",
+      "../../../client_dashboard/assets/v2/prod-files/js/membership/groupings/member_categories/edit.js"
+    ],
+    "shared": [
+      "../../../client_dashboard/assets/v2/prod-files/js/runtime.js",
+      "../../../client_dashboard/assets/v2/prod-files/js/shared.js"
+    ]
+  },
+  "publicPath": "https://client.plusdatabase.com/"
+}
