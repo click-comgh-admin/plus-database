@@ -54,6 +54,13 @@ class Functions
         }
         function curlCall($url, $curl, $method = "GET", $post_data = [], $token = API_TOKEN)
         {
+            // print_r([
+            //     "url" => $url,
+            //     "curl" => $curl,
+            //     "method" => $method,
+            //     "post_data" => $post_data,
+            //     "token" => $token
+            // ]);
             curl_setopt_array($curl, array(
                 CURLOPT_URL => str_replace(" ", "%20", $url),
                 CURLOPT_RETURNTRANSFER => true,
@@ -211,4 +218,49 @@ function imageFileEndpoint(string $url, string $type)
     } else {
         return $url;
     }
+}
+
+function setUpMemberImage($url, $debug = false) {
+    if ($debug) {
+        echo '<pre>';
+        print_r(['$url-1' => $url]);
+        print_r(['strpos($url, "member/profile/") !== false' => strpos($url, "member/profile/") !== false]);
+        print_r(['strpos($url, "member/logo/") !== false' => strpos($url, "member/logo/") !== false]);
+    }
+    if ((strpos($url, "member/logo/") !== false) || (strpos($url, "member/profile/") !== false)) {
+        if ($debug) {
+            print_r(['new-path' => "true"]);
+        }
+        if ((strpos($url, "member/logo/") !== false)) {
+            $parts = explode('member/logo/', $url);
+            if ($debug) {
+                print_r(['$parts/logo' => $parts]);
+            }
+
+            if (isset($parts[1])) {
+                $url = FILE_BUCKET_BASE_URL . "/files/member/logo/" . $parts[1];
+            }
+        } elseif ((strpos($url, "member/profile/") !== false)) {
+            $parts = explode('member/profile/', $url);
+            if ($debug) {
+                print_r(['$parts/profile' => $parts]);
+            }
+
+            if (isset($parts[1])) {
+                $url = FILE_BUCKET_BASE_URL . "/files/member/profile/" . $parts[1];
+            }
+        }
+    } else {
+        if ($debug) {
+            print_r(['new-path' => "false"]);
+        }
+        $parts = explode('/', $url);
+        $fileName = end($parts);
+        $url = FILE_BUCKET_BASE_URL . "/files/members/profile-picture/" . $fileName;
+    }
+    if ($debug) {
+        print_r(['$url-2' => $url]);
+        echo '</pre>';
+    }
+    return $url;
 }

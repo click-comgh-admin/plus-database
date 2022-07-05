@@ -82,6 +82,23 @@
                         ]);
                     ?>
                 </div>
+				<div class="col-md-6 col-lg-4">
+					<?php 
+						$tittle_placeholder = "Enter Middle Name";
+						$id_name = "middlename";
+					?>
+					<h6><?= $tittle_placeholder; ?></h6>
+					<?php
+                        $input_value = 'value="'.$this->member['middlename'].'"';
+                        $input_attributes = ''.$input_value.' name="'.$id_name.'" id="'.$id_name.'" placeholder="'.$tittle_placeholder.'"';
+                        echo $tf->use(DIRECTORY."/templates/form/input-icon--left.tmpl", [
+                            [ "name"=>"icon", "value"=>"pe-7s-user icon-gradient bg-warm-flame text-success" ],
+                            [ "name"=>"type", "value"=>"text" ],
+                            [ "name"=>"input_class", "value"=>"-height-inherit-" ],
+                            [ "name"=>"input_attributes", "value"=>$input_attributes ],
+                        ]);
+                    ?>
+				</div>
                 <div class="col-md-6 col-lg-4">
                     <?php 
 						$titlePlaceholder = "Enter Surname";
@@ -293,6 +310,35 @@
                         ]);
                     ?>
                 </div>
+				<div class="col-md-6 col-lg-4">
+					<?php 
+						$tittle_placeholder = "Member Type";
+						$id_name = "memberType";
+                        $defaultValue = (int) $this->member[$id_name];
+					?>
+					<h6><?= $tittle_placeholder; ?></h6>
+					<pdb-membership-select-member-type material="false" defaultValue="<?= $defaultValue; ?>" label="Select <?= $tittle_placeholder; ?>"
+						name="<?= $id_name; ?>" id="<?= $id_name; ?>" tag_class="form-control -height-inherit-" css_style="width: 100%"
+						style="width: 100%">
+					</pdb-membership-select-member-type>
+				</div>
+				<div class="col-md-6 col-lg-4">
+					<?php
+						$tittle_placeholder = "Enter Reference ID";
+						$id_name = "referenceId";
+					?>
+					<h6><?= $tittle_placeholder; ?></h6>
+					<?php
+                        $input_value = 'value="'.$this->member['referenceId'].'"';
+                        $input_attributes = ''.$input_value.' name="'.$id_name.'" id="'.$id_name.'" placeholder="'.$tittle_placeholder.'"';
+                        echo $tf->use(DIRECTORY."/templates/form/input-icon--left.tmpl", [
+                            [ "name"=>"icon", "value"=>"pe-7s-user icon-gradient bg-warm-flame text-success" ],
+                            [ "name"=>"type", "value"=>"text" ],
+                            [ "name"=>"input_class", "value"=>"-height-inherit-" ],
+                            [ "name"=>"input_attributes", "value"=>$input_attributes ],
+                        ]);
+                    ?>
+				</div>
                 <div class="col-md-6 col-lg-8">
                     <?php 
 						$titlePlaceholder = "Enter Business Description";
@@ -716,6 +762,9 @@
                         ]);
                     ?>
                 </div>
+                <?php global $BranchInfo_I; ?>
+                <input type="hidden" name="branchId" value="<?= $BranchInfo_I->id; ?>" />
+                <input type="hidden" name="accountType" value="1" />
 				<?php /* <div class="col-md-6 col-lg-4">
 					<?php 
 						$titlePlaceholder = "House Address";

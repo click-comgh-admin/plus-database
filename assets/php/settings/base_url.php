@@ -1,4 +1,7 @@
 <?php
+
+    define('IN_PRODUCTION_MODE', false);
+
     require_once ('base_url/api_base_url.php');
     require_once ('base_url/public_base_url.php');
     require_once ('base_url/member_base_url.php');

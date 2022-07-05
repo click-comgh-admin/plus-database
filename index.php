@@ -12,10 +12,21 @@
     
     define('PAGE_TITLE', "Home");
     define('PAGE_DESC', "Home Page.");
+
+    define("_Webpack_Pack_", Get_Webpack_Tags(
+        'home/dashboard', prefix: IN_PRODUCTION_MODE_PREFIX)
+    );
 ?>
 <!doctype html>
 <html lang="en">
-    <?php require_once 'assets/php/page_components/header/head.php'; ?>
+    <?php 
+        $cssFiles = '';
+        foreach (_Webpack_Pack_['css'] as $key => $cssFile) {
+            $cssFiles .= $cssFile;
+        }
+        define('WEB_PACK_CSS_FILES', $cssFiles);
+        require_once 'assets/php/page_components/header/head.php';
+    ?>
     <body>
         <div class="app-container app-theme-white body-tabs-shadow fixed-sidebar fixed-header">
             <?php require_once 'assets/php/page_components/header/navbar.php'; ?>
@@ -267,62 +278,11 @@
                         <div class="row">
                             <div class="col-md-12">
                                 <div class="main-card mb-3 card">
-                                    <div class="card-header">Recent Users
+                                    <div class="card-header">Recent Users 
                                     </div>
-                                    <div class="table-responsive">
-                                        <table class="align-middle mb-0 table table-borderless table-striped table-hover">
-                                            <thead>
-                                                <tr>
-                                                    <th class="text-center">#</th>
-                                                    <th>Name</th>
-                                                    <th class="text-center">Actions</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <?php 
-                                                    @$get_string = @"currentpage=1&rowsperpage=5&client_id=$account_id";
-                                                    @$total_members = @$ccApi->client_members($type="members_reverse", $get_string = $get_string, function ($members) {
-                                                        return (isset($members['data']) && !empty($members['data'])) ? $members['data'] : [];
-                                                    }, $debug = false); 
-                                                    foreach ($total_members as $member_key => $member) { ?>
-                                                    <tr>
-                                                        <td class="text-center text-muted">#<?= (int)$member_key + 1; ?></td>
-                                                        <td>
-                                                            <div class="widget-content p-0">
-                                                                <div class="widget-content-wrapper">
-                                                                    <div class="widget-content-left mr-3">
-                                                                        <div class="widget-content-left">
-                                                                            <img width="40" height="40" class="rounded-circle" src="<?= FILE_BUCKET_BASE_URL; ?>files/members/profile-picture/<?= @$member['pdm_profile_picture']; ?>" alt=""></div>
-                                                                    </div>
-                                                                    <div class="widget-content-left flex2">
-                                                                        <div class="widget-heading"><?= @$member['pdm_firstname'] . " " . @$member['pdm_surname']; ?></div>
-                                                                        <div class="widget-subheading opacity-7"><?= (@$member['pdm_gender'] == 1) ? "Male" : "Female"; ?></div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </td>
-                                                        <td class="text-center w-25">
-                                                            <button class="badge badge-info btn btn-sm text-white mb-2">
-                                                                <?=  
-                                                                    $active_status = $ccApi->active_status($all="one", $id=$member['pdm_status'],function($active_status) {
-                                                                        return @$active_status[0]['pdd_info'];
-                                                                    });
-                                                                ?>
-                                                            </button>
-                                                            <?php
-                                                                $user_id = $member['pdm_id'];
-                                                                $encryptor = new Encryptor("members", md5("members"));
-                                                                $user_id = $encryptor->encrypt($user_id);
-                                                            ?>
-                                                            <a href="<?= CLIENT_BASE_URL; ?>members?show-member&member=<?= $user_id; ?>" class="btn btn-success mt-0 btn-sm" type="button">Details</a>                                                            
-                                                        </td>
-                                                    </tr>
-                                                <?php } ?>
-                                            </tbody>
-                                        </table>
-                                    </div>
+                                    <pdb-dashboard-index></pdb-dashboard-index>
                                     <div class="d-block text-center card-footer">                                      
-                                        <a href="<?= CLIENT_BASE_URL; ?>members" class="btn-wide btn btn-success">Members</a>
+                                        <a href="<?= CLIENT_BASE_URL; ?>member/members" class="btn-wide btn btn-success">Members</a>
                                     </div>
                                 </div>
                             </div>
@@ -332,6 +292,16 @@
                 </div>
             </div>
         </div>
-        <?php require_once 'assets/php/page_components/footer/js.php'; ?>
+        <?php 
+            $jsFiles = '';
+            foreach (_Webpack_Pack_Shared_['js'] as $key => $jsFile) {
+                $jsFiles .= $jsFile;
+            }
+            foreach (_Webpack_Pack_['js'] as $key => $jsFile) {
+                $jsFiles .= $jsFile;
+            }
+            define('WEB_PACK_JS_FILES', $jsFiles);
+            require_once 'assets/php/page_components/footer/js.php';
+        ?>
     </body>
 </html>

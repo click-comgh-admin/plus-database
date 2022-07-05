@@ -4,6 +4,7 @@ require_once DIRECTORY . '/main.php';
 class ClickComApi
 {
     private $base_url;
+    private $v2_base_url;
     private $location_base_url;
 
     private $account_type = "account_type";
@@ -21,6 +22,7 @@ class ClickComApi
     private $forgot_password = "forgot-password";
     private $reset_password = "reset-password";
     private $account_login = "login";
+    private $account_login_v2_client = "clients/login";
     private $admin_membership = "admin-membership";
     private $client_membership = "client-membership";
     private $membership_filter = "membership-filter";
@@ -33,9 +35,10 @@ class ClickComApi
     private $custom_form = "custom-form";
     private $district_status = "district-status";
 
-    public function __construct($base_url, $location_base_url)
+    public function __construct($base_url, $v2_base_url, $location_base_url)
     {
         $this->base_url = $base_url;
+        $this->v2_base_url = $v2_base_url;
         $this->location_base_url = $location_base_url;
     }
 
@@ -456,6 +459,10 @@ class ClickComApi
         $curl = curl_init();
         if ($type === "member") {
             $response = curlCall($this->base_url . $this->account_login . "/" . $type, $curl, $method = "POST", $post_data =
+                $post
+            );
+        } else if ($type === "clients/login") {
+            $response = curlCall($this->v2_base_url . $type, $curl, $method = "POST", $post_data =
                 $post
             );
         } else if ($type === "client") {

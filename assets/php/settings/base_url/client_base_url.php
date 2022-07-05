@@ -1,34 +1,23 @@
 <?php
-
-	if ($_SERVER['HTTP_HOST'] == "169.254.128.177") {
-		define('CLIENT_BASE_URL', "http://169.254.128.177/AMG/plus_db/client_dashboard/");
-	} else if ($_SERVER['HTTP_HOST'] == "169.254.47.26") {
-		define('CLIENT_BASE_URL', "http://169.254.47.26/AMG/plus_db/client_dashboard/");
-	} else if ($_SERVER['HTTP_HOST'] == "192.168.137.1") {
-		define('CLIENT_BASE_URL', "http://192.168.137.1/AMG/plus_db/client_dashboard/");
-	} else if ($_SERVER['HTTP_HOST'] == "localhost") {
-		define('CLIENT_BASE_URL', "http://localhost/AMG/plus_db/client_dashboard/");
-	} else if ($_SERVER['HTTP_HOST'] == "192.168.43.161") {
-		define('CLIENT_BASE_URL', "http://192.168.43.161/AMG/plus_db/client_dashboard/");
-	} else if ($_SERVER['HTTP_HOST'] == "192.168.173.1") {
-		define('CLIENT_BASE_URL', "http://192.168.173.1/AMG/plus_db/client_dashboard/");
-	} else if ($_SERVER['HTTP_HOST'] == "127.0.0.1") {
-		define('CLIENT_BASE_URL', "http://127.0.0.1/AMG/plus_db/client_dashboard/");
+	$actual_host = $_SERVER['SERVER_ADDR'];
+	if (IN_PRODUCTION_MODE) {
+		define('CLIENT_BASE_URL', "https://clocking.akwaabaapp.com/");
 	} else {
-		die("INVALID HOST");
+		// define('CLIENT_BASE_URL', "http://$actual_host/AMG/plus_db/client_dashboard/");
+		define('CLIENT_BASE_URL', "http://$actual_host:82/");
 	}
 
 	// $_SERVER['SERVER_NAME'] = "app.districtdb.com";
-	$_SERVER['SERVER_NAME'] = "client.plusdatabase.com";
+	$_SERVER['SERVER_NAME'] = "clocking.akwaabaapp.com";
 
 	// if ($_SERVER['SERVER_NAME'] == "app.districtdb.com") {
 	// 	define('CLIENT_BASE_URL', "https://app.districtdb.com/");
-	// } else if ($_SERVER['SERVER_NAME'] == "client.plusdatabase.com") {
-	// 	define('CLIENT_BASE_URL', "https://client.plusdatabase.com/");
+	// } else if ($_SERVER['SERVER_NAME'] == "clocking.akwaabaapp.com") {
+	// 	define('CLIENT_BASE_URL', "https://clocking.akwaabaapp.com/");
 	// } else if ($_SERVER['SERVER_NAME'] == "admin.clockintoday.com") {
 	// 	define('CLIENT_BASE_URL', "https://admin.clockintoday.com/");
 	// } else {
-	// 	define('CLIENT_BASE_URL', "https://client.plusdatabase.com/");
+	// 	define('CLIENT_BASE_URL', "https://clocking.akwaabaapp.com/");
 	// }
 	// print_r($_SERVER);
 

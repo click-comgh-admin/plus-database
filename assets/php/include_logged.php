@@ -1,10 +1,10 @@
 <?php
-use Encryptor\Encryptor;
 use Subscriber\Subscriber;
 
-$user_id = $_COOKIE['pdb-client-user'];
-$encryptor = new Encryptor("clients", md5("clients"));
-$user_id = $encryptor->decrypt($user_id);
+global $UserLoginInfo_I;
+// print_r(['$UserLoginInfo_I'=> $UserLoginInfo_I]);
+$user_id = $UserLoginInfo_I->user->id;
+// print_r(['$user_id'=> $user_id]);
 
 /** @var ClickComApi $ccApi */
 
@@ -175,7 +175,7 @@ $ccApi->user_info($type = "client", $account_id = null,
             );
         }
     }
-);
+, false);
 // print_r($__SYSTEM_VARIABLES);
 $appPages = isset($__SYSTEM_VARIABLES['appPages'])? $__SYSTEM_VARIABLES['appPages']: [];
 $user_info = isset($__SYSTEM_VARIABLES['user_info'])? $__SYSTEM_VARIABLES['user_info']: [];

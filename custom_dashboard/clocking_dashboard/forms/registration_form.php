@@ -211,7 +211,7 @@
 					<?php
 						$countries = '';
 						foreach ($load_countries as $key => $country) {
-							$countries .= "<option value=".$country->Name.">".$country->Name."</option>";
+							$countries .= "<option value='".$country->Name."'>".$country->Name."</option>";
 						}
 					?>
 					<h6><?= $tittle_placeholder; ?></h6>

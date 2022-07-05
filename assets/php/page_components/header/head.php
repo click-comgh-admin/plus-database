@@ -1,3 +1,4 @@
+<?php require_once BASE_DIRECTORY . '/assets/php/page_components/webpack_support.php'; ?>
 <head>
     <!--
         =========================================================
@@ -34,6 +35,17 @@
             <link href="<?= CLIENT_BASE_URL; ?>assets/css/none-table-pagination.css" rel="stylesheet">
         <?php }
     ?>
+    <link href="<?= CLIENT_BASE_URL; ?>assets/v2/3rd-party/material/fonts/material-icons.css" rel="stylesheet">
+    <?php if (defined("WEB_PACK_CSS_FILES_BRANCH_BTN")) { echo WEB_PACK_CSS_FILES_BRANCH_BTN; } ?>
+    <?php if (defined("WEB_PACK_CSS_FILES")) { echo WEB_PACK_CSS_FILES; } ?>
+    <link rel="manifest" href="<?= CLIENT_BASE_URL; ?>manifest.webmanifest" />
+    <link rel="apple-touch-icon" href="<?= CLIENT_BASE_URL; ?>assets/images/icons/icon-48x48.png" />
+    <link rel="apple-touch-icon" href="<?= CLIENT_BASE_URL; ?>assets/images/icons/icon-72x72.png" />
+    <link rel="apple-touch-icon" href="<?= CLIENT_BASE_URL; ?>assets/images/icons/icon-96x96.png" />
+    <link rel="apple-touch-icon" href="<?= CLIENT_BASE_URL; ?>assets/images/icons/icon-144x144.png" />
+    <link rel="apple-touch-icon" href="<?= CLIENT_BASE_URL; ?>assets/images/icons/icon-192x192.png" />
+    <meta name="apple-mobile-web-app-status-bar" content="#f97817">
+    <meta name="theme-color" content="#f97817">
     <script type="text/javascript" src="<?= CLIENT_BASE_URL; ?>assets/js/--set_cookie--.js"></script>
     <title><?= AppName; ?> :: <?= PAGE_TITLE; ?></title>
 </head>

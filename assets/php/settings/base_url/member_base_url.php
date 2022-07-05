@@ -1,20 +1,9 @@
 <?php
-	if ($_SERVER['HTTP_HOST'] == "169.254.128.177") {
-		define('MEMBER_BASE_URL', "http://169.254.128.177/AMG/plus_db/member_dashboard/");
-	} else if ($_SERVER['HTTP_HOST'] == "169.254.47.26") {
-		define('MEMBER_BASE_URL', "http://169.254.47.26/AMG/plus_db/member_dashboard/");
-	} else if ($_SERVER['HTTP_HOST'] == "192.168.137.1") {
-		define('MEMBER_BASE_URL', "http://192.168.137.1/AMG/plus_db/member_dashboard/");
-	} else if ($_SERVER['HTTP_HOST'] == "localhost") {
-		define('MEMBER_BASE_URL', "http://localhost/AMG/plus_db/member_dashboard/");
-	} else if ($_SERVER['HTTP_HOST'] == "192.168.43.161") {
-		define('MEMBER_BASE_URL', "http://192.168.43.161/AMG/plus_db/member_dashboard/");
-	} else if ($_SERVER['HTTP_HOST'] == "192.168.173.1") {
-		define('MEMBER_BASE_URL', "http://192.168.173.1/AMG/plus_db/member_dashboard/");
-	} else if ($_SERVER['HTTP_HOST'] == "127.0.0.1") {
-		define('MEMBER_BASE_URL', "http://127.0.0.1/AMG/plus_db/member_dashboard/");
+	$actual_host = $_SERVER['SERVER_ADDR'];
+	if (IN_PRODUCTION_MODE) {
+		define('MEMBER_BASE_URL', "https://member.plusdatabase.com/");
 	} else {
-		die("INVALID HOST");
+		define('MEMBER_BASE_URL', "http://$actual_host/AMG/plus_db/member_dashboard/");
 	}
 	
 	$_SERVER['SERVER_NAME'] = "staff.districtdb.com";

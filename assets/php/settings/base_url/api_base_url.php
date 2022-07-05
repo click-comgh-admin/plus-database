@@ -1,20 +1,13 @@
 <?php
-	if ($_SERVER['HTTP_HOST'] == "169.254.128.177") {
-		define('API_BASE_URL', "http://169.254.128.177/AMG/plus_db/api/");
-	} else if ($_SERVER['HTTP_HOST'] == "169.254.47.26") {
-		define('API_BASE_URL', "http://169.254.47.26/AMG/plus_db/api/");
-	} else if ($_SERVER['HTTP_HOST'] == "192.168.137.1") {
-		define('API_BASE_URL', "http://192.168.137.1/AMG/plus_db/api/");
-	} else if ($_SERVER['HTTP_HOST'] == "localhost") {
-		define('API_BASE_URL', "http://localhost/AMG/plus_db/api/");
-	} else if ($_SERVER['HTTP_HOST'] == "192.168.43.161") {
-		define('API_BASE_URL', "http://192.168.43.161/AMG/plus_db/api/");
-	} else if ($_SERVER['HTTP_HOST'] == "127.0.0.1") {
-		define('API_BASE_URL', "http://127.0.0.1/AMG/plus_db/api/");
-	} else if ($_SERVER['HTTP_HOST'] == "192.168.173.1") {
-		define('API_BASE_URL', "http://192.168.173.1/AMG/plus_db/api/");
+	// print_r(['IN_PRODUCTION_MODE'=>IN_PRODUCTION_MODE]);
+	$actual_host = $_SERVER['SERVER_ADDR'];
+	// print_r(['$actual_host' => $actual_host, '$_SERVER[HTTP_HOST]' => $_SERVER['HTTP_HOST']]);
+	if (IN_PRODUCTION_MODE) {
+		define('API_BASE_URL', "https://api.plusdatabase.com/");
+		define('API_V2_BASE_URL', "https://api.akwaabaapp.com/");
 	} else {
-		die("INVALID HOST");
+		define('API_BASE_URL', "http://$actual_host/AMG/plus_db/api/");
+		define('API_V2_BASE_URL', "http://127.0.0.1:9001/api/");
 	}
 	// print_r($_SERVER);
 

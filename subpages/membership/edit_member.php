@@ -69,6 +69,8 @@
                 $_GET['type'] = strtolower($_GET['type']);
                 if ($_GET['type'] == "photo") {
                     require_once("edit_pages/photo.php");
+                } else if ($_GET['type'] == "photo-new") {
+                    require_once("edit_pages/photo-new.php"); 
                 } else if ($_GET['type'] == "groups") {
                     require_once("edit_pages/groups.php"); 
                 } else if ($_GET['type'] == "subgroups") {

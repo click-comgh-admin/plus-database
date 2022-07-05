@@ -9,7 +9,7 @@ define('__CODE', isset($_GET['code']) ? $_GET['code'] : "");
 // http://192.168.173.1/AMG/plus_db/client_dashboard/app-reroute?page=update-member-profile%2Fmember-accounts&code=@66804-0f96_bb79~df0b$2y0ae3$35505
 use Encryptor\Encryptor;
 
-$ccApi = new ClickComApi(API_BASE_URL, LocBaseUrl);
+$ccApi = new ClickComApi(API_BASE_URL, API_V2_BASE_URL, LocBaseUrl);
 if (isset($_COOKIE[CookieIndex]) && !empty($_COOKIE[CookieIndex])) {
     setcookie(CookieIndex, null, null + 0 + 0 * 0 * 0, '/', null, null, false);
     header("Location: " . CLIENT_BASE_URL . "app-reroute?page=" . __PAGE . "&code=" . __CODE);

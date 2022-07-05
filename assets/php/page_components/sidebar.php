@@ -1,4 +1,5 @@
         <?php
+            global $BranchInfo_I;
             define('AccountInfoTypeName', $account_type = $ccApi->account_type($all="one",
                 $id=(int)AccountInfoType, function($account_type) {
                     return $account_type[0]['pdd_info'];
@@ -47,7 +48,12 @@
                             <ul class="vertical-nav-menu">
                                 <li class="app-sidebar__heading mb-0 pb-0">
                                     <span>
-                                        <?= $account_info['pdc_name']; ?>
+                                        <?= $account_info['pdc_name']; ?> 
+                                    </span>
+                                </li>
+                                <li class="app-sidebar__heading mb-0 pb-0">
+                                    <span>
+                                        <b>Branch:</b> <?= $BranchInfo_I->name; ?> 
                                     </span>
                                 </li>
                                 <li class="app-sidebar__heading mt-0 pt-0"><hr class="my-1 mx-0">
@@ -57,15 +63,10 @@
                                 </li>
                                 <?php require_once "sidebar/home_module.php"; ?>
                                 <?php require_once "sidebar/membership-data_module.php"; ?>
+                                <?php require_once "sidebar/user_connections.php"; ?>
                                 <?php require_once "sidebar/notifications_module.php"; ?>
                                 <?php require_once "sidebar/groupings_module.php"; ?>
                                 <?php require_once "sidebar/attendance_module.php"; ?>
-                                <?php require_once "sidebar/duty_tracker_module.php"; ?>
-                                <?php require_once "sidebar/communications_module.php"; ?>
-                                <?php require_once "sidebar/office_module.php"; ?>
-                                <?php require_once "sidebar/file-manager_module.php"; ?>
-                                <?php require_once "sidebar/school_module.php"; ?>
-                                <?php require_once "sidebar/dues_module.php"; ?>
                             </ul>
                         </div>
                     </div>

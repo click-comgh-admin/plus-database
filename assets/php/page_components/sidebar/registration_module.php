@@ -11,13 +11,8 @@
             </a>
         </li>
         <li>
-            <a href="<?= CLIENT_BASE_URL; ?>excel-registration" mm-active="excel-registration">
-                <i class="metismenu-icon"></i> Excel Registration
-            </a>
-        </li>
-        <li>
             <a href="<?= CLIENT_BASE_URL; ?>excel-registration2" mm-active="excel-registration2">
-                <i class="metismenu-icon"></i> New Excel Registration
+                <i class="metismenu-icon"></i> Excel Registration
             </a>
         </li>
         <li>

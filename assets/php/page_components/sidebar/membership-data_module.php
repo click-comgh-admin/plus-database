@@ -24,7 +24,7 @@
     </a>
     <ul>
         <li>
-            <a href="<?= CLIENT_BASE_URL; ?>members" mm-active="members">
+            <a href="<?= CLIENT_BASE_URL; ?>/member/members" mm-active="members">
                 <i class="metismenu-icon">
                 </i>Members
             </a>
@@ -33,12 +33,6 @@
             <a href="<?= CLIENT_BASE_URL; ?>members?verification" mm-active="members">
                 <i class="metismenu-icon">
                 </i>Member Verification
-            </a>
-        </li>
-        <li>
-            <a href="<?= CLIENT_BASE_URL; ?>members?search" mm-active="members">
-                <i class="metismenu-icon">
-                </i>Search Member
             </a>
         </li>
         <li>
@@ -84,14 +78,7 @@
     </ul>
 </li>
 <li>
-    <a href="<?= CLIENT_BASE_URL; ?>update-member-profile/member-accounts" mm-active="member-accounts|member-account">
-        <i class="metismenu-icon pe-7s-users"></i> Update Member Profile
-    </a>
-</li>
-<li>
     <a href="https://www.youtube.com/playlist?list=PL94Wg7vEQie4EojeY5BGDkR2I0Zyy9Ufa" target="_blank">
         <i class="metismenu-icon pe-7s-study"></i> System Video Tutorials
     </a>
 </li>
-
-<?php require_once "branch_module.php"; ?>

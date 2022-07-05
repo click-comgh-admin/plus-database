@@ -1,3 +1,20 @@
+if ('serviceWorker' in navigator) {
+
+    window.addEventListener('load', () => {
+
+        navigator.serviceWorker.register("/service_worker").then(registration => {
+
+            console.log('SW registered: ', registration);
+
+        }).catch(registrationError => {
+
+            console.log('SW registration has failed: ', registrationError);
+
+        });
+
+    });
+
+}
 (function(window, document, $, cc, Croppr) {
     document.addEventListener('DOMContentLoaded', function(loaded) {
         cc.show_password();

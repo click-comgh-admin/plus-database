@@ -110,7 +110,7 @@
                                 <?php }
                             ?>
                             <li class="btn-group nav-item">
-                                <a href="<?= CLIENT_BASE_URL; ?>account/accounts" type="button" class="nav-link">
+                                <a href="<?= CLIENT_BASE_URL; ?>admin/user/accounts" type="button" class="nav-link">
                                     <i class="nav-link-icon fa fa-users"></i> Accounts
                                 </a>
                             </li>
@@ -118,6 +118,9 @@
                                 <a href="<?= CLIENT_BASE_URL; ?>account/settings/settings" type="button" class="nav-link">
                                     <i class="nav-link-icon fa fa-cog"></i> Settings
                                 </a>
+                            </li>
+                            <li class="dropdown nav-item">
+                                <pdb-branch-button></pdb-branch-button>
                             </li>
                         </ul>
                     </div>
@@ -137,8 +140,9 @@
                                                 $url_endpoint = strtolower(trim(end($url_endpoint), '/'));
                                             ?>
                                             <div tabindex="-1" role="menu" aria-hidden="true" class="dropdown-menu dropdown-menu-right">
-                                                <a href="<?= CLIENT_BASE_URL; ?>account/my-account" type="button" tabindex="0" class="dropdown-item <?= ($url_endpoint == "my-account") ? "active": ""; ?>">User Account</a>
-                                                <a href="<?= CLIENT_BASE_URL; ?>account/accounts" type="button" tabindex="0" class="dropdown-item <?= ($url_endpoint == "accounts") ? "active": ""; ?>">Accounts</a>
+                                                <a href="<?= CLIENT_BASE_URL; ?>admin/user/my-account" type="button" tabindex="0" class="dropdown-item <?= ($url_endpoint == "my-account") ? "active": ""; ?>">User Account</a>
+                                                <a href="<?= CLIENT_BASE_URL; ?>admin/user/accounts" type="button" tabindex="0" class="dropdown-item <?= ($url_endpoint == "accounts") ? "active": ""; ?>">Accounts</a>
+                                                <pdb-branch-button></pdb-branch-button>
                                                 <div tabindex="-1" class="dropdown-divider"></div>
                                                 <a href="<?= CLIENT_BASE_URL; ?>account/settings/settings" type="button" tabindex="0" class="dropdown-item <?= ($url_endpoint == "settings" || $url_endpoint == "logo" || $url_endpoint == "leaders") ? "active": ""; ?>">Settings</a>
                                                 <?php

@@ -1,0 +1,38 @@
+"use strict";(self.webpackChunkwebpackNumbers=self.webpackChunkwebpackNumbers||[]).push([["src_addons_widgets_form_new_select_ts"],{3036:(e,t,o)=>{o.r(t)},5866:(e,t,o)=>{o.r(t),o.d(t,{SelectInput:()=>n});var r=o(9755),i=o(5862),s=o(9662),a=(o(686),o(3036),function(e,t,o,r){var i,s=arguments.length,a=s<3?t:null===r?r=Object.getOwnPropertyDescriptor(t,o):r;if("object"==typeof Reflect&&"function"==typeof Reflect.decorate)a=Reflect.decorate(e,t,o,r);else for(var l=e.length-1;l>=0;l--)(i=e[l])&&(a=(s<3?i(a):s>3?i(t,o,a):i(t,o))||a);return s>3&&a&&Object.defineProperty(t,o,a),a}),l=function(e,t){if("object"==typeof Reflect&&"function"==typeof Reflect.metadata)return Reflect.metadata(e,t)};let n=class extends i.LitElement{constructor(){super(...arguments),this.name="",this.label="",this.value=[],this.randomID=Math.floor(12345*Math.random()),this.input_id=this.id+"_"+this.randomID,this.options=[],this.ajaxFetchToken="",this.ajaxFetchUrl=null,this._ajaxHeader=null,this.ajaxFetchProcessResponse=null,this.ajaxFetchUrlParams=[],this.startSearchPage=0,this.startNumber=10,this.rowsPerPage=10,this.totalShowing=10,this.showSelectorLoaded=!1}set ajaxHeader(e){this._ajaxHeader=e,this.requestUpdate()}get ajaxHeader(){return this._ajaxHeader}connectedCallback(){super.connectedCallback(),this.value=Array.isArray(this.value)?this.value:[],setInterval((()=>{void 0===this.selectSelector?(this.selectSelector=document.querySelectorAll("select-input>select[input_id="+this.input_id+"]"),this.$selectSelector=r(this.selectSelector)):this.showDropdownAlt()})),this.options=this.options.map((e=>{const t=e.id;let o=!1;return this.value.forEach((e=>{const r=e.id;o=t===r})),e.selected=o,e}))}render(){return this.multiple?this.required?i.html`
+          <select input_id="${this.input_id}" id="${this.id}" name="${this.name}[]" placeholder="${this.label}" multiple required>
+            ${this.options.map((e=>{const t=void 0===e.isSelected?e.selected:e.isSelected;return!0===t||"true"===t?i.html`
+                  <option value="${e.id}" selected>${e.name}</option>
+                `:i.html`
+                  <option value="${e.id}">${e.name}</option>
+                `}))}
+          </select>
+        `:i.html`
+          <select input_id="${this.input_id}" id="${this.id}" name="${this.name}[]" placeholder="${this.label}" multiple>
+            ${this.options.map((e=>{const t=void 0===e.isSelected?e.selected:e.isSelected;return!0===t||"true"===t?i.html`
+                  <option value="${e.id}" selected>${e.name}</option>
+                `:i.html`
+                  <option value="${e.id}">${e.name}</option>
+                `}))}
+          </select>
+        `:this.required?i.html`
+          <select input_id="${this.input_id}" id="${this.id}" name="${this.name}" placeholder="${this.label}" required>
+            ${this.options.map((e=>{const t=void 0===e.isSelected?e.selected:e.isSelected;return!0===t||"true"===t?i.html`
+                  <option value="${e.id}" selected>${e.name}</option>
+                `:i.html`
+                  <option value="${e.id}">${e.name}</option>
+                `}))}
+          </select>
+        `:i.html`
+          <select input_id="${this.input_id}" id="${this.id}" name="${this.name}" placeholder="${this.label}">
+            ${this.options.map((e=>{const t=void 0===e.isSelected?e.selected:e.isSelected;return!0===t||"true"===t?i.html`
+                  <option value="${e.id}" selected>${e.name}</option>
+                `:i.html`
+                  <option value="${e.id}">${e.name}</option>
+                `}))}
+          </select>
+        `}firstUpdated(){}formatRepo(e){return e.loading?e.text:r(this.value.map((t=>{const o=Number(e.id)===t.id?"selected='true'":"";return'<option value="'+e.id+'" '+o+">"+e.text+"</option>"})))}formatRepoSelection(e){return e.full_name||e.text}_start(e,t){const o=this;return this.startSearchPage=isNaN(e.page)?0:e.page,this.startSearchPage=0===this.startSearchPage?this.startSearchPage:this.startSearchPage*t,r(".select2-search__field").on("keyup",(function(e){r(o.selectSelector).empty(),o.startSearchPage=0})),o.startSearchPage}showDropdownAlt(){const e=this;let t=this.totalShowing,o=this.startSearchPage;if(!1===this.showSelectorLoaded){if(this.showSelectorLoaded=!0,null===this.ajaxFetchUrl)this.selectSelector.forEach((e=>{r(e).select2({closeOnSelect:!1,placeholder:this.label})}));else{let i={"Access-Control-Allow-Origin":"*/*",Accept:"application/json, text/plain, */*","Content-Type":"application/json"};for(const e in this.ajaxHeader)i[e]=this.ajaxHeader[e];this.selectSelector.forEach((s=>{r(s).select2({closeOnSelect:!1,ajax:{url:e.ajaxFetchUrl,dataType:"json",delay:250,data:function(i){const s=function(i,s){return o=isNaN(i.page)?0:i.page,o=0===o?o:o*t,r(".select2-search__field").on("keyup",(function(i){r(e.selectSelector).empty(),o=0,t=0})),o}(i),a=function(o,i){let s=isNaN(o.page)?1:o.page+1;return s=0===s?1:s,r(".select2-search__field").on("keyup",(function(o){r(e.selectSelector).empty(),s=0,t=0})),s}(i);let l={search:i.term,start:s,page:a};return e.ajaxFetchUrlParams.forEach((e=>{l[e.param]=e.value})),l},headers:i,processResults:(e,o)=>{const r=null===this.ajaxFetchProcessResponse?this._processResults(e,o):this.ajaxFetchProcessResponse(e,o);return t+=r.results.length,{results:r.results,pagination:{more:t<r.total}}},cache:!0},placeholder:this.label}).on("select2:opening",(e=>{o=0,t=0}))}))}this.querySelectorAll(".select2-container").forEach((e=>{e.setAttribute("style","width: 100% !important; pointer-events: auto !important;")}))}}_processResults(e,t){const o=e;t.page=t.page||0;let r=[];if(!1===o.error){var i=o.data;for(let e=0;e<i.length;e++){const t=i[e],o={id:t.id,text:t.fullName};r.includes(o)||r.push(o)}}return this.totalShowing+=r.length,{results:r,total:o.total,totalShowing:this.totalShowing}}createRenderRoot(){return this}};n.styles=[i.css`
+      .select2-container {
+        pointer-events: auto !important;
+      }
+    `],a([(0,s.property)({type:String}),l("design:type",String)],n.prototype,"name",void 0),a([(0,s.property)({type:String}),l("design:type",String)],n.prototype,"label",void 0),a([(0,s.property)({type:Array}),l("design:type",Array)],n.prototype,"value",void 0),a([(0,s.property)({type:Number}),l("design:type",Number)],n.prototype,"randomID",void 0),a([(0,s.property)({type:String}),l("design:type",String)],n.prototype,"input_id",void 0),a([(0,s.property)({type:Array}),l("design:type",Array)],n.prototype,"options",void 0),a([(0,s.property)({type:Boolean}),l("design:type",Boolean)],n.prototype,"required",void 0),a([(0,s.property)({type:String}),l("design:type",String)],n.prototype,"ajaxFetchToken",void 0),a([(0,s.property)({type:String}),l("design:type",String)],n.prototype,"ajaxFetchUrl",void 0),a([(0,s.property)({type:Object}),l("design:type",Function)],n.prototype,"ajaxFetchProcessResponse",void 0),a([(0,s.property)({type:Array}),l("design:type",Array)],n.prototype,"ajaxFetchUrlParams",void 0),a([(0,s.property)({type:Number}),l("design:type",Number)],n.prototype,"startSearchPage",void 0),a([(0,s.property)({type:Boolean}),l("design:type",Boolean)],n.prototype,"multiple",void 0),a([(0,s.property)({type:Number}),l("design:type",Number)],n.prototype,"startNumber",void 0),a([(0,s.property)({type:Number}),l("design:type",Number)],n.prototype,"rowsPerPage",void 0),a([(0,s.property)({type:Number}),l("design:type",Number)],n.prototype,"totalShowing",void 0),a([(0,s.property)({type:Boolean}),l("design:type",Boolean)],n.prototype,"showSelectorLoaded",void 0),n=a([(0,s.customElement)("select-input")],n)}}]);
+//# sourceMappingURL=src_addons_widgets_form_new_select_ts.js.map

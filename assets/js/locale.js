@@ -57,7 +57,7 @@
                     const oldHtml = bg.innerHTML;
                     var imgUrl = $(bg).attr("background-image");
                     _this.bgImgUrlList.push(bg);
-                    console.log({ "_this.bgImgUrlList": _this.bgImgUrlList });
+                    // console.log({ "_this.bgImgUrlList": _this.bgImgUrlList });
 
                     if ($(bg).attr("style") == undefined) {
                         $(bg).attr("style", "");
@@ -66,7 +66,7 @@
                     // $(bg).attr("style", $(bg).attr("style") + "; background-position: 50% 50%;")
                     // $(bg).attr("style", $(bg).attr("style") + "; background-repeat: no-repeat;")
                     bg.innerHTML = "<span img=\"act\"><a href=\"" + imgUrl + "\">" + oldHtml + "</a></span>";
-                    console.log({ _____: $(bg).attr("style") })
+                    // console.log({ _____: $(bg).attr("style") })
                 }
             });
             _this._s(bgs + " .widget-content.p-3", (changeBG) => {
@@ -80,16 +80,16 @@
 
             _this._s(img, (bg) => {
                 var noPop = $(bg).attr("no-popup");
-                console.log({ noPop })
+                // console.log({ noPop })
                 if (noPop === false || noPop === undefined) {
                     const oldHtml = bg.parentElement.innerHTML;
                     var imgUrl = $(bg).attr("src");
                     if (!_this.popImgUrlList.includes(imgUrl)) {
                         _this.popImgUrlList.push(imgUrl);
-                        console.log({ "_this.popImgUrlList": _this.popImgUrlList });
+                        // console.log({ "_this.popImgUrlList": _this.popImgUrlList });
 
                         bg.parentElement.innerHTML = "<span img=\"act\"><a href=\"" + imgUrl + "\">" + oldHtml + "</a></span>";
-                        console.log($(bg).attr("style"));
+                        // console.log($(bg).attr("style"));
                     }
                 }
             });
@@ -97,7 +97,7 @@
 
         _noneTablePagin(data, callbackFx = false) {
 
-            console.log({ data: data });
+            // console.log({ data: data });
             const _this = this;
             const network = (data.network == undefined) ? { url: "", type: "GET" } : data.network;
             const url = (network.url == undefined) ? "" : network.url;
@@ -160,7 +160,7 @@
                             success: function(response, pagination) {
                                 response = JSON.parse(response);
                                 response = (typeof response['aaData'][0] !== "undefined") ? response['aaData'] : [];
-                                console.log({ response, pagination }, );
+                                // console.log({ response, pagination }, );
                                 done(response);
                             }
                         });
@@ -221,7 +221,7 @@
 
         noneTablePagin(data, callbackFx = false) {
 
-            console.log({ data: data });
+            // console.log({ data: data });
             const _this = this;
             const network = (data.network == undefined) ? { url: "", type: "GET" } : data.network;
             const url = (network.url == undefined) ? "" : network.url;
@@ -564,7 +564,7 @@
             });
 
             function doS2($select, account_id, placeholder) {
-                console.log({ "smbfl-doS2": $select });
+                // console.log({ "smbfl-doS2": $select });
                 const rowsPerPage = 10;
                 let totalShowing = 0;
 
@@ -572,9 +572,9 @@
                     let startNumber = isNaN(params.page) ? 0 : params.page;
                     startNumber = startNumber === 0 ? startNumber : startNumber * rowsPerPage;
                     $('.select2-search__field').on('keyup', function($this) {
-                        console.log({ "smbfl-options-1": $select.options });
+                        // console.log({ "smbfl-options-1": $select.options });
                         $($select).empty();
-                        console.log({ "smbfl-options-2": $select.options });
+                        // console.log({ "smbfl-options-2": $select.options });
 
                         startNumber = 0
                         totalShowing = 0;
@@ -608,7 +608,7 @@
                             let processedData = [];
                             if (response.error === false) {
                                 var _data = response['data'];
-                                console.log({ "smbfl-_data": _data });
+                                // console.log({ "smbfl-_data": _data });
                                 for (let i = 0; i < _data.length; i++) {
                                     const item = _data[i];
                                     const id = item['id'];
@@ -624,11 +624,11 @@
                                 }
                             }
                             totalShowing += processedData.length;
-                            console.log({
-                                "smbfl-processedData": processedData,
-                                "response.total": response.total,
-                                "totalShowing": totalShowing
-                            });
+                            // console.log({
+                            //     "smbfl-processedData": processedData,
+                            //     "response.total": response.total,
+                            //     "totalShowing": totalShowing
+                            // });
                             return {
                                 results: processedData,
                                 pagination: {
@@ -680,7 +680,7 @@
                 for (let _ = 0; _ < $select.classList.length; _++) {
                     const classMember = $select.classList[_];
 
-                    console.log({ classMember, "===": 'super-selector-selectNew' });
+                    // console.log({ classMember, "===": 'super-selector-selectNew' });
                     if (classMember === 'super-selector-selectNew') {
                         selectNewExists = true;
                     }
@@ -724,7 +724,7 @@
             }
 
             function doS2($select) {
-                console.log({ "doS2": $select });
+                // console.log({ "doS2": $select });
                 $($select).select2({ closeOnSelect: false });
                 $($select).addClass('form-control-select2');
                 // $('[data-select2-id]').attr('style', 'width: auto !important;');
@@ -755,7 +755,7 @@
             let $selects = $(selector);
             for (let i = 0; i < $selects.length; i++) {
                 const $select = $selects[i];
-                console.log({ "$select.classList -- 222": $select.classList, "": $select });
+                // console.log({ "$select.classList -- 222": $select.classList, "": $select });
                 if (!$select.classList.contains('form-control-select2')) {
                     $($select).removeClass('select2-hidden-accessible');
                     doS2($select, i + 1);
@@ -763,11 +763,10 @@
             }
 
             function doS2($select, index) {
-                console.log("2222222222222222222222222222222222222222222222222222222");
                 const _newClass = _title + '-select-' + index;
                 if ($(".this_" + _newClass).length) {
                     $($select).removeClass(_newClass);
-                    console.log({ "$(.this_newClass)": $(".this_" + _newClass) });
+                    // console.log({ "$(.this_newClass)": $(".this_" + _newClass) });
                     document.querySelector(".this_" + _newClass).remove();
                 }
                 const newClass = title + '-select-' + index;
@@ -1131,7 +1130,7 @@
                 // timerProgressBar: true,
                 preConfirm: (savePackage) => {
                     const submit_form = document.querySelector(selector);
-                    console.log(submit_form)
+                    // console.log(submit_form)
                     Swal.fire({
                         title: '<strong>Error(s)</strong>',
                         // type: 'error',
@@ -1224,7 +1223,7 @@
                 // timerProgressBar: true,
                 preConfirm: (savePackage) => {
                     const submit_form = document.querySelector(selector);
-                    console.log(submit_form)
+                    // console.log(submit_form)
                     Swal.fire({
                         title: '<strong>Error(s)</strong>',
                         // type: 'error',
@@ -1316,7 +1315,7 @@
                 timerProgressBar: true,
                 preConfirm: (savePackage) => {
                     const submit_form = document.querySelector(selector);
-                    console.log(submit_form)
+                    // console.log(submit_form)
                     Swal.showLoading()
                         // timerInterval = setInterval(() => {
                         //     const content = Swal.getContent();
@@ -1651,7 +1650,7 @@
             let _this = this;
             class region {
                 district(r) {
-                    console.log($(s2));
+                    // console.log($(s2));
                     $(s2).html("<option value=''>Select a District</option>");
                     _this.disable_and_loader(s2, sLoader, true, url);
                     $.get(url + "assets/php/custom/locale.php?cc=get_district&region=" + r, function(a) {
@@ -1778,9 +1777,9 @@
             })
         }
         kickOut() {
-            console.log("HOST")
+            // console.log("HOST")
             this.fetchRelay({ url: "./logout" }, function(response) {
-                console.log(response);
+                // console.log(response);
             });
         }
     }

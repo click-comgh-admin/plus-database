@@ -48,7 +48,7 @@ class CustomForms2
         $this->directory = DIRECTORY;
         $this->template_file = $template_file;
 
-        $ccApi = new ClickComApi(API_BASE_URL, LocBaseUrl);
+        $ccApi = new ClickComApi(API_BASE_URL, API_V2_BASE_URL, LocBaseUrl);
 
         $get_string = "system-questions/types";
         $this->question_types = $ccApi->fetch_from($get_string, function ($question_types) {
