@@ -23,16 +23,16 @@
 	// }
 
 	// // $_SERVER['SERVER_NAME'] = "app.districtdb.com";
-	// $_SERVER['SERVER_NAME'] = "clocking.akwaabaapp.com";
+	// $_SERVER['SERVER_NAME'] = "database.akwaabaapp.com";
 
 	// // if ($_SERVER['SERVER_NAME'] == "app.districtdb.com") {
 	// // 	define('CLIENT_BASE_URL', "https://app.districtdb.com/");
-	// // } else if ($_SERVER['SERVER_NAME'] == "clocking.akwaabaapp.com") {
-	// // 	define('CLIENT_BASE_URL', "https://clocking.akwaabaapp.com/");
+	// // } else if ($_SERVER['SERVER_NAME'] == "database.akwaabaapp.com") {
+	// // 	define('CLIENT_BASE_URL', "https://database.akwaabaapp.com/");
 	// // } else if ($_SERVER['SERVER_NAME'] == "admin.clockintoday.com") {
 	// // 	define('CLIENT_BASE_URL', "https://admin.clockintoday.com/");
 	// // } else {
-	// // 	define('CLIENT_BASE_URL', "https://clocking.akwaabaapp.com/");
+	// // 	define('CLIENT_BASE_URL', "https://database.akwaabaapp.com/");
 	// // }
 	// // print_r($_SERVER);
 

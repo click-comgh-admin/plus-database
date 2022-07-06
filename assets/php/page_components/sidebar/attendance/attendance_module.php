@@ -9,27 +9,6 @@
     </a>
 </li>
 <li>
-    <a href="<?= CLIENT_BASE_URL; ?>attendance/clocking/attendance-clocking" mm-active="attendance-clocking">
-        <i class="metismenu-icon pe-7s-check"></i> Attendance Clocking
-    </a>
-</li>
-<?php /*
-<li>
-    <?php
-        $get_string = "attendance/clocking/web-clocking-count?account_id=".AccountInfoId;
-        $web_clocking_count = $ccApi->fetch_from($get_string=$get_string, function($web_clocking_count)
-        {
-            return isset($web_clocking_count[0]['total_count'])? (int)$web_clocking_count[0]['total_count']: 0;
-        }, $debug = false);
-    ?>
-    <a href="<?= CLIENT_BASE_URL; ?>attendance/clocking/attendance-approvals" mm-active="attendance-approvals">
-        <i class="metismenu-icon pe-7s-check"></i> Attendance Approvals
-        <?= ($web_clocking_count > 0)? 
-            '<span class="badge badge-warning">'.$web_clocking_count.'</span>': ""; ?>
-    </a>
-</li>
-*/ ?>
-<li>
     <a href="<?= CLIENT_BASE_URL; ?>attendance/v2/clocking/clocker" mm-active="clocker">
         <i class="metismenu-icon pe-7s-check"></i> Attendance Clocking
     </a>

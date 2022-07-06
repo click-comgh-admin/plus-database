@@ -14,7 +14,7 @@ $config['DEFAULT']['STATS_FILE'] = dirname(__DIR__) . "/webpack-stats.json";
 if (($_SERVER['HTTP_HOST'] === '192.168.173.1:82') || ($_SERVER['HTTP_HOST'] === '45.80.152.213')) {
     define('_ASSET_REMOVE_STR_', ["/client_dashboard"]);
 } else {
-    define('_ASSET_REMOVE_STR_', []);
+    define('_ASSET_REMOVE_STR_', ["/client_dashboard"]);
 }
 
 require_once 'webpack_loader/utils.php';
