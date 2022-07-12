@@ -1444,14 +1444,14 @@ img, video {
   color: rgba(248, 113, 113, var(--tw-text-opacity)) !important;
 }
 
-.text-green-600 {
-  --tw-text-opacity:1;
-  color: rgba(5, 150, 105, var(--tw-text-opacity));
-}
-
 .text-akwaaba-orange-light {
   --tw-text-opacity:1;
   color: rgba(255, 161, 91, var(--tw-text-opacity));
+}
+
+.text-green-600 {
+  --tw-text-opacity:1;
+  color: rgba(5, 150, 105, var(--tw-text-opacity));
 }
 
 .underline {
@@ -1588,14 +1588,6 @@ body {
 @media (min-width: 640px) {
   .sm\:hidden {
     display: none;
-  }
-
-  .sm\:flex-row {
-    flex-direction: row;
-  }
-
-  .sm\:flex-col {
-    flex-direction: column;
   }
 }
 @media (min-width: 768px) {

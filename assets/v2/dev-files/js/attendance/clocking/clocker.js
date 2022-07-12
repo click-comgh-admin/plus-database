@@ -30,7 +30,7 @@
         <div class="my-1 flex flex-col items-end">
           <div class="col-md-6 col-lg-4 flex flex-col items-end">
             <h4 class="font-semibold my-2">Select Date</h4>
-            <mwc-textfield name="setClockingTimeBtn" type="time" step="1" class="w-full" label="Select Clocking Time"
+            <mwc-textfield name="setClockingTimeBtn" type="datetime-local" step="1" class="w-full" label="Select Clocking Time"
               value="${this.clockingTimeValue}" outlined required>
             </mwc-textfield><br>
             <mwc-button raised label="Set Clocking Time" @click="${this.setClockingTimeBtn}"></mwc-button>

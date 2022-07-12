@@ -122,6 +122,11 @@
                     `}
                   </div>
                   <div class="col-md-6 col-lg-6">
+                    <h4 class="font-semibold my-2">Select Meeting Span (in days) <span class="text-xs text-akwaaba-orange-light">How long the meeting/ event will last (default is 1 day)</span></h4> 
+                    <mwc-textfield name="meetingSpan" type="number" min="1" class="w-full" id="meetingSpan" value="${void 0===e.id?"1":String(e.meetingSpan)}" label="Select Meeting Span" outlined required>
+                    </mwc-textfield>
+                  </div>
+                  <div class="col-md-6 col-lg-6">
                     <h4 class="font-semibold my-2">Select Start Time</h4> 
                     <mwc-textfield name="startTime" type="time" class="w-full" id="startTime" value="${void 0===e.id?"":String(e.startTime)}" label="Select Start Time" outlined required>
                     </mwc-textfield>
