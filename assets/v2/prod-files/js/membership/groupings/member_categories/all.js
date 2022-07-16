@@ -55,7 +55,7 @@
               <a class="text-blue-700" href="${d.t.URLS.PDB_CLIENT}groupings/member-category/edit-member-category?member-category-id=${e.id}">${e.category}</a>
             </th>
             <td class="mdc-data-table__cell mdc-data-table__cell--numeric !py-1" scope="row">
-              ${1===e.id?a.dy``:a.dy`
+              ${1===e.id||2===e.id||3===e.id?a.dy``:a.dy`
                 <mwc-icon-button class="ml-1 danger" icon="delete_forever" delete-this-item="${e.id}"
                   @click="${this.deleteMemberCategory}"></mwc-icon-button>
               `}

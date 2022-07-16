@@ -171,7 +171,7 @@ $ccApi->user_info($type = "client", $account_id = null,
                             }
                         );
                     }
-                }
+                }, false
             );
         }
     }

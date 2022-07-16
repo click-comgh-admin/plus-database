@@ -2,8 +2,8 @@
     global $ccApi;
 	$account_login = $ccApi->account_login($all="clients/login", $post=$_POST, function($account_login) {
 		return $account_login;
-	}, $debug = 1);
-	print_r($account_login);
+	}, $debug = false);
+	// print_r($account_login);
 
 	if ($account_login['error'] == true) { ?>
         <div class="alert alert-warning alert-dismissible fade show shadow shadow-lg pb-0" role="alert">

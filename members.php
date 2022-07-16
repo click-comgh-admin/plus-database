@@ -1,6 +1,7 @@
 <?php
 	require_once 'assets/php/include.php';
 	require_once 'defs.php';
+	require_once 'assets/v2/php/webpack.php';
 
 	if (!isset($_COOKIE['pdb-client-user']) || empty($_COOKIE['pdb-client-user'])) {
 		header("Location: " . ClientBaseUrl . "login");
@@ -8,10 +9,21 @@
     
     define('PAGE_TITLE', "Members");
     define('PAGE_DESC', "View ".$account_info['pdc_name']." Members");
+
+    define("_Webpack_Pack_", Get_Webpack_Tags(
+        'membership/members/profile_photo', prefix: IN_PRODUCTION_MODE_PREFIX)
+    );
 ?>
 <!doctype html>
 <html lang="en">
-    <?php require_once 'assets/php/page_components/header/head.php'; ?>
+    <?php 
+        $cssFiles = '';
+        foreach (_Webpack_Pack_['css'] as $key => $cssFile) {
+            $cssFiles .= $cssFile;
+        }
+        define('WEB_PACK_CSS_FILES', $cssFiles);
+        require_once 'assets/php/page_components/header/head.php';
+    ?>
     <body>
         <div class="app-container app-theme-white body-tabs-shadow fixed-sidebar fixed-header">
             <?php require_once 'assets/php/page_components/header/navbar.php'; ?>
@@ -324,9 +336,17 @@
                     </div>
                     <?php require_once 'assets/php/page_components/footer/footer.php'; ?>
                 </div>
-                
             </div>
         </div>
-        <?php require_once 'assets/php/page_components/footer/js.php'; ?>
+        <?php
+            $jsFiles = '';
+            foreach (_Webpack_Pack_Shared_['js'] as $key => $jsFile) {
+                $jsFiles .= $jsFile;
+            }
+            foreach (_Webpack_Pack_['js'] as $key => $jsFile) {
+                $jsFiles .= $jsFile;
+            }
+            define('WEB_PACK_JS_FILES', $jsFiles);
+            require_once 'assets/php/page_components/footer/js.php'; ?>
     </body>
 </html>

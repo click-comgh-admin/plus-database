@@ -46,9 +46,21 @@
             </a>
         </li>
         <li>
+            <a href="<?= CLIENT_BASE_URL; ?>members?group" mm-active="members">
+                <i class="metismenu-icon"></i>
+                Group Members
+            </a>
+        </li>
+        <li>
             <a href="<?= CLIENT_BASE_URL; ?>subgroups" mm-active="subgroups">
                 <i class="metismenu-icon"></i>
                 <?= (AccountInfoCategory === 10) ? "Unit(s)": "Sub-Groups"; ?>
+            </a>
+        </li>
+        <li>
+            <a href="<?= CLIENT_BASE_URL; ?>members?subgroup" mm-active="members">
+                <i class="metismenu-icon"></i>
+                Sub-Group Members
             </a>
         </li>
         <?php

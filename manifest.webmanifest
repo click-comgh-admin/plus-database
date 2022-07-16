@@ -1,6 +1,6 @@
 {
-    "name": "Plus Database Client",
-    "short_name": "PlusDatabaseClient",
+    "name": "Akwaaba-App Database Client",
+    "short_name": "Akwaaba-App Database",
     "start_url": "/",
     "display": "standalone",
     "background_color": "#f97817",

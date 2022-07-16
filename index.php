@@ -127,8 +127,8 @@
                                                 {
                                                     return isset($spaces[0])? $spaces[0]: [];
                                                 }, $debug = false);
-                                                $pdcfmf_space = isset($spaces['pdcfmf_space'])? $spaces['pdcfmf_space']: 1;
-                                                $pdcfmf_space_used = isset($spaces['pdcfmf_space_used'])? $spaces['pdcfmf_space_used']: 1;
+                                                $pdcfmf_space = @isset($spaces['pdcfmf_space'])? $spaces['pdcfmf_space']: 1;
+                                                $pdcfmf_space_used = @isset($spaces['pdcfmf_space_used'])? $spaces['pdcfmf_space_used']: 1;
                                                 $fmSpacePercent = @(int)((floatval($pdcfmf_space_used)*100)/floatval($pdcfmf_space));
                                                 $progressBarVar = ($fmSpacePercent <= 25) ? "success": "danger";
                                                 $progressBarVar = ($fmSpacePercent > 25 && $fmSpacePercent <= 50) ? "info": $progressBarVar;
