@@ -37,18 +37,20 @@
     </a>
 </li>
 <li>
-    <?php
-        $get_string = "attendance/clocking/user-devices-request-count?account_id=".AccountInfoId;
-        $user_devices_request_count = $ccApi->fetch_from($get_string=$get_string,
-            function($user_devices_request_count)
-        {
-            return isset($user_devices_request_count[0]['total_count'])
-                ? (int)$user_devices_request_count[0]['total_count']: 0;
-        }, $debug = false);
-    ?>
-    <a href="<?= CLIENT_BASE_URL; ?>attendance/settings/user-device-request" mm-active="user-device-request">
-        <i class="metismenu-icon pe-7s-phone"></i> User Device Requests
-        <?= ($user_devices_request_count > 0)? 
-            '<span class="badge badge-warning">'.$user_devices_request_count.'</span>': ""; ?>
+    <a href="#" mm-active="device-requests|device-settings">
+        <i class="metismenu-icon pe-7s-phone"></i> Clocking Devices
+        <i class="metismenu-state-icon pe-7s-angle-down caret-left"></i>
     </a>
+    <ul>
+        <li>
+            <a href="<?= CLIENT_BASE_URL; ?>attendance/v2/devices/device-requests" mm-active="device-requests">
+                <i class="metismenu-icon pe-7s-phone"></i> Device Requests
+            </a>
+        </li>
+        <li>
+            <a href="<?= CLIENT_BASE_URL; ?>attendance/v2/devices/device-settings" mm-active="device-settings">
+                <i class="metismenu-icon pe-7s-phone"></i> User Devices
+            </a>
+        </li>
+    </ul>
 </li>

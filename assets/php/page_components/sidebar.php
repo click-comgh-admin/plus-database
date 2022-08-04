@@ -44,7 +44,7 @@
                         </span>
                     </div>
                     <div class="scrollbar-sidebar">
-                        <div class="app-sidebar__inner">
+                        <div class="app-sidebar__inner" style="margin-bottom: 100px;">
                             <ul class="vertical-nav-menu">
                                 <li class="app-sidebar__heading mb-0 pb-0">
                                     <span>

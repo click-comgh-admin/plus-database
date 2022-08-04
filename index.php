@@ -159,7 +159,11 @@
                                                 </div>
                                             </div>
                                             <div class="widget-content-left fsize-1">
-                                                <div class="text-muted opacity-6">File Manager Space <i>// <?= $fM->storage_space($spaces['pdcfmf_space_used']); ?> of <?= $fM->storage_space($spaces['pdcfmf_space']); ?></i></div>
+                                                <?php
+                                                    $pdcfmf_space_used = isset($spaces['pdcfmf_space_used'])? $spaces['pdcfmf_space_used']: 0;
+                                                    $pdcfmf_space = isset($spaces['pdcfmf_space'])? $spaces['pdcfmf_space']: 0;
+                                                ?>
+                                                <div class="text-muted opacity-6">File Manager Space <i>// <?= $fM->storage_space($pdcfmf_space_used); ?> of <?= $fM->storage_space($pdcfmf_space); ?></i></div>
                                             </div>
                                         </div>
                                     </div>

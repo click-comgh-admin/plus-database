@@ -36,6 +36,16 @@
       "path": "C:\\xampp\\htdocs\\AMG\\plus_db\\client_dashboard\\assets\\v2\\prod-files\\js\\home\\dashboard.js",
       "publicPath": "https://database.akwaabaapp.com/../../../client_dashboard/assets/v2/prod-files/js/home/dashboard.js"
     },
+    "../../../client_dashboard/assets/v2/prod-files/js/attendance/devices/requests.js": {
+      "name": "../../../client_dashboard/assets/v2/prod-files/js/attendance/devices/requests.js",
+      "path": "C:\\xampp\\htdocs\\AMG\\plus_db\\client_dashboard\\assets\\v2\\prod-files\\js\\attendance\\devices\\requests.js",
+      "publicPath": "https://database.akwaabaapp.com/../../../client_dashboard/assets/v2/prod-files/js/attendance/devices/requests.js"
+    },
+    "../../../client_dashboard/assets/v2/prod-files/js/attendance/devices/settings.js": {
+      "name": "../../../client_dashboard/assets/v2/prod-files/js/attendance/devices/settings.js",
+      "path": "C:\\xampp\\htdocs\\AMG\\plus_db\\client_dashboard\\assets\\v2\\prod-files\\js\\attendance\\devices\\settings.js",
+      "publicPath": "https://database.akwaabaapp.com/../../../client_dashboard/assets/v2/prod-files/js/attendance/devices/settings.js"
+    },
     "../../../client_dashboard/assets/v2/prod-files/css/attendance/clocking/clocker.css": {
       "name": "../../../client_dashboard/assets/v2/prod-files/css/attendance/clocking/clocker.css",
       "path": "C:\\xampp\\htdocs\\AMG\\plus_db\\client_dashboard\\assets\\v2\\prod-files\\css\\attendance\\clocking\\clocker.css",
@@ -456,10 +466,20 @@
       "path": "C:\\xampp\\htdocs\\AMG\\plus_db\\client_dashboard\\assets\\v2\\prod-files\\js\\7724.js",
       "publicPath": "https://database.akwaabaapp.com/../../../client_dashboard/assets/v2/prod-files/js/7724.js"
     },
+    "../../../client_dashboard/assets/v2/prod-files/js/1731.js": {
+      "name": "../../../client_dashboard/assets/v2/prod-files/js/1731.js",
+      "path": "C:\\xampp\\htdocs\\AMG\\plus_db\\client_dashboard\\assets\\v2\\prod-files\\js\\1731.js",
+      "publicPath": "https://database.akwaabaapp.com/../../../client_dashboard/assets/v2/prod-files/js/1731.js"
+    },
     "../../../client_dashboard/assets/v2/prod-files/js/2989.js": {
       "name": "../../../client_dashboard/assets/v2/prod-files/js/2989.js",
       "path": "C:\\xampp\\htdocs\\AMG\\plus_db\\client_dashboard\\assets\\v2\\prod-files\\js\\2989.js",
       "publicPath": "https://database.akwaabaapp.com/../../../client_dashboard/assets/v2/prod-files/js/2989.js"
+    },
+    "../../../client_dashboard/assets/v2/prod-files/js/479.js": {
+      "name": "../../../client_dashboard/assets/v2/prod-files/js/479.js",
+      "path": "C:\\xampp\\htdocs\\AMG\\plus_db\\client_dashboard\\assets\\v2\\prod-files\\js\\479.js",
+      "publicPath": "https://database.akwaabaapp.com/../../../client_dashboard/assets/v2/prod-files/js/479.js"
     },
     "../../../client_dashboard/assets/v2/prod-files/js/5345.js": {
       "name": "../../../client_dashboard/assets/v2/prod-files/js/5345.js",
@@ -501,15 +521,25 @@
       "path": "C:\\xampp\\htdocs\\AMG\\plus_db\\client_dashboard\\assets\\v2\\prod-files\\css\\6553.css",
       "publicPath": "https://database.akwaabaapp.com/../../../client_dashboard/assets/v2/prod-files/css/6553.css"
     },
-    "../../../client_dashboard/assets/v2/prod-files/js/8462.js": {
-      "name": "../../../client_dashboard/assets/v2/prod-files/js/8462.js",
-      "path": "C:\\xampp\\htdocs\\AMG\\plus_db\\client_dashboard\\assets\\v2\\prod-files\\js\\8462.js",
-      "publicPath": "https://database.akwaabaapp.com/../../../client_dashboard/assets/v2/prod-files/js/8462.js"
+    "../../../client_dashboard/assets/v2/prod-files/js/6773.js": {
+      "name": "../../../client_dashboard/assets/v2/prod-files/js/6773.js",
+      "path": "C:\\xampp\\htdocs\\AMG\\plus_db\\client_dashboard\\assets\\v2\\prod-files\\js\\6773.js",
+      "publicPath": "https://database.akwaabaapp.com/../../../client_dashboard/assets/v2/prod-files/js/6773.js"
     },
     "../../../client_dashboard/assets/v2/prod-files/css/2585.css": {
       "name": "../../../client_dashboard/assets/v2/prod-files/css/2585.css",
       "path": "C:\\xampp\\htdocs\\AMG\\plus_db\\client_dashboard\\assets\\v2\\prod-files\\css\\2585.css",
       "publicPath": "https://database.akwaabaapp.com/../../../client_dashboard/assets/v2/prod-files/css/2585.css"
+    },
+    "../../../client_dashboard/assets/v2/prod-files/css/2351.css": {
+      "name": "../../../client_dashboard/assets/v2/prod-files/css/2351.css",
+      "path": "C:\\xampp\\htdocs\\AMG\\plus_db\\client_dashboard\\assets\\v2\\prod-files\\css\\2351.css",
+      "publicPath": "https://database.akwaabaapp.com/../../../client_dashboard/assets/v2/prod-files/css/2351.css"
+    },
+    "../../../client_dashboard/assets/v2/prod-files/js/2351.js": {
+      "name": "../../../client_dashboard/assets/v2/prod-files/js/2351.js",
+      "path": "C:\\xampp\\htdocs\\AMG\\plus_db\\client_dashboard\\assets\\v2\\prod-files\\js\\2351.js",
+      "publicPath": "https://database.akwaabaapp.com/../../../client_dashboard/assets/v2/prod-files/js/2351.js"
     },
     "../../../client_dashboard/assets/v2/prod-files/css/6236.css": {
       "name": "../../../client_dashboard/assets/v2/prod-files/css/6236.css",
@@ -536,16 +566,6 @@
       "path": "C:\\xampp\\htdocs\\AMG\\plus_db\\client_dashboard\\assets\\v2\\prod-files\\js\\8330.js",
       "publicPath": "https://database.akwaabaapp.com/../../../client_dashboard/assets/v2/prod-files/js/8330.js"
     },
-    "../../../client_dashboard/assets/v2/prod-files/css/2351.css": {
-      "name": "../../../client_dashboard/assets/v2/prod-files/css/2351.css",
-      "path": "C:\\xampp\\htdocs\\AMG\\plus_db\\client_dashboard\\assets\\v2\\prod-files\\css\\2351.css",
-      "publicPath": "https://database.akwaabaapp.com/../../../client_dashboard/assets/v2/prod-files/css/2351.css"
-    },
-    "../../../client_dashboard/assets/v2/prod-files/js/2351.js": {
-      "name": "../../../client_dashboard/assets/v2/prod-files/js/2351.js",
-      "path": "C:\\xampp\\htdocs\\AMG\\plus_db\\client_dashboard\\assets\\v2\\prod-files\\js\\2351.js",
-      "publicPath": "https://database.akwaabaapp.com/../../../client_dashboard/assets/v2/prod-files/js/2351.js"
-    },
     "../../../client_dashboard/assets/v2/prod-files/js/7192.js": {
       "name": "../../../client_dashboard/assets/v2/prod-files/js/7192.js",
       "path": "C:\\xampp\\htdocs\\AMG\\plus_db\\client_dashboard\\assets\\v2\\prod-files\\js\\7192.js",
@@ -571,20 +591,45 @@
       "path": "C:\\xampp\\htdocs\\AMG\\plus_db\\client_dashboard\\assets\\v2\\prod-files\\js\\6141.js",
       "publicPath": "https://database.akwaabaapp.com/../../../client_dashboard/assets/v2/prod-files/js/6141.js"
     },
+    "../../../client_dashboard/assets/v2/prod-files/js/2865.js": {
+      "name": "../../../client_dashboard/assets/v2/prod-files/js/2865.js",
+      "path": "C:\\xampp\\htdocs\\AMG\\plus_db\\client_dashboard\\assets\\v2\\prod-files\\js\\2865.js",
+      "publicPath": "https://database.akwaabaapp.com/../../../client_dashboard/assets/v2/prod-files/js/2865.js"
+    },
+    "../../../client_dashboard/assets/v2/prod-files/js/1731.js.LICENSE.txt": {
+      "name": "../../../client_dashboard/assets/v2/prod-files/js/1731.js.LICENSE.txt",
+      "path": "C:\\xampp\\htdocs\\AMG\\plus_db\\client_dashboard\\assets\\v2\\prod-files\\js\\1731.js.LICENSE.txt",
+      "publicPath": "https://database.akwaabaapp.com/../../../client_dashboard/assets/v2/prod-files/js/1731.js.LICENSE.txt"
+    },
     "../../../client_dashboard/assets/v2/prod-files/js/2459.js.LICENSE.txt": {
       "name": "../../../client_dashboard/assets/v2/prod-files/js/2459.js.LICENSE.txt",
       "path": "C:\\xampp\\htdocs\\AMG\\plus_db\\client_dashboard\\assets\\v2\\prod-files\\js\\2459.js.LICENSE.txt",
       "publicPath": "https://database.akwaabaapp.com/../../../client_dashboard/assets/v2/prod-files/js/2459.js.LICENSE.txt"
+    },
+    "../../../client_dashboard/assets/v2/prod-files/js/2865.js.LICENSE.txt": {
+      "name": "../../../client_dashboard/assets/v2/prod-files/js/2865.js.LICENSE.txt",
+      "path": "C:\\xampp\\htdocs\\AMG\\plus_db\\client_dashboard\\assets\\v2\\prod-files\\js\\2865.js.LICENSE.txt",
+      "publicPath": "https://database.akwaabaapp.com/../../../client_dashboard/assets/v2/prod-files/js/2865.js.LICENSE.txt"
     },
     "../../../client_dashboard/assets/v2/prod-files/js/2989.js.LICENSE.txt": {
       "name": "../../../client_dashboard/assets/v2/prod-files/js/2989.js.LICENSE.txt",
       "path": "C:\\xampp\\htdocs\\AMG\\plus_db\\client_dashboard\\assets\\v2\\prod-files\\js\\2989.js.LICENSE.txt",
       "publicPath": "https://database.akwaabaapp.com/../../../client_dashboard/assets/v2/prod-files/js/2989.js.LICENSE.txt"
     },
+    "../../../client_dashboard/assets/v2/prod-files/js/479.js.LICENSE.txt": {
+      "name": "../../../client_dashboard/assets/v2/prod-files/js/479.js.LICENSE.txt",
+      "path": "C:\\xampp\\htdocs\\AMG\\plus_db\\client_dashboard\\assets\\v2\\prod-files\\js\\479.js.LICENSE.txt",
+      "publicPath": "https://database.akwaabaapp.com/../../../client_dashboard/assets/v2/prod-files/js/479.js.LICENSE.txt"
+    },
     "../../../client_dashboard/assets/v2/prod-files/js/5345.js.LICENSE.txt": {
       "name": "../../../client_dashboard/assets/v2/prod-files/js/5345.js.LICENSE.txt",
       "path": "C:\\xampp\\htdocs\\AMG\\plus_db\\client_dashboard\\assets\\v2\\prod-files\\js\\5345.js.LICENSE.txt",
       "publicPath": "https://database.akwaabaapp.com/../../../client_dashboard/assets/v2/prod-files/js/5345.js.LICENSE.txt"
+    },
+    "../../../client_dashboard/assets/v2/prod-files/js/6773.js.LICENSE.txt": {
+      "name": "../../../client_dashboard/assets/v2/prod-files/js/6773.js.LICENSE.txt",
+      "path": "C:\\xampp\\htdocs\\AMG\\plus_db\\client_dashboard\\assets\\v2\\prod-files\\js\\6773.js.LICENSE.txt",
+      "publicPath": "https://database.akwaabaapp.com/../../../client_dashboard/assets/v2/prod-files/js/6773.js.LICENSE.txt"
     },
     "../../../client_dashboard/assets/v2/prod-files/js/7724.js.LICENSE.txt": {
       "name": "../../../client_dashboard/assets/v2/prod-files/js/7724.js.LICENSE.txt",
@@ -600,11 +645,6 @@
       "name": "../../../client_dashboard/assets/v2/prod-files/js/8330.js.LICENSE.txt",
       "path": "C:\\xampp\\htdocs\\AMG\\plus_db\\client_dashboard\\assets\\v2\\prod-files\\js\\8330.js.LICENSE.txt",
       "publicPath": "https://database.akwaabaapp.com/../../../client_dashboard/assets/v2/prod-files/js/8330.js.LICENSE.txt"
-    },
-    "../../../client_dashboard/assets/v2/prod-files/js/8462.js.LICENSE.txt": {
-      "name": "../../../client_dashboard/assets/v2/prod-files/js/8462.js.LICENSE.txt",
-      "path": "C:\\xampp\\htdocs\\AMG\\plus_db\\client_dashboard\\assets\\v2\\prod-files\\js\\8462.js.LICENSE.txt",
-      "publicPath": "https://database.akwaabaapp.com/../../../client_dashboard/assets/v2/prod-files/js/8462.js.LICENSE.txt"
     },
     "../../../client_dashboard/assets/v2/prod-files/js/938.js.LICENSE.txt": {
       "name": "../../../client_dashboard/assets/v2/prod-files/js/938.js.LICENSE.txt",
@@ -685,11 +725,6 @@
       "name": "../../../client_dashboard/assets/v2/prod-files/js/login.js.LICENSE.txt",
       "path": "C:\\xampp\\htdocs\\AMG\\plus_db\\client_dashboard\\assets\\v2\\prod-files\\js\\login.js.LICENSE.txt",
       "publicPath": "https://database.akwaabaapp.com/../../../client_dashboard/assets/v2/prod-files/js/login.js.LICENSE.txt"
-    },
-    "../../../client_dashboard/assets/v2/prod-files/js/membership/connections/accounts.js.LICENSE.txt": {
-      "name": "../../../client_dashboard/assets/v2/prod-files/js/membership/connections/accounts.js.LICENSE.txt",
-      "path": "C:\\xampp\\htdocs\\AMG\\plus_db\\client_dashboard\\assets\\v2\\prod-files\\js\\membership\\connections\\accounts.js.LICENSE.txt",
-      "publicPath": "https://database.akwaabaapp.com/../../../client_dashboard/assets/v2/prod-files/js/membership/connections/accounts.js.LICENSE.txt"
     },
     "../../../client_dashboard/assets/v2/prod-files/js/membership/groupings/branches/add.js.LICENSE.txt": {
       "name": "../../../client_dashboard/assets/v2/prod-files/js/membership/groupings/branches/add.js.LICENSE.txt",
@@ -790,6 +825,16 @@
       "name": "../../../client_dashboard/assets/v2/prod-files/js/home/dashboard.js.map",
       "path": "C:\\xampp\\htdocs\\AMG\\plus_db\\client_dashboard\\assets\\v2\\prod-files\\js\\home\\dashboard.js.map",
       "publicPath": "https://database.akwaabaapp.com/../../../client_dashboard/assets/v2/prod-files/js/home/dashboard.js.map"
+    },
+    "../../../client_dashboard/assets/v2/prod-files/js/attendance/devices/requests.js.map": {
+      "name": "../../../client_dashboard/assets/v2/prod-files/js/attendance/devices/requests.js.map",
+      "path": "C:\\xampp\\htdocs\\AMG\\plus_db\\client_dashboard\\assets\\v2\\prod-files\\js\\attendance\\devices\\requests.js.map",
+      "publicPath": "https://database.akwaabaapp.com/../../../client_dashboard/assets/v2/prod-files/js/attendance/devices/requests.js.map"
+    },
+    "../../../client_dashboard/assets/v2/prod-files/js/attendance/devices/settings.js.map": {
+      "name": "../../../client_dashboard/assets/v2/prod-files/js/attendance/devices/settings.js.map",
+      "path": "C:\\xampp\\htdocs\\AMG\\plus_db\\client_dashboard\\assets\\v2\\prod-files\\js\\attendance\\devices\\settings.js.map",
+      "publicPath": "https://database.akwaabaapp.com/../../../client_dashboard/assets/v2/prod-files/js/attendance/devices/settings.js.map"
     },
     "../../../client_dashboard/assets/v2/prod-files/css/attendance/clocking/clocker.css.map": {
       "name": "../../../client_dashboard/assets/v2/prod-files/css/attendance/clocking/clocker.css.map",
@@ -1211,10 +1256,20 @@
       "path": "C:\\xampp\\htdocs\\AMG\\plus_db\\client_dashboard\\assets\\v2\\prod-files\\js\\7724.js.map",
       "publicPath": "https://database.akwaabaapp.com/../../../client_dashboard/assets/v2/prod-files/js/7724.js.map"
     },
+    "../../../client_dashboard/assets/v2/prod-files/js/1731.js.map": {
+      "name": "../../../client_dashboard/assets/v2/prod-files/js/1731.js.map",
+      "path": "C:\\xampp\\htdocs\\AMG\\plus_db\\client_dashboard\\assets\\v2\\prod-files\\js\\1731.js.map",
+      "publicPath": "https://database.akwaabaapp.com/../../../client_dashboard/assets/v2/prod-files/js/1731.js.map"
+    },
     "../../../client_dashboard/assets/v2/prod-files/js/2989.js.map": {
       "name": "../../../client_dashboard/assets/v2/prod-files/js/2989.js.map",
       "path": "C:\\xampp\\htdocs\\AMG\\plus_db\\client_dashboard\\assets\\v2\\prod-files\\js\\2989.js.map",
       "publicPath": "https://database.akwaabaapp.com/../../../client_dashboard/assets/v2/prod-files/js/2989.js.map"
+    },
+    "../../../client_dashboard/assets/v2/prod-files/js/479.js.map": {
+      "name": "../../../client_dashboard/assets/v2/prod-files/js/479.js.map",
+      "path": "C:\\xampp\\htdocs\\AMG\\plus_db\\client_dashboard\\assets\\v2\\prod-files\\js\\479.js.map",
+      "publicPath": "https://database.akwaabaapp.com/../../../client_dashboard/assets/v2/prod-files/js/479.js.map"
     },
     "../../../client_dashboard/assets/v2/prod-files/js/5345.js.map": {
       "name": "../../../client_dashboard/assets/v2/prod-files/js/5345.js.map",
@@ -1256,15 +1311,25 @@
       "path": "C:\\xampp\\htdocs\\AMG\\plus_db\\client_dashboard\\assets\\v2\\prod-files\\css\\6553.css.map",
       "publicPath": "https://database.akwaabaapp.com/../../../client_dashboard/assets/v2/prod-files/css/6553.css.map"
     },
-    "../../../client_dashboard/assets/v2/prod-files/js/8462.js.map": {
-      "name": "../../../client_dashboard/assets/v2/prod-files/js/8462.js.map",
-      "path": "C:\\xampp\\htdocs\\AMG\\plus_db\\client_dashboard\\assets\\v2\\prod-files\\js\\8462.js.map",
-      "publicPath": "https://database.akwaabaapp.com/../../../client_dashboard/assets/v2/prod-files/js/8462.js.map"
+    "../../../client_dashboard/assets/v2/prod-files/js/6773.js.map": {
+      "name": "../../../client_dashboard/assets/v2/prod-files/js/6773.js.map",
+      "path": "C:\\xampp\\htdocs\\AMG\\plus_db\\client_dashboard\\assets\\v2\\prod-files\\js\\6773.js.map",
+      "publicPath": "https://database.akwaabaapp.com/../../../client_dashboard/assets/v2/prod-files/js/6773.js.map"
     },
     "../../../client_dashboard/assets/v2/prod-files/css/2585.css.map": {
       "name": "../../../client_dashboard/assets/v2/prod-files/css/2585.css.map",
       "path": "C:\\xampp\\htdocs\\AMG\\plus_db\\client_dashboard\\assets\\v2\\prod-files\\css\\2585.css.map",
       "publicPath": "https://database.akwaabaapp.com/../../../client_dashboard/assets/v2/prod-files/css/2585.css.map"
+    },
+    "../../../client_dashboard/assets/v2/prod-files/css/2351.css.map": {
+      "name": "../../../client_dashboard/assets/v2/prod-files/css/2351.css.map",
+      "path": "C:\\xampp\\htdocs\\AMG\\plus_db\\client_dashboard\\assets\\v2\\prod-files\\css\\2351.css.map",
+      "publicPath": "https://database.akwaabaapp.com/../../../client_dashboard/assets/v2/prod-files/css/2351.css.map"
+    },
+    "../../../client_dashboard/assets/v2/prod-files/js/2351.js.map": {
+      "name": "../../../client_dashboard/assets/v2/prod-files/js/2351.js.map",
+      "path": "C:\\xampp\\htdocs\\AMG\\plus_db\\client_dashboard\\assets\\v2\\prod-files\\js\\2351.js.map",
+      "publicPath": "https://database.akwaabaapp.com/../../../client_dashboard/assets/v2/prod-files/js/2351.js.map"
     },
     "../../../client_dashboard/assets/v2/prod-files/css/6236.css.map": {
       "name": "../../../client_dashboard/assets/v2/prod-files/css/6236.css.map",
@@ -1291,16 +1356,6 @@
       "path": "C:\\xampp\\htdocs\\AMG\\plus_db\\client_dashboard\\assets\\v2\\prod-files\\js\\8330.js.map",
       "publicPath": "https://database.akwaabaapp.com/../../../client_dashboard/assets/v2/prod-files/js/8330.js.map"
     },
-    "../../../client_dashboard/assets/v2/prod-files/css/2351.css.map": {
-      "name": "../../../client_dashboard/assets/v2/prod-files/css/2351.css.map",
-      "path": "C:\\xampp\\htdocs\\AMG\\plus_db\\client_dashboard\\assets\\v2\\prod-files\\css\\2351.css.map",
-      "publicPath": "https://database.akwaabaapp.com/../../../client_dashboard/assets/v2/prod-files/css/2351.css.map"
-    },
-    "../../../client_dashboard/assets/v2/prod-files/js/2351.js.map": {
-      "name": "../../../client_dashboard/assets/v2/prod-files/js/2351.js.map",
-      "path": "C:\\xampp\\htdocs\\AMG\\plus_db\\client_dashboard\\assets\\v2\\prod-files\\js\\2351.js.map",
-      "publicPath": "https://database.akwaabaapp.com/../../../client_dashboard/assets/v2/prod-files/js/2351.js.map"
-    },
     "../../../client_dashboard/assets/v2/prod-files/js/7192.js.map": {
       "name": "../../../client_dashboard/assets/v2/prod-files/js/7192.js.map",
       "path": "C:\\xampp\\htdocs\\AMG\\plus_db\\client_dashboard\\assets\\v2\\prod-files\\js\\7192.js.map",
@@ -1325,6 +1380,11 @@
       "name": "../../../client_dashboard/assets/v2/prod-files/js/6141.js.map",
       "path": "C:\\xampp\\htdocs\\AMG\\plus_db\\client_dashboard\\assets\\v2\\prod-files\\js\\6141.js.map",
       "publicPath": "https://database.akwaabaapp.com/../../../client_dashboard/assets/v2/prod-files/js/6141.js.map"
+    },
+    "../../../client_dashboard/assets/v2/prod-files/js/2865.js.map": {
+      "name": "../../../client_dashboard/assets/v2/prod-files/js/2865.js.map",
+      "path": "C:\\xampp\\htdocs\\AMG\\plus_db\\client_dashboard\\assets\\v2\\prod-files\\js\\2865.js.map",
+      "publicPath": "https://database.akwaabaapp.com/../../../client_dashboard/assets/v2/prod-files/js/2865.js.map"
     }
   },
   "chunks": {
@@ -1362,6 +1422,42 @@
       "../../../client_dashboard/assets/v2/prod-files/css/6236.css",
       "../../../client_dashboard/assets/v2/prod-files/css/home/dashboard.css",
       "../../../client_dashboard/assets/v2/prod-files/js/home/dashboard.js"
+    ],
+    "attendance/devices/requests": [
+      "../../../client_dashboard/assets/v2/prod-files/js/vendors.buffer.js",
+      "../../../client_dashboard/assets/v2/prod-files/js/vendors.material.js",
+      "../../../client_dashboard/assets/v2/prod-files/js/vendors.sweetalert2.js",
+      "../../../client_dashboard/assets/v2/prod-files/js/vendors.jquery.js",
+      "../../../client_dashboard/assets/v2/prod-files/js/vendors.select2.js",
+      "../../../client_dashboard/assets/v2/prod-files/js/vendors.wicg-inert.js",
+      "../../../client_dashboard/assets/v2/prod-files/js/2459.js",
+      "../../../client_dashboard/assets/v2/prod-files/js/7879.js",
+      "../../../client_dashboard/assets/v2/prod-files/js/5291.js",
+      "../../../client_dashboard/assets/v2/prod-files/css/948.css",
+      "../../../client_dashboard/assets/v2/prod-files/css/6553.css",
+      "../../../client_dashboard/assets/v2/prod-files/js/6773.js",
+      "../../../client_dashboard/assets/v2/prod-files/css/2351.css",
+      "../../../client_dashboard/assets/v2/prod-files/js/2351.js",
+      "../../../client_dashboard/assets/v2/prod-files/js/2865.js",
+      "../../../client_dashboard/assets/v2/prod-files/js/attendance/devices/requests.js"
+    ],
+    "attendance/devices/settings": [
+      "../../../client_dashboard/assets/v2/prod-files/js/vendors.buffer.js",
+      "../../../client_dashboard/assets/v2/prod-files/js/vendors.material.js",
+      "../../../client_dashboard/assets/v2/prod-files/js/vendors.sweetalert2.js",
+      "../../../client_dashboard/assets/v2/prod-files/js/vendors.jquery.js",
+      "../../../client_dashboard/assets/v2/prod-files/js/vendors.select2.js",
+      "../../../client_dashboard/assets/v2/prod-files/js/vendors.wicg-inert.js",
+      "../../../client_dashboard/assets/v2/prod-files/js/2459.js",
+      "../../../client_dashboard/assets/v2/prod-files/js/7879.js",
+      "../../../client_dashboard/assets/v2/prod-files/js/5291.js",
+      "../../../client_dashboard/assets/v2/prod-files/css/948.css",
+      "../../../client_dashboard/assets/v2/prod-files/css/6553.css",
+      "../../../client_dashboard/assets/v2/prod-files/js/6773.js",
+      "../../../client_dashboard/assets/v2/prod-files/css/2351.css",
+      "../../../client_dashboard/assets/v2/prod-files/js/2351.js",
+      "../../../client_dashboard/assets/v2/prod-files/js/2865.js",
+      "../../../client_dashboard/assets/v2/prod-files/js/attendance/devices/settings.js"
     ],
     "attendance/clocking/clocker": [
       "../../../client_dashboard/assets/v2/prod-files/js/vendors.buffer.js",
@@ -1478,7 +1574,7 @@
       "../../../client_dashboard/assets/v2/prod-files/js/5291.js",
       "../../../client_dashboard/assets/v2/prod-files/css/214.css",
       "../../../client_dashboard/assets/v2/prod-files/css/948.css",
-      "../../../client_dashboard/assets/v2/prod-files/js/8462.js",
+      "../../../client_dashboard/assets/v2/prod-files/js/6773.js",
       "../../../client_dashboard/assets/v2/prod-files/css/attendance/setup-form/edit-admin.css",
       "../../../client_dashboard/assets/v2/prod-files/js/attendance/setup-form/edit-admin.js"
     ],
@@ -1494,7 +1590,7 @@
       "../../../client_dashboard/assets/v2/prod-files/js/5291.js",
       "../../../client_dashboard/assets/v2/prod-files/css/214.css",
       "../../../client_dashboard/assets/v2/prod-files/css/948.css",
-      "../../../client_dashboard/assets/v2/prod-files/js/8462.js",
+      "../../../client_dashboard/assets/v2/prod-files/js/6773.js",
       "../../../client_dashboard/assets/v2/prod-files/css/attendance/setup-form/edit-attachment.css",
       "../../../client_dashboard/assets/v2/prod-files/js/attendance/setup-form/edit-attachment.js"
     ],
@@ -1510,7 +1606,7 @@
       "../../../client_dashboard/assets/v2/prod-files/js/5291.js",
       "../../../client_dashboard/assets/v2/prod-files/css/214.css",
       "../../../client_dashboard/assets/v2/prod-files/css/948.css",
-      "../../../client_dashboard/assets/v2/prod-files/js/8462.js",
+      "../../../client_dashboard/assets/v2/prod-files/js/6773.js",
       "../../../client_dashboard/assets/v2/prod-files/css/attendance/setup-form/edit-break.css",
       "../../../client_dashboard/assets/v2/prod-files/js/attendance/setup-form/edit-break.js"
     ],
@@ -1524,7 +1620,7 @@
       "../../../client_dashboard/assets/v2/prod-files/js/5291.js",
       "../../../client_dashboard/assets/v2/prod-files/css/214.css",
       "../../../client_dashboard/assets/v2/prod-files/css/948.css",
-      "../../../client_dashboard/assets/v2/prod-files/js/8462.js",
+      "../../../client_dashboard/assets/v2/prod-files/js/6773.js",
       "../../../client_dashboard/assets/v2/prod-files/js/attendance/setup-form/edit-date.js"
     ],
     "attendance/setup-form/edit-day": [
@@ -1539,7 +1635,7 @@
       "../../../client_dashboard/assets/v2/prod-files/js/5291.js",
       "../../../client_dashboard/assets/v2/prod-files/css/214.css",
       "../../../client_dashboard/assets/v2/prod-files/css/948.css",
-      "../../../client_dashboard/assets/v2/prod-files/js/8462.js",
+      "../../../client_dashboard/assets/v2/prod-files/js/6773.js",
       "../../../client_dashboard/assets/v2/prod-files/css/attendance/setup-form/edit-day.css",
       "../../../client_dashboard/assets/v2/prod-files/js/attendance/setup-form/edit-day.js"
     ],
@@ -1555,7 +1651,7 @@
       "../../../client_dashboard/assets/v2/prod-files/js/5291.js",
       "../../../client_dashboard/assets/v2/prod-files/css/214.css",
       "../../../client_dashboard/assets/v2/prod-files/css/948.css",
-      "../../../client_dashboard/assets/v2/prod-files/js/8462.js",
+      "../../../client_dashboard/assets/v2/prod-files/js/6773.js",
       "../../../client_dashboard/assets/v2/prod-files/css/attendance/setup-form/edit-group.css",
       "../../../client_dashboard/assets/v2/prod-files/js/attendance/setup-form/edit-group.js"
     ],
@@ -1571,7 +1667,7 @@
       "../../../client_dashboard/assets/v2/prod-files/js/5291.js",
       "../../../client_dashboard/assets/v2/prod-files/css/214.css",
       "../../../client_dashboard/assets/v2/prod-files/css/948.css",
-      "../../../client_dashboard/assets/v2/prod-files/js/8462.js",
+      "../../../client_dashboard/assets/v2/prod-files/js/6773.js",
       "../../../client_dashboard/assets/v2/prod-files/css/attendance/setup-form/edit-location.css",
       "../../../client_dashboard/assets/v2/prod-files/js/attendance/setup-form/edit-location.js"
     ],
@@ -1587,7 +1683,7 @@
       "../../../client_dashboard/assets/v2/prod-files/js/5291.js",
       "../../../client_dashboard/assets/v2/prod-files/css/214.css",
       "../../../client_dashboard/assets/v2/prod-files/css/948.css",
-      "../../../client_dashboard/assets/v2/prod-files/js/8462.js",
+      "../../../client_dashboard/assets/v2/prod-files/js/6773.js",
       "../../../client_dashboard/assets/v2/prod-files/css/attendance/setup-form/edit-member.css",
       "../../../client_dashboard/assets/v2/prod-files/js/attendance/setup-form/edit-member.js"
     ],
@@ -1603,7 +1699,7 @@
       "../../../client_dashboard/assets/v2/prod-files/js/5291.js",
       "../../../client_dashboard/assets/v2/prod-files/css/214.css",
       "../../../client_dashboard/assets/v2/prod-files/css/948.css",
-      "../../../client_dashboard/assets/v2/prod-files/js/8462.js",
+      "../../../client_dashboard/assets/v2/prod-files/js/6773.js",
       "../../../client_dashboard/assets/v2/prod-files/css/attendance/setup-form/edit-sms.css",
       "../../../client_dashboard/assets/v2/prod-files/js/attendance/setup-form/edit-sms.js"
     ],
@@ -1631,7 +1727,7 @@
       "../../../client_dashboard/assets/v2/prod-files/js/5291.js",
       "../../../client_dashboard/assets/v2/prod-files/css/214.css",
       "../../../client_dashboard/assets/v2/prod-files/css/948.css",
-      "../../../client_dashboard/assets/v2/prod-files/js/8462.js",
+      "../../../client_dashboard/assets/v2/prod-files/js/6773.js",
       "../../../client_dashboard/assets/v2/prod-files/css/attendance/setup-form/edit-sub_group.css",
       "../../../client_dashboard/assets/v2/prod-files/js/attendance/setup-form/edit-sub_group.js"
     ],
@@ -1645,7 +1741,7 @@
       "../../../client_dashboard/assets/v2/prod-files/js/7879.js",
       "../../../client_dashboard/assets/v2/prod-files/css/214.css",
       "../../../client_dashboard/assets/v2/prod-files/css/948.css",
-      "../../../client_dashboard/assets/v2/prod-files/js/8462.js",
+      "../../../client_dashboard/assets/v2/prod-files/js/6773.js",
       "../../../client_dashboard/assets/v2/prod-files/css/attendance/setup-view/schedules.css",
       "../../../client_dashboard/assets/v2/prod-files/js/attendance/setup-view/schedules.js"
     ],
@@ -1659,7 +1755,7 @@
       "../../../client_dashboard/assets/v2/prod-files/js/5291.js",
       "../../../client_dashboard/assets/v2/prod-files/css/214.css",
       "../../../client_dashboard/assets/v2/prod-files/css/948.css",
-      "../../../client_dashboard/assets/v2/prod-files/js/8462.js",
+      "../../../client_dashboard/assets/v2/prod-files/js/6773.js",
       "../../../client_dashboard/assets/v2/prod-files/css/attendance/setup-view/schedule.css",
       "../../../client_dashboard/assets/v2/prod-files/js/attendance/setup-view/schedule.js"
     ],
@@ -1673,7 +1769,7 @@
       "../../../client_dashboard/assets/v2/prod-files/js/5291.js",
       "../../../client_dashboard/assets/v2/prod-files/css/214.css",
       "../../../client_dashboard/assets/v2/prod-files/css/948.css",
-      "../../../client_dashboard/assets/v2/prod-files/js/8462.js",
+      "../../../client_dashboard/assets/v2/prod-files/js/6773.js",
       "../../../client_dashboard/assets/v2/prod-files/css/membership/registration/excel.css",
       "../../../client_dashboard/assets/v2/prod-files/js/membership/registration/excel.js"
     ],
@@ -1792,7 +1888,7 @@
       "../../../client_dashboard/assets/v2/prod-files/js/vendors.jquery.js",
       "../../../client_dashboard/assets/v2/prod-files/js/vendors.select2.js",
       "../../../client_dashboard/assets/v2/prod-files/js/2459.js",
-      "../../../client_dashboard/assets/v2/prod-files/js/2989.js",
+      "../../../client_dashboard/assets/v2/prod-files/js/1731.js",
       "../../../client_dashboard/assets/v2/prod-files/js/5291.js",
       "../../../client_dashboard/assets/v2/prod-files/css/214.css",
       "../../../client_dashboard/assets/v2/prod-files/css/6553.css",
@@ -1833,7 +1929,7 @@
       "../../../client_dashboard/assets/v2/prod-files/js/vendors.jquery.js",
       "../../../client_dashboard/assets/v2/prod-files/js/vendors.select2.js",
       "../../../client_dashboard/assets/v2/prod-files/js/2459.js",
-      "../../../client_dashboard/assets/v2/prod-files/js/2989.js",
+      "../../../client_dashboard/assets/v2/prod-files/js/479.js",
       "../../../client_dashboard/assets/v2/prod-files/js/5291.js",
       "../../../client_dashboard/assets/v2/prod-files/css/6553.css",
       "../../../client_dashboard/assets/v2/prod-files/css/2351.css",
