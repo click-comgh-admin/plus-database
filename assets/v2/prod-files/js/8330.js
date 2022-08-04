@@ -85,14 +85,14 @@
     `}displayNowMeetingsSectionBtn(e){e.preventDefault(),this.formId=1,this.allowFetch=!0,this._meetingEventSchedules=null}displayTodayMeetingsSectionBtn(e){e.preventDefault(),this.formId=2,this.allowFetch=!0,this._meetingEventSchedules=null}displayUpcomingMeetingsSectionBtn(e){e.preventDefault(),this.formId=3,this.allowFetch=!0,this._meetingEventSchedules=null}displayDateMeetingsSectionBtn(e){e.preventDefault(),this.formId=4,this.allowFetch=!0,this._meetingEventSchedules=null}displayAllMeetingsSectionBtn(e){e.preventDefault(),this.formId=5,this.allowFetch=!0,this._meetingEventSchedules=null}displayDateMeetingsFilterBtn(e){e.preventDefault(),document.querySelectorAll('[id="filter_date"]').forEach((e=>{this.todayDate=this._todayDate(e.value)})),this.allowFetch=!0,this._meetingEventSchedules=null}recurringSwitchAction(){const e=this;document.querySelectorAll('[name="recurringSwitchAction"]').forEach((t=>{t.addEventListener("click",(n=>{e.recurring=t.isSelected,1===e.formId?e.getNowMeetingsBtn.click():2===e.formId?e.getTodayMeetingsBtn.click():3===e.formId?e.getUpcomingMeetingsBtn.click():4===e.formId?e.getDateMeetingsBtn.click():e.getAllMeetingsBtn.click()}))}))}get getMeetingSection(){return 1===this.formId?i.dy`
         ${this.nowSectionData}
       `:2===this.formId?i.dy`
-        ${this.upcomingSectionData}
-      `:3===this.formId?i.dy`
         ${this.todaySectionData}
+      `:3===this.formId?i.dy`
+        ${this.upcomingSectionData}
       `:4===this.formId?i.dy`
         ${this.dateSectionData}
-      `:(console.log({"this.allMeetingsSectionData":this.allMeetingsSectionData}),i.dy`
+      `:i.dy`
         ${this.allMeetingsSectionData}
-      `)}get notFound(){const e=i.dy`<h4 class="text-white">Empty</h4>`,t=i.dy`
+      `}get notFound(){const e=i.dy`<h4 class="text-white">Empty</h4>`,t=i.dy`
       <div>
         <p class="text-black mb-2">No Scheduled Meeting(s)/ Event(s) Found!</p>
         <p class="text-black mb-2"><small>Try again later.</small></p>
