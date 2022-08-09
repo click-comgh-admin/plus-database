@@ -2,13 +2,14 @@
       <div class="w-full !py-4 px-2 !flex !justify-between border border-gray-400 rounded-md">
         <mwc-formfield class="w-full text-gray-400" label="${this.label}" alignEnd spaceBetween>
           ${this.switch}
+          <input type="hidden" name="${this.name}" id="${this.name}" value="${this.selected?"on":"off"}" />
         </mwc-formfield>
       </div>
     `}get switch(){return this.selected?i.html`
-        <mwc-switch selected name="${this.name}" id="${this.name}"  ariaLabel="${this.label}" @click="${this.switchAction}"></mwc-switch>
+        <mwc-switch selected name="${this.name}-switch" id="${this.name}-switch"  ariaLabel="${this.label}" @click="${this.switchAction}"></mwc-switch>
       `:i.html`
-        <mwc-switch name="${this.name}" id="${this.name}"  ariaLabel="${this.label}" @click="${this.switchAction}"></mwc-switch>
-      `}switchAction(e){this.isSelected=e.target.selected}createRenderRoot(){return this}};l.styles=[i.css`
+        <mwc-switch name="${this.name}-switch" id="${this.name}-switch"  ariaLabel="${this.label}" @click="${this.switchAction}"></mwc-switch>
+      `}switchAction(e){this.isSelected=e.target.selected,this.querySelectorAll('[name="'+this.name+'"]').forEach((e=>{e.value=this.isSelected?"on":"off"}))}createRenderRoot(){return this}};l.styles=[i.css`
       :host {
         display: block;
       }
@@ -63,14 +64,14 @@
     `}displayNowMeetingsSectionBtn(e){e.preventDefault(),this.formId=1,this.allowFetch=!0,this._meetingEventSchedules=null}displayTodayMeetingsSectionBtn(e){e.preventDefault(),this.formId=2,this.allowFetch=!0,this._meetingEventSchedules=null}displayUpcomingMeetingsSectionBtn(e){e.preventDefault(),this.formId=3,this.allowFetch=!0,this._meetingEventSchedules=null}displayDateMeetingsSectionBtn(e){e.preventDefault(),this.formId=4,this.allowFetch=!0,this._meetingEventSchedules=null}displayAllMeetingsSectionBtn(e){e.preventDefault(),this.formId=5,this.allowFetch=!0,this._meetingEventSchedules=null}displayDateMeetingsFilterBtn(e){e.preventDefault(),document.querySelectorAll('[id="filter_date"]').forEach((e=>{this.todayDate=this._todayDate(e.value)})),this.allowFetch=!0,this._meetingEventSchedules=null}recurringSwitchAction(){const e=this;document.querySelectorAll('[name="recurringSwitchAction"]').forEach((t=>{t.addEventListener("click",(n=>{e.recurring=t.isSelected,1===e.formId?e.getNowMeetingsBtn.click():2===e.formId?e.getTodayMeetingsBtn.click():3===e.formId?e.getUpcomingMeetingsBtn.click():4===e.formId?e.getDateMeetingsBtn.click():e.getAllMeetingsBtn.click()}))}))}get getMeetingSection(){return 1===this.formId?s.html`
         ${this.nowSectionData}
       `:2===this.formId?s.html`
-        ${this.upcomingSectionData}
-      `:3===this.formId?s.html`
         ${this.todaySectionData}
+      `:3===this.formId?s.html`
+        ${this.upcomingSectionData}
       `:4===this.formId?s.html`
         ${this.dateSectionData}
-      `:(console.log({"this.allMeetingsSectionData":this.allMeetingsSectionData}),s.html`
+      `:s.html`
         ${this.allMeetingsSectionData}
-      `)}get notFound(){const e=s.html`<h4 class="text-white">Empty</h4>`,t=s.html`
+      `}get notFound(){const e=s.html`<h4 class="text-white">Empty</h4>`,t=s.html`
       <div>
         <p class="text-black mb-2">No Scheduled Meeting(s)/ Event(s) Found!</p>
         <p class="text-black mb-2"><small>Try again later.</small></p>

@@ -14,13 +14,14 @@
       <div class="w-full !py-4 px-2 !flex !justify-between border border-gray-400 rounded-md">
         <mwc-formfield class="w-full text-gray-400" label="${this.label}" alignEnd spaceBetween>
           ${this.switch}
+          <input type="hidden" name="${this.name}" id="${this.name}" value="${this.selected?"on":"off"}" />
         </mwc-formfield>
       </div>
     `}get switch(){return this.selected?i.html`
-        <mwc-switch selected name="${this.name}" id="${this.name}"  ariaLabel="${this.label}" @click="${this.switchAction}"></mwc-switch>
+        <mwc-switch selected name="${this.name}-switch" id="${this.name}-switch"  ariaLabel="${this.label}" @click="${this.switchAction}"></mwc-switch>
       `:i.html`
-        <mwc-switch name="${this.name}" id="${this.name}"  ariaLabel="${this.label}" @click="${this.switchAction}"></mwc-switch>
-      `}switchAction(t){this.isSelected=t.target.selected}createRenderRoot(){return this}};a.styles=[i.css`
+        <mwc-switch name="${this.name}-switch" id="${this.name}-switch"  ariaLabel="${this.label}" @click="${this.switchAction}"></mwc-switch>
+      `}switchAction(t){this.isSelected=t.target.selected,this.querySelectorAll('[name="'+this.name+'"]').forEach((t=>{t.value=this.isSelected?"on":"off"}))}createRenderRoot(){return this}};a.styles=[i.css`
       :host {
         display: block;
       }
