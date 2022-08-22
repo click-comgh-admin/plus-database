@@ -12,7 +12,7 @@ class WebpackLoader
     /** @var array $_assets */
     private $_assets = [];
 
-    public function __construct($name = null, $config)
+    public function __construct($name = null, $config = null)
     {
         $this->name = $name;
         $this->config = $config;

@@ -1,9 +1,22 @@
 <?php
+	ob_start();
 	require_once 'assets/php/include.php';
 	require_once 'defs.php';
+	require_once 'assets/v2/php/webpack.php';
+
+    define("_Webpack_Pack_", Get_Webpack_Tags(
+        'client/register', prefix: IN_PRODUCTION_MODE_PREFIX)
+    );
 ?>
 <!DOCTYPE HTML>
 <html>
+    <?php 
+        $cssFiles = '';
+        foreach (_Webpack_Pack_['css'] as $key => $cssFile) {
+            $cssFiles .= $cssFile;
+        }
+        define('WEB_PACK_CSS_FILES', $cssFiles);
+    ?>
 	<head>
 		<meta charset="utf-8">
     	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -21,19 +34,32 @@
 			<link rel="stylesheet" href="<?= BaseUrl; ?>assets/css/bootstrap.min.css" />
 		<?php } ?> -->
 		<link rel="stylesheet" href="<?= BaseUrl; ?>assets/css/bootstrap-eclocking.min.css" />
-		<link rel="stylesheet" href="<?= ClientBaseUrl; ?>assets/css/datepicker.min.css" />
-		<link rel="stylesheet" href="<?= ClientBaseUrl; ?>assets/css/select2.min.css" />
-		<link rel="stylesheet" href="<?= ClientBaseUrl; ?>assets/css/sweetalert2.min.css" />
-		<link rel="stylesheet" href="<?= ClientBaseUrl; ?>assets/css/gradient_bg.css" />
 		<link rel="stylesheet" href="<?= ClientBaseUrl; ?>assets/css/font-awesome.css" />
-		<link rel="stylesheet" href="<?= ClientBaseUrl; ?>assets/css/datetime.css" />
-		<link rel="stylesheet" href="<?= ClientBaseUrl; ?>assets/css/click_com_wizard.css" />
-		<link rel="stylesheet" href="<?= BaseUrl; ?>assets/css/main-eclocking.css" />
-		<!-- <?php if ($_SERVER['SERVER_NAME'] === "admin.clockintoday.com") { ?>
+    	<link href="<?= CLIENT_BASE_URL; ?>assets/v2/3rd-party/material/fonts/material-icons.css" rel="stylesheet">
+		<?= WEB_PACK_CSS_FILES; ?>
+		<link rel="manifest" href="<?= CLIENT_BASE_URL; ?>manifest.webmanifest" />
+		<link rel="apple-touch-icon" href="<?= CLIENT_BASE_URL; ?>assets/images/icons/icon-48x48.png" />
+		<link rel="apple-touch-icon" href="<?= CLIENT_BASE_URL; ?>assets/images/icons/icon-72x72.png" />
+		<link rel="apple-touch-icon" href="<?= CLIENT_BASE_URL; ?>assets/images/icons/icon-96x96.png" />
+		<link rel="apple-touch-icon" href="<?= CLIENT_BASE_URL; ?>assets/images/icons/icon-144x144.png" />
+		<link rel="apple-touch-icon" href="<?= CLIENT_BASE_URL; ?>assets/images/icons/icon-192x192.png" />
+		<meta name="apple-mobile-web-app-status-bar" content="#f97817">
+		<meta name="theme-color" content="#f97817">
+		<?php if ($_SERVER['SERVER_NAME'] === "admin.clockintoday.com") { ?>
 			<link rel="stylesheet" href="<?= BaseUrl; ?>assets/css/main-eclocking.css" />
 		<?php } else { ?>
 			<link rel="stylesheet" href="<?= BaseUrl; ?>assets/css/main.css" />
-		<?php } ?> -->
+		<?php } ?>
+		<style>
+			input[type="text"], input[type="password"], 
+			input[type="email"], input[type="phone"], 
+			select, span.select2.select2-container, 
+			span.select2-selection.select2-selection--single.form-control.p-0, 
+			textarea {
+				background: none!important;
+				padding: unset!important;
+			}
+		</style>
 	</head>
 	<body>
 		<?php require_once 'input_urls.php'; ?>
@@ -93,7 +119,7 @@
 						<div class="inner">
 							<header class="align-center">
 								<p><?= AppName; ?></p>
-								<h2>Client Registration</h2>
+								<h2>Client Register</h2>
 							</header>
 						</div>
 					</article>
@@ -104,21 +130,11 @@
 					<div class="inner">
 						<div class="box">
 							<div class="content shadow border-0">
-								<div class="btn-actions-pane-right px-1">
-									<div class="m-0 fa pull-right" role="group">
-										<a class="shadow shadow-sm btn <?= isset($_GET["contact_bank"]) ? "btn-link text-dark": "btn-primary text-white"; ?> 
-											font-weight-bold border border-info btn-sm" href="<?= CLIENT_BASE_URL; ?>register" >Main Registration</a>
-										<a class="shadow shadow-sm btn <?= isset($_GET["contact_bank"]) ? "btn-primary text-white": "btn-link text-dark"; ?> 
-											font-weight-bold border border-info btn-sm" href="<?= CLIENT_BASE_URL; ?>register?contact_bank" >Contact Bank Registration</a>
+								<div class="row align-items-center justify-content-center border-1">
+									<div class="col-lg-12">
+										<pdb-register-form></pdb-register-form>
 									</div>
-								</div><hr>
-								<?php 
-									if (isset($_GET["contact_bank"])) {
-										require_once 'subpages/forms/registration_form_cb.php';
-									} else {
-										require_once 'subpages/forms/registration_form.php';
-									}
-								?>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -128,11 +144,6 @@
 				<footer id="footer">
 					<div class="container">
 						<ul class="icons">
-                            <li class="nav-item">
-                                <a href="https://www.clickcomgh.com/terms-and-conditions-2/" class="nav-link">
-                                    Terms & Conditions
-                                </a>
-                            </li>
 							<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
 							<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
 							<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
@@ -142,29 +153,30 @@
 					<div class="copyright">
 						<?= date("Y"); ?> &copy; Click Communications Limited. All rights reserved.
 					</div>
-				</footer>
+				</footer>		
 		<?php } ?>
+
+		<?php 
+            $jsFiles = '';
+            foreach (_Webpack_Pack_Shared_['js'] as $key => $jsFile) {
+                $jsFiles .= $jsFile;
+            }
+            foreach (_Webpack_Pack_['js'] as $key => $jsFile) {
+                $jsFiles .= $jsFile;
+            }
+            define('WEB_PACK_JS_FILES', $jsFiles);
+		?>
+		
 		<!-- Scripts -->
 			<script src="<?= BaseUrl; ?>assets/js/jquery.min.js"></script>
 			<script src="<?= BaseUrl; ?>assets/js/popper.min.js"></script>
-			<script src="<?= ClientBaseUrl; ?>assets/js/moment.min.js"></script>
 			<script src="<?= BaseUrl; ?>assets/js/bootstrap.min.js"></script>
 			<script src="<?= BaseUrl; ?>assets/js/jquery.scrollex.min.js"></script>
 			<script src="<?= BaseUrl; ?>assets/js/skel.min.js"></script>
 			<script src="<?= BaseUrl; ?>assets/js/util.js"></script>
-			<script src="<?= ClientBaseUrl; ?>assets/js/sweetalert2.min.js"></script>
-			<script src="<?= ClientBaseUrl; ?>assets/js/select2.min.js"></script>
-			<script src="<?= ClientBaseUrl; ?>assets/js/click_com_wizard.js"></script>
-<!-- 			<script src="<?= ClientBaseUrl; ?>assets/js/datepicker.min.js"></script>
-			<script src="<?= ClientBaseUrl; ?>assets/js/datepicker.en.js"></script> -->
-			
-			<script type="text/javascript" src="<?= CLIENT_BASE_URL; ?>assets/js/dtp.js"></script>
-			<script src="<?= ClientBaseUrl; ?>assets/js/croppr.min.js"></script>
 			<script type="text/javascript" src="<?= CLIENT_BASE_URL; ?>assets/js/moment.min.js"></script>
-			<script src="<?= ClientBaseUrl; ?>assets/js/locale.js"></script>
-			<script src="<?= ClientBaseUrl; ?>assets/js/main.js"></script>
-			<script src="<?= ClientBaseUrl; ?>assets/js/main-forms.js"></script>
 			<script src="<?= BaseUrl; ?>assets/js/main.js"></script>
+			<?= WEB_PACK_JS_FILES; ?>
 
 	</body>
 </html>

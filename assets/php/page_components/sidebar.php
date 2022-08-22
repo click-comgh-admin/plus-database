@@ -1,9 +1,10 @@
         <?php
+            global $ccApi;
             global $BranchInfo_I;
             define('AccountInfoTypeName', $account_type = $ccApi->account_type($all="one",
                 $id=(int)AccountInfoType, function($account_type) {
-                    return $account_type[0]['pdd_info'];
-                })
+                    return isset($account_type[0]['pdd_info'])? $account_type[0]['pdd_info'] : "... Account";
+                }, false)
             );
             
             if ((int)AccountInfoType === 6) {

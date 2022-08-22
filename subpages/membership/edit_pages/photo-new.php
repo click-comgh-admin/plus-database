@@ -6,7 +6,7 @@
                 <div class="row justify-content-center p-0 m-0" upload-preview-crop--preview="profile-picture">
                     <img class="container img-fluid" no-popup="true" src="<?= setUpMemberImage(@$member['pdm_profile_picture']); ?>"/>
                 </div>
-            </div><?= setUpMemberImage(@$member['pdm_profile_picture']); ?>
+            </div>
             <div class="card-footer d-block">
                 <?php require_once(BASE_DIRECTORY."/subpages/membership/forms/edit_pages-photo-new.php"); ?>
             </div>

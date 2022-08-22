@@ -56,7 +56,7 @@
                             }
                             $_appPage = 0;
                             foreach ($appPages as $key => $page) {
-                                if ((string)strtolower($page['pdpc_page']) === "attendance") {
+                                if ((string)strtolower($page['pdpc_page']) === "account users") {
                                     $_appPage = $page['pdpc_id'];
                                 }
                             }

@@ -264,3 +264,48 @@ function setUpMemberImage($url, $debug = false) {
     }
     return $url;
 }
+
+function setUpClientImage($url, $debug = false) {
+    if ($debug) {
+        echo '<pre>';
+        print_r(['$url-1' => $url]);
+        print_r(['strpos($url, "clients/profile-picture/") !== false' => strpos($url, "clients/profile-picture/") !== false]);
+        print_r(['strpos($url, "clients/logo/") !== false' => strpos($url, "clients/logo/") !== false]);
+    }
+    if ((strpos($url, "clients/logo/") !== false) || (strpos($url, "clients/profile-picture/") !== false)) {
+        if ($debug) {
+            print_r(['new-path' => "true"]);
+        }
+        if ((strpos($url, "clients/logo/") !== false)) {
+            $parts = explode('clients/logo/', $url);
+            if ($debug) {
+                print_r(['$parts/logo' => $parts]);
+            }
+
+            if (isset($parts[1])) {
+                $url = FILE_BUCKET_BASE_URL . "/files/clients/logo/" . $parts[1];
+            }
+        } elseif ((strpos($url, "clients/profile-picture/") !== false)) {
+            $parts = explode('clients/profile-picture/', $url);
+            if ($debug) {
+                print_r(['$parts/profile' => $parts]);
+            }
+
+            if (isset($parts[1])) {
+                $url = FILE_BUCKET_BASE_URL . "/files/clients/profile-picture/" . $parts[1];
+            }
+        }
+    } else {
+        if ($debug) {
+            print_r(['new-path' => "false"]);
+        }
+        $parts = explode('/', $url);
+        $fileName = end($parts);
+        $url = FILE_BUCKET_BASE_URL . "/files/clients/profile-picture/" . $fileName;
+    }
+    if ($debug) {
+        print_r(['$url-2' => $url]);
+        echo '</pre>';
+    }
+    return $url;
+}

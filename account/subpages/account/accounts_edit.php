@@ -1,14 +1,17 @@
 <?php
-    use Encryptor\Encryptor;
+    // use Encryptor\Encryptor;
 
-    $encryptor = new Encryptor("clients", md5("clients"));
-    $client_user_id = @$_GET['user'];
-    $user_id_ = (int)$encryptor->decrypt($client_user_id);
+    // $encryptor = new Encryptor("clients", md5("clients"));
+    // $client_user_id = @$_GET['user'];
+    // $user_id_ = (int)$encryptor->decrypt($client_user_id);
+    $client_user_id = $_GET['user'] | "";
+    $user_id_ = base64_decode($client_user_id);
 
     $client_user = $ccApi->user_info($type = "client", $account_id = $account_id, $all="one_client_user", $id=$user_id_, function ($info)
 	{
 		return isset($info[0]) ? @$info[0] : [];
 	});
+    // print_r(['$user_id_'=> $user_id_, '$client_user'=>$client_user]);
     
 ?>
 <div class="row justify-content-center">
@@ -19,7 +22,7 @@
                     <div class="card-body">
                         <h5 class="text-muted card-title"><i>Crop <?= @$client_user['pdcu_firstname'] . " " . @$client_user['pdcu_surname']; ?>'s Image</i></h5>
                         <div class="row justify-content-center p-0 m-0" upload-preview-crop--preview="profile-picture">
-                            <img class="container img-fluid" no-popup="true" src="<?= FILE_BUCKET_BASE_URL; ?>files/clients/profile-picture/<?= @$client_user['pdcu_profile_picture']; ?>"/>
+                            <img class="container img-fluid" src="<?= setUpClientImage(@$client_user['pdcu_profile_picture']); ?>"/>
                         </div>
                     </div>
                     <div class="card-footer d-block">

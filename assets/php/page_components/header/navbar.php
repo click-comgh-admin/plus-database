@@ -131,7 +131,7 @@
                                     <div class="widget-content-left">
                                         <div class="btn-group">
                                             <a data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="p-0 btn">
-                                                <img width="42" class="rounded-circle shadow shadow-sm" no-popup="true" src="<?= FILE_BUCKET_BASE_URL; ?>files/clients/profile-picture/<?= $user_info['pdcu_profile_picture']; ?>" alt="Profile Picture">
+                                                <img width="42" class="rounded-circle shadow shadow-sm" no-popup="true" src="<?= setUpClientImage(@$user_info['pdcu_profile_picture']); ?>" alt="Profile Picture">
                                                 <i class="fa fa-angle-down ml-2 opacity-8"></i>
                                             </a>
                                             <?php

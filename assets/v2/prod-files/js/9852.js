@@ -323,7 +323,7 @@
       </div>
       <!-- <div class="col-md-6 col-lg-4">
         <h4 class="font-semibold my-2">Add Profile Picture</h4> 
-        <file-input id="profilePicture" name="profilePicture" label="Add Profile Picture"></file-input>
+        <file-input id="profilePicture" name="profilePicture" hasLabel label="Add Profile Picture"></file-input>
       </div> -->
       <div class="col-md-6 col-lg-4">
         <h4 class="font-semibold my-2">Enter Phone Number</h4> 

@@ -42,7 +42,7 @@
               </div>
               <div class="p-3 border-t-2 flex justify-end">
                 <link-button isblockcontent="false" aClass="" raised bClass="button warning mr-2"
-                  href="/account/accounts?edit=photo-new&user=${a}" label="Edit">
+                  href="/account/accounts?edit=photo&user=${a}" label="Edit">
                 </link-button>
               </div>
             </div>

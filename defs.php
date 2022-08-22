@@ -9,7 +9,8 @@
 		$appDomain = $_SERVER['SERVER_NAME'];
 		
 		foreach ($versions as $key => $version) {
-			if ((bool)strpos($appDomain, $version['pdv_url']) === true) {
+			// print_r(['$version'=>$version]);
+			if (!is_string($version) && (bool)strpos($appDomain, $version['pdv_url']) === true) {
 				return $version;
 			}
 		}
