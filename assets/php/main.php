@@ -16,7 +16,7 @@
 	define('LOCATION_API_TOKEN', "d7be75e67a751342bf0bea90674c750201ade99089b");
 	
 	if (IN_PRODUCTION_MODE) {
-		define('LOCATION_BASE_URL', "https://location.cocdirectory.org/");
+		define('LOCATION_BASE_URL', "https://location-api.akwaabasoftware.com/");
 	} else {
 		define('LOCATION_BASE_URL', "http://localhost/AMG/coCN/00000/saintsbook/location/");
 	}
