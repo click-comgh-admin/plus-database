@@ -18,10 +18,10 @@ node_modules
 __pycache__/
 *.py[cod]
 *$py.class
+.htaccess
 
 # C extensions
 *.so
-.htaccess
 # Distribution / packaging
 .env
 .Python

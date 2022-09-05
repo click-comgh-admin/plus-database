@@ -1,5 +1,5 @@
-const STATIC_CACHE_NAME = 'akwaaba-database-site-base-static-v0.002';
-const DYNAMIC_CACHE_NAME = 'akwaaba-database-site-dynamic-requests-v0.002';
+const STATIC_CACHE_NAME = 'akwaaba-database-site-base-static-v0.003';
+const DYNAMIC_CACHE_NAME = 'akwaaba-database-site-dynamic-requests-v0.003';
 const ASSETS = []; // DYNAMICALLY GENERATED IN PHP VIEW
 const UNCACHEABLE_URLS = []; // DYNAMICALLY GENERATED IN PHP VIEW
 
@@ -52,27 +52,31 @@ self.addEventListener('fetch', event => {
     // console.log('fetch event', event);
     // UNCACHEABLE_URLS.forEach(url => {}); NOT WORKING
 
-    if (event.request.url.indexOf("api.") < 0) {
-        event.respondWith(
-            caches.match(event.request).then(cacheResponse => {
-                return cacheResponse || fetch(event.request).then(fetchResponse => {
-                    return caches.open(DYNAMIC_CACHE_NAME).then(cache => {
-                        cache.put(event.request.url, fetchResponse.clone());
-                        LIMIT_CACHE_SIZE(DYNAMIC_CACHE_NAME, 30)
-                        return fetchResponse;
+    if ((event.request.url.indexOf("api.") < 0) && (event.request.url.indexOf("db-api-v2.") < 0)) {
+        if (event.request.url.indexOf("/login") > -1) {
+            null;
+        } else {
+            event.respondWith(
+                caches.match(event.request).then(cacheResponse => {
+                    return cacheResponse || fetch(event.request).then(fetchResponse => {
+                        return caches.open(DYNAMIC_CACHE_NAME).then(cache => {
+                            cache.put(event.request.url, fetchResponse.clone());
+                            LIMIT_CACHE_SIZE(DYNAMIC_CACHE_NAME, 30)
+                            return fetchResponse;
+                        });
                     });
-                });
-            }).catch(() => {
-                if (event.request.url.indexOf('.png') > -1) {
-                    // return caches.match(ASSETS[2]);
-                } else if (event.request.url.indexOf('.jpg') > -1) {
-                    // return caches.match(ASSETS[2]);
-                } else {
-                    // when all fails revert to default html
-                    return caches.match(ASSETS[2]);
-                }
-            })
-        );
+                }).catch(() => {
+                    if (event.request.url.indexOf('.png') > -1) {
+                        // return caches.match(ASSETS[2]);
+                    } else if (event.request.url.indexOf('.jpg') > -1) {
+                        // return caches.match(ASSETS[2]);
+                    } else {
+                        // when all fails revert to default html
+                        return caches.match(ASSETS[2]);
+                    }
+                })
+            );
+        }
     }
 });
 

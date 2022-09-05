@@ -9,7 +9,7 @@
     
     $sWv = new ServiceWorkerView(IN_PRODUCTION_MODE);
     $getResponse = $sWv->get();
-    header("Content-Type: {$getResponse->content_type}");
+    @header("Content-Type: {$getResponse->content_type}");
     // print_r(['$sWv'=>$sWv]);
     // print_r(['$getResponse->content_type'=>$getResponse->content_type]);
     // print_r(['$getResponse'=>$getResponse->service_worker]);

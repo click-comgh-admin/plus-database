@@ -331,6 +331,10 @@ img, video {
   top: 0;
 }
 
+.top-10 {
+  top: 2.5rem;
+}
+
 .left-0 {
   left: 0;
 }
@@ -404,6 +408,11 @@ img, video {
   margin-top: 0.5rem;
 }
 
+.my-0 {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
 .my-1 {
   margin-bottom: 0.25rem;
   margin-top: 0.25rem;
@@ -429,11 +438,6 @@ img, video {
   margin-right: 0.25rem !important;
 }
 
-.my-0 {
-  margin-bottom: 0;
-  margin-top: 0;
-}
-
 .mt-1 {
   margin-top: 0.25rem;
 }
@@ -444,6 +448,10 @@ img, video {
 
 .mb-4 {
   margin-bottom: 1rem;
+}
+
+.mt-6 {
+  margin-top: 1.5rem;
 }
 
 .mb-2 {
@@ -512,14 +520,6 @@ img, video {
 
 .-mt-2 {
   margin-top: -0.5rem;
-}
-
-.mt-4 {
-  margin-top: 1rem;
-}
-
-.mt-6 {
-  margin-top: 1.5rem;
 }
 
 .block {
@@ -594,6 +594,10 @@ img, video {
   height: 24rem;
 }
 
+.h-44 {
+  height: 11rem;
+}
+
 .h-1 {
   height: 0.25rem;
 }
@@ -642,6 +646,16 @@ img, video {
   width: 8rem;
 }
 
+.w-max {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+
+.w-6 {
+  width: 1.5rem;
+}
+
 .w-auto {
   width: auto;
 }
@@ -668,10 +682,6 @@ img, video {
 
 .w-80 {
   width: 20rem;
-}
-
-.w-6 {
-  width: 1.5rem;
 }
 
 .\!w-28 {
@@ -824,16 +834,16 @@ img, video {
   border-radius: 0.25rem;
 }
 
+.rounded-none {
+  border-radius: 0;
+}
+
 .rounded-2xl {
   border-radius: 1rem;
 }
 
 .rounded-xl {
   border-radius: 0.75rem;
-}
-
-.rounded-none {
-  border-radius: 0;
 }
 
 .rounded-3xl {
@@ -858,12 +868,24 @@ img, video {
   border-width: 1px;
 }
 
+.border-0 {
+  border-width: 0;
+}
+
 .border-b-2 {
   border-bottom-width: 2px;
 }
 
 .border-t-2 {
   border-top-width: 2px;
+}
+
+.border-b {
+  border-bottom-width: 1px;
+}
+
+.border-t {
+  border-top-width: 1px;
 }
 
 .border-r-2 {
@@ -1107,12 +1129,16 @@ img, video {
   padding-top: 0.25rem;
 }
 
-.pb-2 {
-  padding-bottom: 0.5rem;
-}
-
 .pl-4 {
   padding-left: 1rem;
+}
+
+.pl-2 {
+  padding-left: 0.5rem;
+}
+
+.pb-2 {
+  padding-bottom: 0.5rem;
 }
 
 .pb-4 {
@@ -1269,6 +1295,16 @@ img, video {
 .text-blue-700 {
   --tw-text-opacity:1;
   color: rgba(29, 78, 216, var(--tw-text-opacity));
+}
+
+.text-green-700 {
+  --tw-text-opacity:1;
+  color: rgba(4, 120, 87, var(--tw-text-opacity));
+}
+
+.text-red-700 {
+  --tw-text-opacity:1;
+  color: rgba(185, 28, 28, var(--tw-text-opacity));
 }
 
 .text-gray-400 {
@@ -1577,6 +1613,10 @@ mwc-icon-button.primary {
 @media (min-width: 640px) {
   .sm\:hidden {
     display: none;
+  }
+
+  .sm\:w-2\/5 {
+    width: 40%;
   }
 }
 @media (min-width: 768px) {

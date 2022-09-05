@@ -184,7 +184,7 @@ class View
     {
         $URLS = [
             'http://127.0.0.1:9000/api/',
-            'https://api.plusdatabase.com/',
+            'https://db-api.akwaabasoftware.com/',
         ];
 
         $allUrls = "";

@@ -1,7 +1,7 @@
 <?php
 	$actual_host = $_SERVER['SERVER_ADDR'];
 	if (IN_PRODUCTION_MODE) {
-		define('FILE_BUCKET_BASE_URL', "https://file-bucket.plusdatabase.com/");
+		define('FILE_BUCKET_BASE_URL', "https://file-bucket.akwaabasoftware.com/");
 	} else {
 		define('FILE_BUCKET_BASE_URL', "http://$actual_host/AMG/plus_db/file_bucket/");
 	}
