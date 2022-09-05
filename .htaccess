@@ -54,10 +54,10 @@
     # - deny access to some documentation files
     RewriteRule /?(README\.md|composer\.json-dist|composer\.json|package\.xml|jsdeps.json|Dockerfile)$ - [F]
 
-    ErrorDocument 403 http://localhost/2my_comp/myrtek_new_site/403
-    ErrorDocument 404 http://localhost/2my_comp/myrtek_new_site/404
-    ErrorDocument 500 http://localhost/2my_comp/myrtek_new_site/500
-    ErrorDocument 510 http://localhost/2my_comp/myrtek_new_site/510
+    ErrorDocument 403 /error-page/403
+    ErrorDocument 404 /error-page/404
+    ErrorDocument 500 /error-page/500
+    ErrorDocument 510 /error-page/510
 
 </IfModule>
 
