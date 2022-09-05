@@ -1,4 +1,30 @@
-"use strict";!function(e,t){"object"==typeof exports&&"object"==typeof module?module.exports=t():"function"==typeof define&&define.amd?define([],t):"object"==typeof exports?exports.webpackNumbers=t():e.webpackNumbers=t()}(self,(function(){return(self.webpackChunkwebpackNumbers=self.webpackChunkwebpackNumbers||[]).push([[826],{67:(e,t,i)=>{i.r(t);var o=i(213),n=i(752),s=i(790),r=function(e,t,i,o){return new(i||(i=Promise))((function(n,s){function r(e){try{c(o.next(e))}catch(e){s(e)}}function l(e){try{c(o.throw(e))}catch(e){s(e)}}function c(e){var t;e.done?n(e.value):(t=e.value,t instanceof i?t:new i((function(e){e(t)}))).then(r,l)}c((o=o.apply(e,t||[])).next())}))};function l(e,t){return r(this,void 0,void 0,(function*(){t=null==t?{method:"GET"}:t;var i=new Headers;return i.append("Access-Control-Allow-Origin","*/*"),i.append("Accept","application/json, text/plain, */*"),i.append("Authorization","Bearer dskjsdr43930934j34934304934n34kkd3d89sdjsdjb349"),i.append("Content-Type","application/json"),t.headers=i,t.mode="cors",console.log({init:t}),yield fetch(e,t).then((e=>e.status>=200&&e.status<300?Promise.resolve(e):Promise.reject(new Error(e.statusText)))).then((e=>e.json())).then((e=>r(this,void 0,void 0,(function*(){return e})))).catch((function(e){throw console.error("Request failed",e),e}))}))}const c=new XMLHttpRequest,a=new URL(document.location.href);c.open("HEAD",a.href,!1),c.send(null);const d=new URLSearchParams(a.search);let p=[];d.forEach(((e,t)=>{const i={param:t,value:e};p.includes(i)||p.push(i)}));const u={GET:new class{constructor(e){this.params=[],this.params=e}get(e){let t;return this.params.forEach((i=>{i.param===e&&(t=i)})),t}}(p),HEADERS:c.getAllResponseHeaders()},h="https://db-api.akwaabasoftware.com/",f={IMAGES:{loadingGif1:"/assets/js/node/images/loading.gif",akwaabaLogo:"/assets/js/node/images/logo-inverse.png",loadingGif2:"/assets/js/node/images/loading2.gif",loadingGif3:"/assets/js/node/images/loading3.gif",errorNotFound:"/assets/js/node/images/error-not-found.webp"},HTTPS:u,URLS:{API_BASE_URL:h,PUBLIC_BASE_URL:"https://plusdatabase.com/",CLICK_COM_BASE_URL:"https://clickcomgh.com/",GET_CLIENT_INFO:h+"subscription-quick-info/index",GET_SUBSCRIPTION_FEE:h+"subscription-quick-info/get-fee",PAY_SUBSCRIPTION_FEE:h+"subscription-quick-info/pay",GET_PAYMENT_STATUS:h+"subscription-quick-info/has-been-paid"},ERROR_MSG:"Something went wrong, please try again or contact us using the whatsapp button"};console.log({CONSTANTS:f});var y=function(e,t,i,o){var n,s=arguments.length,r=s<3?t:null===o?o=Object.getOwnPropertyDescriptor(t,i):o;if("object"==typeof Reflect&&"function"==typeof Reflect.decorate)r=Reflect.decorate(e,t,i,o);else for(var l=e.length-1;l>=0;l--)(n=e[l])&&(r=(s<3?n(r):s>3?n(t,i,r):n(t,i))||r);return s>3&&r&&Object.defineProperty(t,i,r),r};let v=class extends o.oi{constructor(){super(...arguments),this.size=32}render(){return o.dy`
+"use strict";
+! function(e, t) { "object" == typeof exports && "object" == typeof module ? module.exports = t() : "function" == typeof define && define.amd ? define([], t) : "object" == typeof exports ? exports.webpackNumbers = t() : e.webpackNumbers = t() }(self, (function() { return (self.webpackChunkwebpackNumbers = self.webpackChunkwebpackNumbers || []).push([
+                        [826], { 67: (e, t, i) => { i.r(t); var o = i(213),
+                                        n = i(752),
+                                        s = i(790),
+                                        r = function(e, t, i, o) { return new(i || (i = Promise))((function(n, s) {
+                                                function r(e) { try { c(o.next(e)) } catch (e) { s(e) } }
+
+                                                function l(e) { try { c(o.throw(e)) } catch (e) { s(e) } }
+
+                                                function c(e) { var t;
+                                                    e.done ? n(e.value) : (t = e.value, t instanceof i ? t : new i((function(e) { e(t) }))).then(r, l) }
+                                                c((o = o.apply(e, t || [])).next()) })) };
+
+                                    function l(e, t) { return r(this, void 0, void 0, (function*() { t = null == t ? { method: "GET" } : t; var i = new Headers; return i.append("Access-Control-Allow-Origin", "*/*"), i.append("Accept", "application/json, text/plain, */*"), i.append("Authorization", "Bearer dskjsdr43930934j34934304934n34kkd3d89sdjsdjb349"), i.append("Content-Type", "application/json"), t.headers = i, t.mode = "cors", console.log({ init: t }), yield fetch(e, t).then((e => e.status >= 200 && e.status < 300 ? Promise.resolve(e) : Promise.reject(new Error(e.statusText)))).then((e => e.json())).then((e => r(this, void 0, void 0, (function*() { return e })))).catch((function(e) { throw console.error("Request failed", e), e })) })) } const c = new XMLHttpRequest,
+                                        a = new URL(document.location.href);
+                                    c.open("HEAD", a.href, !1), c.send(null); const d = new URLSearchParams(a.search); let p = [];
+                                    d.forEach(((e, t) => { const i = { param: t, value: e };
+                                        p.includes(i) || p.push(i) })); const u = { GET: new class { constructor(e) { this.params = [], this.params = e }
+                                                get(e) { let t; return this.params.forEach((i => { i.param === e && (t = i) })), t } }(p), HEADERS: c.getAllResponseHeaders() },
+                                        h = "https://db-api.akwaabasoftware.com/",
+                                        f = { IMAGES: { loadingGif1: "/assets/js/node/images/loading.gif", akwaabaLogo: "/assets/js/node/images/logo-inverse.png", loadingGif2: "/assets/js/node/images/loading2.gif", loadingGif3: "/assets/js/node/images/loading3.gif", errorNotFound: "/assets/js/node/images/error-not-found.webp" }, HTTPS: u, URLS: { API_BASE_URL: h, PUBLIC_BASE_URL: "https://plus-database.akwaabasoftware.com/", CLICK_COM_BASE_URL: "https://clickcomgh.com/", GET_CLIENT_INFO: h + "subscription-quick-info/index", GET_SUBSCRIPTION_FEE: h + "subscription-quick-info/get-fee", PAY_SUBSCRIPTION_FEE: h + "subscription-quick-info/pay", GET_PAYMENT_STATUS: h + "subscription-quick-info/has-been-paid" }, ERROR_MSG: "Something went wrong, please try again or contact us using the whatsapp button" };
+                                    console.log({ CONSTANTS: f }); var y = function(e, t, i, o) { var n, s = arguments.length,
+                                            r = s < 3 ? t : null === o ? o = Object.getOwnPropertyDescriptor(t, i) : o; if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) r = Reflect.decorate(e, t, i, o);
+                                        else
+                                            for (var l = e.length - 1; l >= 0; l--)(n = e[l]) && (r = (s < 3 ? n(r) : s > 3 ? n(t, i, r) : n(t, i)) || r); return s > 3 && r && Object.defineProperty(t, i, r), r }; let v = class extends o.oi { constructor() { super(...arguments), this.size = 32 }
+                                        render() { return o.dy `
       <div class="w-full block mb-2">
         <div class="flex justify-center">
             <div class="rounded-full overflow-hidden h-${this.size} w-${this.size} shadow-xl">
@@ -6,7 +32,10 @@
             </div>
         </div>
       </div>
-    `}createRenderRoot(){return this}};y([(0,s.C)({type:Number})],v.prototype,"size",void 0),v=y([(0,n.M)("is-loading")],v);let b=class extends o.oi{constructor(){super()}render(){return o.dy`
+    ` }
+                                        createRenderRoot() { return this } };
+                                    y([(0, s.C)({ type: Number })], v.prototype, "size", void 0), v = y([(0, n.M)("is-loading")], v); let b = class extends o.oi { constructor() { super() }
+                                        render() { return o.dy `
     <diV class="flex justify-around">
       <div class="relative px-4 mt-10">
         <div class="rounded-md overflow-hidden h-80 w-80 shadow-xl">
@@ -19,7 +48,16 @@
         </div>
       </div>
     </diV>
-  `}createRenderRoot(){return this}};b=function(e,t,i,o){var n,s=arguments.length,r=s<3?t:null===o?o=Object.getOwnPropertyDescriptor(t,i):o;if("object"==typeof Reflect&&"function"==typeof Reflect.decorate)r=Reflect.decorate(e,t,i,o);else for(var l=e.length-1;l>=0;l--)(n=e[l])&&(r=(s<3?n(r):s>3?n(t,i,r):n(t,i))||r);return s>3&&r&&Object.defineProperty(t,i,r),r}([(0,n.M)("client-not-found")],b);var m=function(e,t,i,o){var n,s=arguments.length,r=s<3?t:null===o?o=Object.getOwnPropertyDescriptor(t,i):o;if("object"==typeof Reflect&&"function"==typeof Reflect.decorate)r=Reflect.decorate(e,t,i,o);else for(var l=e.length-1;l>=0;l--)(n=e[l])&&(r=(s<3?n(r):s>3?n(t,i,r):n(t,i))||r);return s>3&&r&&Object.defineProperty(t,i,r),r};let g=class extends o.oi{constructor(e){super(),this.clientInfo=null,this.clientInfo=e}render(){return null===this.clientInfo?o.dy`<is-loading></is-loading>`:void 0===this.clientInfo.error?o.dy`
+  ` }
+                                        createRenderRoot() { return this } };
+                                    b = function(e, t, i, o) { var n, s = arguments.length,
+                                            r = s < 3 ? t : null === o ? o = Object.getOwnPropertyDescriptor(t, i) : o; if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) r = Reflect.decorate(e, t, i, o);
+                                        else
+                                            for (var l = e.length - 1; l >= 0; l--)(n = e[l]) && (r = (s < 3 ? n(r) : s > 3 ? n(t, i, r) : n(t, i)) || r); return s > 3 && r && Object.defineProperty(t, i, r), r }([(0, n.M)("client-not-found")], b); var m = function(e, t, i, o) { var n, s = arguments.length,
+                                            r = s < 3 ? t : null === o ? o = Object.getOwnPropertyDescriptor(t, i) : o; if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) r = Reflect.decorate(e, t, i, o);
+                                        else
+                                            for (var l = e.length - 1; l >= 0; l--)(n = e[l]) && (r = (s < 3 ? n(r) : s > 3 ? n(t, i, r) : n(t, i)) || r); return s > 3 && r && Object.defineProperty(t, i, r), r }; let g = class extends o.oi { constructor(e) { super(), this.clientInfo = null, this.clientInfo = e }
+                                        render() { return null === this.clientInfo ? o.dy `<is-loading></is-loading>` : void 0 === this.clientInfo.error ? o.dy `
         <diV class="flex justify-around">
           <div class="w-2/3 md:w-7/12 lg:w-5/12 xl:w-3/12">
             <div class="relative pb-5/12 md:pb-5/12">
@@ -33,11 +71,26 @@
             </div>
           </div>
         </diV>
-      `:o.dy`
+      ` : o.dy `
           <h1 class="text-red-500 font-bold tracking-wide text-center">
             ${this.clientInfo.error.error}...
           </h1>
-        `}createRenderRoot(){return this}};m([(0,s.C)({type:Object})],g.prototype,"clientInfo",void 0),g=m([(0,n.M)("client-banner")],g);var _=function(e,t,i,o){var n,s=arguments.length,r=s<3?t:null===o?o=Object.getOwnPropertyDescriptor(t,i):o;if("object"==typeof Reflect&&"function"==typeof Reflect.decorate)r=Reflect.decorate(e,t,i,o);else for(var l=e.length-1;l>=0;l--)(n=e[l])&&(r=(s<3?n(r):s>3?n(t,i,r):n(t,i))||r);return s>3&&r&&Object.defineProperty(t,i,r),r};let w=class extends o.oi{constructor(){super(...arguments),this.input=null,this.error=!1,this.select=!1}render(){const e=this.input.id,t=this.input.name,i=this.error?"text-red-400 border-red-600":"";this.select=null!==this.select&&void 0!==this.select&&!1!==this.select,void 0===this.input.inputClass||this.input.inputClass;const n=void 0===this.input.inputClass?`appearance-none block w-full bg-gray-100 text-gray-700\n        border border-gray-200 rounded-md py-3 px-4 leading-tight\n        focus:outline-none bg- focus:bg-white focus:border-gray-500 ${i}`:this.input.inputClass,s=void 0===this.input.type?"text":this.input.type,r=void 0===this.input.label?"Label":this.input.label,l=(void 0===this.input.labelClass||this.input.labelClass,void 0===this.input.labelClass?"block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2":this.input.labelClass),c=null!==this.input.disabled&&void 0!==this.input.disabled&&!1!==this.input.disabled;return!0===this.select?(e=>{const t=e.id,i=e.name,n=null!==e.selectOptions&&void 0!==e.selectOptions;return o.dy`
+        ` }
+                                        createRenderRoot() { return this } };
+                                    m([(0, s.C)({ type: Object })], g.prototype, "clientInfo", void 0), g = m([(0, n.M)("client-banner")], g); var _ = function(e, t, i, o) { var n, s = arguments.length,
+                                            r = s < 3 ? t : null === o ? o = Object.getOwnPropertyDescriptor(t, i) : o; if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) r = Reflect.decorate(e, t, i, o);
+                                        else
+                                            for (var l = e.length - 1; l >= 0; l--)(n = e[l]) && (r = (s < 3 ? n(r) : s > 3 ? n(t, i, r) : n(t, i)) || r); return s > 3 && r && Object.defineProperty(t, i, r), r }; let w = class extends o.oi { constructor() { super(...arguments), this.input = null, this.error = !1, this.select = !1 }
+                                            render() { const e = this.input.id,
+                                                        t = this.input.name,
+                                                        i = this.error ? "text-red-400 border-red-600" : "";
+                                                    this.select = null !== this.select && void 0 !== this.select && !1 !== this.select, void 0 === this.input.inputClass || this.input.inputClass; const n = void 0 === this.input.inputClass ? `appearance-none block w-full bg-gray-100 text-gray-700\n        border border-gray-200 rounded-md py-3 px-4 leading-tight\n        focus:outline-none bg- focus:bg-white focus:border-gray-500 ${i}` : this.input.inputClass,
+                                                        s = void 0 === this.input.type ? "text" : this.input.type,
+                                                        r = void 0 === this.input.label ? "Label" : this.input.label,
+                                                        l = (void 0 === this.input.labelClass || this.input.labelClass, void 0 === this.input.labelClass ? "block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" : this.input.labelClass),
+                                                        c = null !== this.input.disabled && void 0 !== this.input.disabled && !1 !== this.input.disabled; return !0 === this.select ? (e => { const t = e.id,
+                                                                    i = e.name,
+                                                                    n = null !== e.selectOptions && void 0 !== e.selectOptions; return o.dy `
     <div class="w-full mb-4 md:mb-6">
       <label class="${e.labelClass}"> ${e.label}
         <select style="${e.style}" ?disabled="${e.disabled}" class="${e.inputClass}" placeholder="${e.placeholder}" id="${t}"

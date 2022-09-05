@@ -1,7 +1,7 @@
 <?php
 	$actual_host = $_SERVER['SERVER_ADDR'];
 	if (IN_PRODUCTION_MODE) {
-		define('MEMBER_BASE_URL', "https://member.plusdatabase.com/");
+		define('MEMBER_BASE_URL', "https://member.plus-database.akwaabasoftware.com/");
 	} else {
 		define('MEMBER_BASE_URL', "http://$actual_host/AMG/plus_db/member_dashboard/");
 	}

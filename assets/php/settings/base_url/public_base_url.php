@@ -1,7 +1,7 @@
 <?php
 	$actual_host = $_SERVER['SERVER_ADDR'];
 	if (IN_PRODUCTION_MODE) {
-		define('PUBLIC_BASE_URL', "https://plusdatabase.com/");
+		define('PUBLIC_BASE_URL', "https://plus-database.akwaabasoftware.com/");
 	} else {
 		define('PUBLIC_BASE_URL', "http://$actual_host/AMG/plus_db/landing_page/");
 	}
