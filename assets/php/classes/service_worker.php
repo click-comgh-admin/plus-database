@@ -93,7 +93,8 @@ class View
                 if ($entry === "." || $entry === "..") {
                     null;
                 } else {
-                    $fullPath = strtolower("{$dirname}{$entry}");
+                    // $fullPath = strtolower("{$dirname}{$entry}");
+                    $fullPath = "{$dirname}{$entry}";
     
                     if (is_dir($fullPath)) {
                         $fullPath = "{$fullPath}/";
@@ -185,6 +186,7 @@ class View
         $URLS = [
             'http://127.0.0.1:9000/api/',
             'https://db-api.akwaabasoftware.com/',
+            'https://db-api-v2.akwaabasoftware.com/',
         ];
 
         $allUrls = "";
