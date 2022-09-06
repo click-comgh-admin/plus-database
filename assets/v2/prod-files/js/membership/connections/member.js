@@ -4,5 +4,5 @@
       </div>
     `}firstUpdated(){}createRenderRoot(){return this}};s.styles=[c.iv`
    :host { display: block; }
-  `],s=r([(0,o.M)("pdb-connections-members"),function(e,t){if("object"==typeof Reflect&&"function"==typeof Reflect.metadata)return Reflect.metadata(e,t)}("design:paramtypes",[])],s)}},e=>(e.O(0,[2185,5744,9674,8820,1828,2459,479,5291,6553,2351,3712],(()=>(5141,e(e.s=5141)))),e.O())])}));
+  `],s=r([(0,o.M)("pdb-connections-members"),function(e,t){if("object"==typeof Reflect&&"function"==typeof Reflect.metadata)return Reflect.metadata(e,t)}("design:paramtypes",[])],s)}},e=>(e.O(0,[2185,5744,9674,8820,1828,2459,2989,5291,6553,2351,3712],(()=>(5141,e(e.s=5141)))),e.O())])}));
 //# sourceMappingURL=member.js.map
