@@ -27,7 +27,7 @@
 		<link href="<?= CLIENT_BASE_URL; ?>assets/css/combo.css" rel="stylesheet">
 	<?php } ?> -->
     <link href="<?= CLIENT_BASE_URL; ?>assets/css/countdown.css" rel="stylesheet">
-    <link href="<?= PUBLIC_BASE_URL; ?>assets/css/font-awesome.min.css" rel="stylesheet">
+    <link href="<?= CLIENT_BASE_URL; ?>assets/css/font-awesome.css" rel="stylesheet">
     <?php
         if (defined("LIT_FILE_HEAD")) {
             echo LIT_FILE_HEAD;    

@@ -916,12 +916,12 @@ img, video {
   justify-content: center;
 }
 
-.\!justify-between {
-  justify-content: space-between !important;
-}
-
 .justify-between {
   justify-content: space-between;
+}
+
+.\!justify-between {
+  justify-content: space-between !important;
 }
 
 .justify-evenly {
@@ -1287,12 +1287,12 @@ img, video {
   padding-top: 0.25rem;
 }
 
-.pl-4 {
-  padding-left: 1rem;
-}
-
 .pl-2 {
   padding-left: 0.5rem;
+}
+
+.pl-4 {
+  padding-left: 1rem;
 }
 
 .pb-2 {
