@@ -8,6 +8,7 @@
     $data = $_POST;
     $data['account_id'] = $_GET['acc_id'];
     $data['user_id'] = $_GET['user'];
+    $data['member_id'] = $_GET['member'];
     $data['api_base_url'] = $_GET['api'];
 
 	$curl = curl_init();

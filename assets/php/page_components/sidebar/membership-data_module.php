@@ -75,10 +75,30 @@
                 </li>
             <?php }
         ?>
+    </ul>
+</li>
+<li>
+    <a href="#" mm-active="member-prefix|branch-prefix|category-prefix">
+        <i class="metismenu-icon pe-7s-id"></i> Member Identification
+        <i class="metismenu-state-icon pe-7s-angle-down caret-left"></i>
+    </a>
+    <ul>
         <li>
-            <a href="<?= CLIENT_BASE_URL; ?>members?member-id-prefix" mm-active="members">
+            <a href="<?= CLIENT_BASE_URL; ?>member/id-prefix/member-prefix" mm-active="member-prefix">
                 <i class="metismenu-icon">
                 </i>Member ID Prefix
+            </a>
+        </li>
+        <li>
+            <a href="<?= CLIENT_BASE_URL; ?>member/id-prefix/branch-prefix" mm-active="branch-prefix">
+                <i class="metismenu-icon">
+                </i>Branch ID Prefix
+            </a>
+        </li>
+        <li>
+            <a href="<?= CLIENT_BASE_URL; ?>member/id-prefix/category-prefix" mm-active="category-prefix">
+                <i class="metismenu-icon">
+                </i>Member Category ID Prefix
             </a>
         </li>
         <li>
