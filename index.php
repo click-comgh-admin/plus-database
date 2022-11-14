@@ -6,6 +6,8 @@
 		header("Location: " . ClientBaseUrl . "login");
     }
 
+    global $ccApi;
+
     use Encryptor\Encryptor;
     use FileManager\FileManager;
     $fM = new FileManager();
@@ -66,12 +68,18 @@
                                         </div>
                                         <div class="widget-content-right">
                                             <?php   
-                                                @$get_string = @"currentpage=1&rowsperpage=100000000000&client_id=$account_id";
-                                                @$total_members = @$ccApi->client_members($type="members", $get_string = $get_string, function ($members) {
+                                                @$get_string = @"client_id=$account_id";
+                                                // print_r(['$get_string' => $get_string]);
+                                                @$total_members = @$ccApi->client_members($type="count", $get_string = $get_string, function ($members) {
+                                                        
+                                                    // print_r(['$members' => $members]);
                                                     return @$members;
                                                 }, $debug = false); 
+                                                // print_r(['$total_members' => $total_members]);
+                                                $number_of_members = isset($total_members['data'][0]['total_members'])? @$total_members['data'][0]['total_members']: 0;
+                                                // print_r(['$number_of_members' => $number_of_members]);
                                             ?>
-                                            <div class="widget-numbers text-white"><span><?= count(@$total_members['data']); ?></span></div>
+                                            <div class="widget-numbers text-white"><span><?= $number_of_members > 99? $number_of_members: $number_of_members; ?></span></div>
                                         </div>
                                     </div>
                                 </div>
@@ -91,7 +99,7 @@
                                                     return @$contacts;
                                                 }, $debug = false);
                                             ?>
-                                            <div class="widget-numbers text-white"><span><?= count(@$total_contacts); ?></span></div>
+                                            <div class="widget-numbers text-white"><span><?= is_array(@$total_contacts)? count(@$total_contacts): 0; ?></span></div>
                                         </div>
                                     </div>
                                 </div>
@@ -182,7 +190,7 @@
                                                 $membershipMax = explode("-", $membershipMax);
                                                 $membershipMax = end($membershipMax);
                                                 $membershipMax = trim($membershipMax);
-                                                $membershipRegPercent = @(int)(((int)count($total_members['data'])*100)/(int)$membershipMax);
+                                                $membershipRegPercent = @(int)(((int)$number_of_members*100)/(int)$membershipMax);
                                                 
                                                 if ($membershipRegPercent <= 25) {
                                                     $progressBarVar = "happy-green";
@@ -209,7 +217,7 @@
                                                 </div>
                                             </div>
                                             <div class="widget-content-left fsize-1">
-                                                <div class="text-muted opacity-6">Member Registration Space <i>// <?= count($total_members['data']); ?> of <?= $membershipMax; ?></i></div>
+                                                <div class="text-muted opacity-6">Member Registration Space <i>// <?= $number_of_members; ?> of <?= $membershipMax; ?></i></div>
                                             </div>
                                         </div>
                                     </div>

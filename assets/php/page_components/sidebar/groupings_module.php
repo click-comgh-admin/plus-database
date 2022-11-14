@@ -37,3 +37,61 @@
         </li>
     </ul>
 </li>
+
+<li>
+    <a href="#" class="text-primary" 
+        mm-active="view-mc-list|assign-mc-list">
+        <i class="metismenu-icon pe-7s-note2"></i><i class="pe-7s-users"></i> Member Category Assignment
+        <i class="metismenu-state-icon pe-7s-angle-down caret-left"></i>
+    </a>
+    <ul>
+        <li>
+            <a href="<?= CLIENT_BASE_URL; ?>groupings/bulk-assignment/member-category/view-mc-list" mm-active="view-mc-list">
+                <i class="metismenu-icon"></i> View Member Category
+            </a>
+        </li>
+        <li>
+            <a href="<?= CLIENT_BASE_URL; ?>groupings/bulk-assignment/member-category/assign-mc-list" mm-active="assign-mc-list">
+                <i class="metismenu-icon"></i> Assign Member Category
+            </a>
+        </li>
+    </ul>
+</li>
+<li>
+    <a href="#" class="text-primary" 
+        mm-active="view-g-list|assign-g-list">
+        <i class="metismenu-icon pe-7s-note2"></i><i class="pe-7s-users"></i> Group Assignment
+        <i class="metismenu-state-icon pe-7s-angle-down caret-left"></i>
+    </a>
+    <ul>
+        <li>
+            <a href="<?= CLIENT_BASE_URL; ?>groupings/bulk-assignment/group/view-g-list" mm-active="view-mc-list">
+                <i class="metismenu-icon"></i> View Group
+            </a>
+        </li>
+        <li>
+            <a href="<?= CLIENT_BASE_URL; ?>groupings/bulk-assignment/group/assign-g-list" mm-active="assign-mc-list">
+                <i class="metismenu-icon"></i> Assign Group
+            </a>
+        </li>
+    </ul>
+</li>
+<li>
+    <a href="#" class="text-primary" 
+        mm-active="view-sg-list|assign-sg-list">
+        <i class="metismenu-icon pe-7s-note2"></i><i class="pe-7s-users"></i> Sub-Group Assignment
+        <i class="metismenu-state-icon pe-7s-angle-down caret-left"></i>
+    </a>
+    <ul>
+        <li>
+            <a href="<?= CLIENT_BASE_URL; ?>groupings/bulk-assignment/subgroup/view-sg-list" mm-active="view-mc-list">
+                <i class="metismenu-icon"></i> View Sub-Group
+            </a>
+        </li>
+        <li>
+            <a href="<?= CLIENT_BASE_URL; ?>groupings/bulk-assignment/subgroup/assign-sg-list" mm-active="assign-mc-list">
+                <i class="metismenu-icon"></i> Assign Sub-Group
+            </a>
+        </li>
+    </ul>
+</li>

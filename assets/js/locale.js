@@ -1141,7 +1141,10 @@
                     fetch(submit_form['attributes']['action']['value'], {
                         method: "POST",
                         headers: {
+                            // "Authorization": "Bearer " + token,
+                            // "Accept": "application/json, text/plain, */*",
                             "Authorization": "Bearer " + token,
+                            "Access-Control-Allow-Origin": "*/*",
                             "Accept": "application/json, text/plain, */*"
                         },
                         body: new FormData(submit_form)

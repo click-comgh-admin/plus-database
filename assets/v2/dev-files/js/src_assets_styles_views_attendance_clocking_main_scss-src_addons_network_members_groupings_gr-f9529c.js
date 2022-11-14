@@ -1,0 +1,49 @@
+"use strict";(self.webpackChunkwebpackNumbers=self.webpackChunkwebpackNumbers||[]).push([["src_assets_styles_views_attendance_clocking_main_scss-src_addons_network_members_groupings_gr-f9529c"],{73794:(e,t,r)=>{r.r(t)},26660:(e,t,r)=>{r.r(t)},8967:(e,t,r)=>{r.r(t),r.d(t,{__swalStyle:()=>i,https_swal_error_format:()=>o});const i="<style>#swal2-validation-message{\n  display: flex !important;\n  justify-content: flex-start !important;\n  font-weight: 600 !important;\n}#swal2-validation-message>ul{list-style: inside !important; margin: 0 !important;}</style>",o=(e,t=!0)=>{if(Array.isArray(e)){let r=(t?i:"")+"<ul>";return e.forEach((e=>{r+="string"==typeof e?`<li>${e}</li>\n`:`<li>${e.error}</li>\n`})),r+="</ul>"}throw new Error("Unknown error response format")}},17126:(e,t,r)=>{r.r(t),r.d(t,{DELETE_MemberGroupingsGroupMember:()=>u});var i=r(86455),o=r.n(i),s=r(48485),n=r(87270),l=r(14492),a=r(8967),c=r(33600),p=function(e,t,r,i){return new(r||(r=Promise))((function(o,s){function n(e){try{a(i.next(e))}catch(e){s(e)}}function l(e){try{a(i.throw(e))}catch(e){s(e)}}function a(e){var t;e.done?o(e.value):(t=e.value,t instanceof r?t:new r((function(e){e(t)}))).then(n,l)}a((i=i.apply(e,t||[])).next())}))};function u(e,t){return p(this,void 0,void 0,(function*(){const r=(0,c.getUserLoginInfoCookie)(),i=s.CONSTANTS.URLS.AKWAABA_API_BASE_URL+"members/groupings/bulk-assignment/remove-from-group",u={groupId:e,memberId:t};return o().fire({title:"Remove Member From Group?",text:"Member will be permanently removed from group member list!",icon:"info",iconColor:"#f97817",showCancelButton:!0,confirmButtonText:"Yes",cancelButtonText:"Cancel",confirmButtonColor:"#f97817",cancelButtonColor:"#ddd",reverseButtons:!0,showLoaderOnConfirm:!0,backdrop:!0,preConfirm:e=>p(this,void 0,void 0,(function*(){return yield(0,n.http)(i,{method:"DELETE",body:JSON.stringify(u),headers:{Authorization:"Token "+r.token}},!0).then((e=>{try{const t=new l.NetWorkCallResponses("delete",e,!1),r=t.response;if("nameError"in r&&"unknownError"in r&&r.unknownError.length>0){let e=[];r.unknownError.forEach((t=>{t.errors.forEach((t=>{e.push({error:t})}))}));const t=(0,a.https_swal_error_format)(e);o().showValidationMessage(`${t}`)}return t}catch(t){console.error({error:t});let r=e;r.error=t;const i=new l.NetWorkCallResponses("delete",r,!0);return i.postForm,i}})).catch((e=>{o().showValidationMessage(`${String(e)}`)}))})),allowOutsideClick:()=>!o().isLoading()}).then((e=>{if(e.isConfirmed){let t="Success",r=!1;const i=e.value;if(i instanceof Object){const e=i.response;t=String(e.message),r=i.response.success}o().fire({title:t,icon:r?"success":"error",iconColor:"#f97817",confirmButtonColor:"#f97817"}),r&&setTimeout((()=>{window.location.reload()}),500)}}))}))}},38281:(e,t,r)=>{r.r(t),r.d(t,{UserProfilePhoto:()=>a});var i=r(48485),o=r(85862),s=r(59662),n=function(e,t,r,i){var o,s=arguments.length,n=s<3?t:null===i?i=Object.getOwnPropertyDescriptor(t,r):i;if("object"==typeof Reflect&&"function"==typeof Reflect.decorate)n=Reflect.decorate(e,t,r,i);else for(var l=e.length-1;l>=0;l--)(o=e[l])&&(n=(s<3?o(n):s>3?o(t,r,n):o(t,r))||n);return s>3&&n&&Object.defineProperty(t,r,n),n},l=function(e,t){if("object"==typeof Reflect&&"function"==typeof Reflect.metadata)return Reflect.metadata(e,t)};let a=class extends o.LitElement{constructor(){super(),this["click-to-open"]="false"}connectedCallback(){super.connectedCallback(),"client"===this.type?this.setUpClientImage():this.setUpMemberImage()}disconnectedCallback(){}render(){return o.html`
+      <div @click="${this.openProfile}"
+        class="h-${this.size} w-${this.size} items-center justify-center border-2 border-yellow-500 ${this.rounded?"rounded-full":""}">
+        <img class="object-cover h-full w-full border-2 border-akwaaba-orange-light ${this.rounded?"rounded-full":""}"
+          src="${this.url}">
+      </div>
+    `}openProfile(e){e.preventDefault(),"false"!==this["click-to-open"]&&(window.location.href=this["click-to-open"])}firstUpdated(){}setUpMemberImage(){if(this.url.includes("member/logo/")||this.url.includes("member/profile/"))this.url=this.url;else{const e=this.url.split("/"),t=e[e.length-1];this.url=i.CONSTANTS.URLS.FILE_BUCKET_BASE_URL+"/files/members/profile-picture/"+t}}setUpClientImage(){if(this.url.includes("clients/profile-picture/"))this.url=this.url;else{const e=this.url.split("/"),t=e[e.length-1];this.url=i.CONSTANTS.URLS.FILE_BUCKET_BASE_URL+"/files/clients/profile-picture/"+t}}createRenderRoot(){return this}};a.styles=[o.css`
+   :host { display: block; }
+  `],n([(0,s.property)({type:String}),l("design:type",String)],a.prototype,"url",void 0),n([(0,s.property)({type:String}),l("design:type",String)],a.prototype,"type",void 0),n([(0,s.property)({type:Boolean}),l("design:type",Boolean)],a.prototype,"rounded",void 0),n([(0,s.property)({type:String}),l("design:type",String)],a.prototype,"click-to-open",void 0),n([(0,s.property)({type:Number}),l("design:type",Number)],a.prototype,"size",void 0),a=n([(0,s.customElement)("user-profile-photo"),l("design:paramtypes",[])],a)},43629:(e,t,r)=>{r.r(t),r.d(t,{PdbMembershipSelectMemberType:()=>c}),r(26660);var i=r(85862),o=r(59662),s=r(90072),n=function(e,t,r,i){var o,s=arguments.length,n=s<3?t:null===i?i=Object.getOwnPropertyDescriptor(t,r):i;if("object"==typeof Reflect&&"function"==typeof Reflect.decorate)n=Reflect.decorate(e,t,r,i);else for(var l=e.length-1;l>=0;l--)(o=e[l])&&(n=(s<3?o(n):s>3?o(t,r,n):o(t,r))||n);return s>3&&n&&Object.defineProperty(t,r,n),n},l=function(e,t){if("object"==typeof Reflect&&"function"==typeof Reflect.metadata)return Reflect.metadata(e,t)},a=function(e,t,r,i){return new(r||(r=Promise))((function(o,s){function n(e){try{a(i.next(e))}catch(e){s(e)}}function l(e){try{a(i.throw(e))}catch(e){s(e)}}function a(e){var t;e.done?o(e.value):(t=e.value,t instanceof r?t:new r((function(e){e(t)}))).then(n,l)}a((i=i.apply(e,t||[])).next())}))};let c=class extends i.LitElement{constructor(){super(),this.material="true",this.defaultValue=null,this.label="",this.name="",this.id="",this.tag_class="",this.css_style="",this._memberCategories=[]}connectedCallback(){const e=Object.create(null,{connectedCallback:{get:()=>super.connectedCallback}});return a(this,void 0,void 0,(function*(){e.connectedCallback.call(this),yield this.getMemberCategories()}))}disconnectedCallback(){}render(){return"true"===this.material?i.html`
+        ${this.materialSelectField}
+      `:i.html`
+        ${this.selectField}
+      `}get materialSelectField(){return null===this.defaultValue?i.html`
+      <mwc-select name="${this.name}" class="w-full ${this.tag_class}" id="${this.id}" label="${this.label}" outlined required>
+        <mwc-list-item value="0">${this.label}</mwc-list-item>
+        ${this._memberCategories.map((e=>i.html`<mwc-list-item value="${e.id}">${e.category}</mwc-list-item>`))}
+      </mwc-select>
+    `:i.html`
+      <mwc-select name="${this.name}" class="w-full ${this.tag_class}" id="${this.id}" label="${this.label}" outlined required>
+        <mwc-list-item value="0">${this.label}</mwc-list-item>
+        ${this._memberCategories.map((e=>this.defaultValue===e.id?i.html`<mwc-list-item value="${e.id}" selected>${e.category}</mwc-list-item>`:i.html`<mwc-list-item value="${e.id}">${e.category}</mwc-list-item>`))}
+      </mwc-select>
+    `}get selectField(){let e=i.html``;return e=null===this.defaultValue?i.html`
+      <select class="${this.tag_class}" name="${this.name}" id="${this.id}" style="${this.css_style}">
+				<option value="0">${this.label}</option>
+        ${this._memberCategories.map((e=>i.html`<option value="${e.id}">${e.category}</option>`))}
+			</select>
+    `:i.html`
+        <select class="${this.tag_class}" name="${this.name}" id="${this.id}" style="${this.css_style}">
+          <option value="0">${this.label}</option>
+          ${this._memberCategories.map((e=>this.defaultValue===e.id?i.html`<option value="${e.id}" selected>${e.category}</option>`:i.html`<option value="${e.id}">${e.category}</option>`))}
+        </select>
+      `,i.html`
+      <div class="main_class">
+				<div class="form-group">
+					<div class="input-group mb-4">
+						<div class="input-group-prepend" icon_id="">
+							<span class="input-group-text px-2">
+								<i class="pe-7s-leaf icon-gradient bg-warm-flame text-success font-weight-bolder "></i>
+							</span>
+						</div>
+						${e}
+					</div>
+				</div>
+			</div>
+    `}firstUpdated(){}getMemberCategories(){return a(this,void 0,void 0,(function*(){const e=yield(0,s.GET_MemberGroupingsMemberCategories)();let t=[];null===e?t.push({id:0,category:"**NOT FOUND**"}):!0===e.response.success&&"length"in e.response.data&&(t=e.response.data),this._memberCategories=[...this._memberCategories,...t]}))}createRenderRoot(){return this}};c.styles=[i.css`
+   :host { display: block; }
+  `],n([(0,o.property)({type:String}),l("design:type",String)],c.prototype,"material",void 0),n([(0,o.property)({type:Number}),l("design:type",Number)],c.prototype,"defaultValue",void 0),n([(0,o.property)({type:String}),l("design:type",String)],c.prototype,"label",void 0),n([(0,o.property)({type:String}),l("design:type",String)],c.prototype,"name",void 0),n([(0,o.property)({type:String}),l("design:type",String)],c.prototype,"id",void 0),n([(0,o.property)({type:String}),l("design:type",String)],c.prototype,"tag_class",void 0),n([(0,o.property)({type:String}),l("design:type",String)],c.prototype,"css_style",void 0),n([(0,o.property)({type:Array}),l("design:type",Array)],c.prototype,"_memberCategories",void 0),c=n([(0,o.customElement)("pdb-membership-select-member-type"),l("design:paramtypes",[])],c)}}]);
+//# sourceMappingURL=src_assets_styles_views_attendance_clocking_main_scss-src_addons_network_members_groupings_gr-f9529c.js.map

@@ -1,4 +1,5 @@
 <?php
+    ini_set('display_errors', 'On');
 	require_once 'settings/base_url.php';
 
 	define('LoginCookie', strtolower(

@@ -110,6 +110,11 @@
     </ul>
 </li>
 <li>
+    <a href="<?= CLIENT_BASE_URL; ?>member/access-restriction/restrictions" mm-active="restrictions">
+        <i class="metismenu-icon pe-7s-id"></i> Access Restriction
+    </a>
+</li>
+<li>
     <a href="https://www.youtube.com/playlist?list=PL94Wg7vEQie4EojeY5BGDkR2I0Zyy9Ufa" target="_blank">
         <i class="metismenu-icon pe-7s-study"></i> System Video Tutorials
     </a>
