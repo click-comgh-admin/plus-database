@@ -201,5 +201,5 @@
       </div>
     `}firstUpdated(){}createRenderRoot(){return this}};j.styles=[o.iv`
    :host { display: block; }
-  `],B([(0,c.C)({type:Object}),E("design:type",Object)],j.prototype,"_property",void 0),j=B([(0,i.M)("pdb-connections-types"),E("design:paramtypes",[])],j)}},e=>(e.O(0,[2185,5744,9674,9564,2459,9553,5291,214,6553,3712],(()=>(3612,e(e.s=3612)))),e.O())])}));
+  `],B([(0,c.C)({type:Object}),E("design:type",Object)],j.prototype,"_property",void 0),j=B([(0,i.M)("pdb-connections-types"),E("design:paramtypes",[])],j)}},e=>(e.O(0,[2185,5744,9674,9564,2459,9553,5291,6553,214,3712],(()=>(3612,e(e.s=3612)))),e.O())])}));
 //# sourceMappingURL=types.js.map
