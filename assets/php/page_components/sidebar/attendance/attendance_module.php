@@ -37,6 +37,34 @@
     </a>
 </li>
 <li>
+    <a href="#" mm-active="view-al-status|add-al-status|view-al-assignment|assign-al-status">
+        <i class="metismenu-icon pe-7s-clock"></i> Absent/ Leave Status
+        <i class="metismenu-state-icon pe-7s-angle-down caret-left"></i>
+    </a>
+    <ul>
+        <li>
+            <a href="<?= CLIENT_BASE_URL; ?>attendance/v2/absent-leave/view-al-status" mm-active="view-al-status">
+                <i class="metismenu-icon pe-7s-clock"></i> View Status
+            </a>
+        </li>
+        <li>
+            <a href="<?= CLIENT_BASE_URL; ?>attendance/v2/absent-leave/add-al-status" mm-active="add-al-status">
+                <i class="metismenu-icon pe-7s-clock"></i> Create Status
+            </a>
+        </li>
+        <li>
+            <a href="<?= CLIENT_BASE_URL; ?>attendance/v2/absent-leave/view-al-assignment" mm-active="view-al-assignment">
+                <i class="metismenu-icon pe-7s-clock"></i> View Assignments
+            </a>
+        </li>
+        <li>
+            <a href="<?= CLIENT_BASE_URL; ?>attendance/v2/absent-leave/assign-al-status" mm-active="assign-al-status">
+                <i class="metismenu-icon pe-7s-clock"></i> Assign Status
+            </a>
+        </li>
+    </ul>
+</li>
+<li>
     <a href="#" mm-active="device-requests|device-settings">
         <i class="metismenu-icon pe-7s-phone"></i> Clocking Devices
         <i class="metismenu-state-icon pe-7s-angle-down caret-left"></i>

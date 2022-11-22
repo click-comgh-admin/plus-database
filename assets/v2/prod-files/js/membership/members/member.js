@@ -33,7 +33,7 @@
       ${this.dt_body.map((e=>o.dy`<tr>${e.map((e=>o.dy`<td>${e.title}</td>`))}</tr>`))}
     `}tfoot(){return o.dy`
     ${this.dt_foot.map((e=>o.dy`<th>${e.title}</th>`))}
-    `}firstUpdated(){const e=this.querySelector('[datatable="'+this.ID+'"]');if("object"==typeof this.datatable.ajax){let e=this.datatable.ajax;e.headers={"Access-Control-Allow-Origin":"*/*",Accept:"application/json, text/plain, */*"};let t=e.headers;for(const e in this.ajaxHeader)if(Object.prototype.hasOwnProperty.call(this.ajaxHeader,e)){const r=this.ajaxHeader[e];t[e]=r}e.headers=t,this.datatable.ajax=e}console.log({$,table:e,"this.datatable":this.datatable}),$(e).DataTable(this.datatable)}createRenderRoot(){return this}};c.styles=[o.iv`
+    `}firstUpdated(){const e=this.querySelector('[datatable="'+this.ID+'"]');if("object"==typeof this.datatable.ajax){let e=this.datatable.ajax;e.headers={"Access-Control-Allow-Origin":"*/*",Accept:"application/json, text/plain, */*"};let t=e.headers;for(const e in this.ajaxHeader)if(Object.prototype.hasOwnProperty.call(this.ajaxHeader,e)){const r=this.ajaxHeader[e];t[e]=r}e.headers=t,this.datatable.ajax=e}$(e).DataTable(this.datatable)}createRenderRoot(){return this}};c.styles=[o.iv`
       :host { display: block; }
       input, select {
         box-shadow: 0 0 0 1px !important;
@@ -101,7 +101,7 @@
           </table>
         </div>
       </div>
-    `}get tableBody(){const e=this._members.results;return console.log({"this._members":this._members}),Array.isArray(e)?e.map((e=>{const t=(0,l.h)(String(e.id),!0);return n.dy`
+    `}get tableBody(){const e=this._members.results;return Array.isArray(e)?e.map((e=>{const t=(0,l.h)(String(e.id),!0);return n.dy`
           <tr class="mdc-data-table__row">
             <th class="mdc-data-table__cell whitespace-pre-line" scope="row">
               #

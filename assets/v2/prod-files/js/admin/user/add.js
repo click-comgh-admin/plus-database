@@ -2,5 +2,5 @@
       <pdb-admin-user-form></pdb-admin-user-form>
     `}firstUpdated(){}createRenderRoot(){return this}};s.styles=[c.iv`
    :host { display: block; }
-  `],d([(0,r.C)({type:Array}),i("design:type",Array)],s.prototype,"_activeBranchId",void 0),s=d([(0,o.M)("pdb-admin-user-add-form"),i("design:paramtypes",[])],s)}},e=>(e.O(0,[2185,5744,9674,8820,1828,2459,7724,5291,8096,9852,3712],(()=>(369,e(e.s=369)))),e.O())])}));
+  `],d([(0,r.C)({type:Array}),i("design:type",Array)],s.prototype,"_activeBranchId",void 0),s=d([(0,o.M)("pdb-admin-user-add-form"),i("design:paramtypes",[])],s)}},e=>(e.O(0,[2185,5744,9674,8820,1828,2459,5345,5291,8096,9852,3712],(()=>(369,e(e.s=369)))),e.O())])}));
 //# sourceMappingURL=add.js.map

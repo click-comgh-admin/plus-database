@@ -2,5 +2,5 @@
       <pdb-admin-user-group-subgroup-form .userId="${this.userId}"></pdb-admin-user-group-subgroup-form>
     `}firstUpdated(){}getUserId(){let e=(0,a.Jx)("user-id"),t=null!==e?(0,s.t)(e):null;this.userId=Number.isNaN(t)?null:Number(t)}createRenderRoot(){return this}};l.styles=[n.iv`
    :host { display: block; }
-  `],d([(0,o.C)({type:Number}),i("design:type",Number)],l.prototype,"userId",void 0),d([(0,o.C)({type:Array}),i("design:type",Array)],l.prototype,"_activeBranchId",void 0),l=d([(0,c.M)("pdb-admin-user-add-group-subgroup-form"),i("design:paramtypes",[])],l)}},e=>(e.O(0,[2185,5744,9674,8820,1828,2459,7724,5291,8096,6141,3712],(()=>(2346,e(e.s=2346)))),e.O())])}));
+  `],d([(0,o.C)({type:Number}),i("design:type",Number)],l.prototype,"userId",void 0),d([(0,o.C)({type:Array}),i("design:type",Array)],l.prototype,"_activeBranchId",void 0),l=d([(0,c.M)("pdb-admin-user-add-group-subgroup-form"),i("design:paramtypes",[])],l)}},e=>(e.O(0,[2185,5744,9674,8820,1828,2459,5345,5291,8096,6141,3712],(()=>(2346,e(e.s=2346)))),e.O())])}));
 //# sourceMappingURL=add_group_subgroup.js.map
