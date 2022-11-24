@@ -12,7 +12,7 @@
         <div class="form-input-container flex">      
           <div class="w-full text-right">
             <a class="underline text-sm !text-gray-800 hover:!text-gray-900"
-              href="${o.CONSTANTS.URLS.HOME_PAGE_BASE_URL}forgot-password">
+              href="${o.CONSTANTS.URLS.FORGOT_PASSWORD_URL}">
               forgot password?
             </a>
           </div>
